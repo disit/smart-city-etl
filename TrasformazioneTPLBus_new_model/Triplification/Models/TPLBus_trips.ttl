@@ -1,0 +1,313 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix transit: <http://vocab.org/transit/terms/> .
+@prefix km4cr: <http://www.disit.org/km4city/resource#> .
+@prefix km4c: <http://www.disit.org/km4city/schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <http://schema.org/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix otn: <http://www.pms.ifi.uni-muenchen.de/OTN#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gtfs: <http://vocab.gtfs.org/terms#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1at6j5kvjx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "SELECT * FROM SiiMobility.TPLBus_trips" ;
+	km-dev:modelPublicationTime "1474468959220"^^xsd:long ;
+	km-dev:modelVersion "1.4" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"shape_id\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"geo:Geometry1 (add)\",\"DomainId\":\"http://www.opengis.net/ont/geosparql#Geometry1\",\"DomainUri\":\"http://www.opengis.net/ont/geosparql#Geometry\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"TripsTXTKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Trip1 (add)\",\"DomainId\":\"http://vocab.gtfs.org/terms#Trip1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Trip\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[{\"edgeId\":\"http://xmlns.com/foaf/0.1/page\",\"edgeSourceId\":\"http://vocab.gtfs.org/terms#Trip1\",\"edgeTargetId\":\"http://xmlns.com/foaf/0.1/Document1\"}],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP1:WS7AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://www.opengis.net/ont/geosparql#Geometry\",\"edgeId\":\"http://www.opengis.net/ont/geosparql#hasGeometry\",\"edgeSourceId\":\"http://vocab.gtfs.org/terms#Trip1\",\"edgeTargetId\":\"http://www.opengis.net/ont/geosparql#Geometry1\",\"edgeSourceUri\":\"http://vocab.gtfs.org/terms#Trip\"}],\"type\":\"other\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"route_id\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Route1 (add)\",\"DomainId\":\"http://vocab.gtfs.org/terms#Route1 (add)\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Route\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"direction_id\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://vocab.gtfs.org/terms#direction\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Trip1\",\"DomainId\":\"http://vocab.gtfs.org/terms#Trip1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Trip\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"service_id\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://vocab.gtfs.org/terms#service\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Trip1\",\"DomainId\":\"http://vocab.gtfs.org/terms#Trip1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Trip\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"trip_short_name\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://vocab.gtfs.org/terms#shortName\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Trip1\",\"DomainId\":\"http://vocab.gtfs.org/terms#Trip1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Trip\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"trip_headsign\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://vocab.gtfs.org/terms#headsign\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Trip1\",\"DomainId\":\"http://vocab.gtfs.org/terms#Trip1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Trip\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"lenght\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#routeLength\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Trip1\",\"DomainId\":\"http://vocab.gtfs.org/terms#Trip1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Trip\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"service_id\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://vocab.gtfs.org/terms#service\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Trip1\",\"DomainId\":\"http://vocab.gtfs.org/terms#Trip1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Trip\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"lenght\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#routeLength\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Trip1\",\"DomainId\":\"http://vocab.gtfs.org/terms#Trip1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Trip\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"service_id\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"isPrimary\":true,\"FullType\":\"http://purl.org/dc/terms/identifier\",\"DomainLabel\":\"gtfs:Service1 (add)\",\"DomainId\":\"http://vocab.gtfs.org/terms#Service1 (add)\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Service\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[{\"edgeId\":\"http://vocab.gtfs.org/terms#route\",\"edgeTargetId\":\"http://vocab.gtfs.org/terms#Route2\",\"edgeSourceId\":\"http://vocab.gtfs.org/terms#Trip1\"},{\"edgeId\":\"http://www.opengis.net/ont/geosparql#hasGeometry\",\"edgeTargetId\":\"http://www.opengis.net/ont/geosparql#Geometry1\",\"edgeSourceId\":\"http://vocab.gtfs.org/terms#Trip1\"}],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP1:WS7AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://vocab.gtfs.org/terms#Route\",\"edgeId\":\"http://vocab.gtfs.org/terms#route\",\"edgeTargetId\":\"http://vocab.gtfs.org/terms#Route2\",\"edgeSourceId\":\"http://vocab.gtfs.org/terms#Trip1\",\"edgeSourceUri\":\"http://vocab.gtfs.org/terms#Trip\"},{\"edgeTargetUri\":\"http://www.opengis.net/ont/geosparql#Geometry\",\"edgeId\":\"http://www.opengis.net/ont/geosparql#hasGeometry\",\"edgeTargetId\":\"http://www.opengis.net/ont/geosparql#Geometry1\",\"edgeSourceId\":\"http://vocab.gtfs.org/terms#Trip1\",\"edgeSourceUri\":\"http://vocab.gtfs.org/terms#Trip\"},{\"edgeTargetUri\":\"http://vocab.gtfs.org/terms#Service\",\"edgeId\":\"http://vocab.gtfs.org/terms#service\",\"edgeTargetId\":\"http://vocab.gtfs.org/terms#Service2\",\"edgeSourceId\":\"http://vocab.gtfs.org/terms#Trip1\",\"edgeSourceUri\":\"http://vocab.gtfs.org/terms#Trip\"}],\"type\":\"other\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"}]" .
+
+km-dev:TriplesMap_fa4d6541-653c-46ca-92eb-2285b2a760b1 a rr:TriplesMap .
+
+_:node1at6j5kvjx1 km-dev:hasTriplesMap km-dev:TriplesMap_fa4d6541-653c-46ca-92eb-2285b2a760b1 .
+
+km-dev:TriplesMap_fa4d6541-653c-46ca-92eb-2285b2a760b1 km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx2 rr:tableName "SELECT * FROM SiiMobility.TPLBus_trips" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasLogicalTable _:node1at6j5kvjx2 .
+
+km-dev:TriplesMap_fa4d6541-653c-46ca-92eb-2285b2a760b1 rr:logicalTable _:node1at6j5kvjx2 ;
+	rr:subjectMap _:node1at6j5kvjx3 .
+
+_:node1at6j5kvjx1 km-dev:hasSubjectMap _:node1at6j5kvjx3 .
+
+_:node1at6j5kvjx3 km-dev:isPartOfMapping _:node1at6j5kvjx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vocab.gtfs.org/terms#Route2" ;
+	rr:class gtfs:Route ;
+	rr:template "http://www.disit.org/km4city/resource/{route_id}" .
+
+km-dev:PredicateObjectMap_29f555b4-3efe-4309-ab36-60a7cc021468 rr:predicate dcterms:identifier .
+
+_:node1at6j5kvjx4 rr:column "route_id" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasObjectMap _:node1at6j5kvjx4 .
+
+km-dev:PredicateObjectMap_29f555b4-3efe-4309-ab36-60a7cc021468 rr:objectMap _:node1at6j5kvjx4 .
+
+km-dev:TriplesMap_fa4d6541-653c-46ca-92eb-2285b2a760b1 rr:predicateObjectMap km-dev:PredicateObjectMap_29f555b4-3efe-4309-ab36-60a7cc021468 .
+
+km-dev:PredicateObjectMap_29f555b4-3efe-4309-ab36-60a7cc021468 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_29f555b4-3efe-4309-ab36-60a7cc021468 .
+
+km-dev:TriplesMap_84bbddee-ec6a-48e4-a971-6c02e5ebd8d8 a rr:TriplesMap .
+
+_:node1at6j5kvjx1 km-dev:hasTriplesMap km-dev:TriplesMap_84bbddee-ec6a-48e4-a971-6c02e5ebd8d8 .
+
+km-dev:TriplesMap_84bbddee-ec6a-48e4-a971-6c02e5ebd8d8 km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx5 rr:tableName "SELECT * FROM SiiMobility.TPLBus_trips" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasLogicalTable _:node1at6j5kvjx5 .
+
+km-dev:TriplesMap_84bbddee-ec6a-48e4-a971-6c02e5ebd8d8 rr:logicalTable _:node1at6j5kvjx5 ;
+	rr:subjectMap _:node1at6j5kvjx6 .
+
+_:node1at6j5kvjx1 km-dev:hasSubjectMap _:node1at6j5kvjx6 .
+
+_:node1at6j5kvjx6 km-dev:isPartOfMapping _:node1at6j5kvjx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vocab.gtfs.org/terms#Service2" ;
+	rr:class gtfs:Service ;
+	rr:template "http://www.disit.org/km4city/resource/{service_id}" .
+
+km-dev:PredicateObjectMap_84efb1b7-b436-4adb-94f0-c3d385aaa2ef rr:predicate dcterms:identifier .
+
+_:node1at6j5kvjx7 rr:column "service_id" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasObjectMap _:node1at6j5kvjx7 .
+
+km-dev:PredicateObjectMap_84efb1b7-b436-4adb-94f0-c3d385aaa2ef rr:objectMap _:node1at6j5kvjx7 .
+
+km-dev:TriplesMap_84bbddee-ec6a-48e4-a971-6c02e5ebd8d8 rr:predicateObjectMap km-dev:PredicateObjectMap_84efb1b7-b436-4adb-94f0-c3d385aaa2ef .
+
+km-dev:PredicateObjectMap_84efb1b7-b436-4adb-94f0-c3d385aaa2ef a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_84efb1b7-b436-4adb-94f0-c3d385aaa2ef .
+
+km-dev:TriplesMap_431a8159-3aee-45d4-8f1a-bf848e83e968 a rr:TriplesMap .
+
+_:node1at6j5kvjx1 km-dev:hasTriplesMap km-dev:TriplesMap_431a8159-3aee-45d4-8f1a-bf848e83e968 .
+
+km-dev:TriplesMap_431a8159-3aee-45d4-8f1a-bf848e83e968 km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx8 rr:tableName "SELECT * FROM SiiMobility.TPLBus_trips" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasLogicalTable _:node1at6j5kvjx8 .
+
+km-dev:TriplesMap_431a8159-3aee-45d4-8f1a-bf848e83e968 rr:logicalTable _:node1at6j5kvjx8 ;
+	rr:subjectMap _:node1at6j5kvjx9 .
+
+_:node1at6j5kvjx1 km-dev:hasSubjectMap _:node1at6j5kvjx9 .
+
+_:node1at6j5kvjx9 km-dev:isPartOfMapping _:node1at6j5kvjx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vocab.gtfs.org/terms#Trip1" ;
+	rr:class gtfs:Trip ;
+	rr:template "http://www.disit.org/km4city/resource/{TripsTXTKey}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_84aad84a-f140-4b2f-91e4-62015c95ad5a rr:predicate dcterms:identifier .
+
+_:node1at6j5kvjx10 rr:column "TripsTXTKey" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasObjectMap _:node1at6j5kvjx10 .
+
+km-dev:PredicateObjectMap_84aad84a-f140-4b2f-91e4-62015c95ad5a rr:objectMap _:node1at6j5kvjx10 .
+
+km-dev:TriplesMap_431a8159-3aee-45d4-8f1a-bf848e83e968 rr:predicateObjectMap km-dev:PredicateObjectMap_84aad84a-f140-4b2f-91e4-62015c95ad5a .
+
+km-dev:PredicateObjectMap_84aad84a-f140-4b2f-91e4-62015c95ad5a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_84aad84a-f140-4b2f-91e4-62015c95ad5a .
+
+km-dev:PredicateObjectMap_cace20d1-5216-4d66-978a-fd7364fed2c4 rr:predicate gtfs:direction .
+
+_:node1at6j5kvjx11 rr:column "direction_id" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasObjectMap _:node1at6j5kvjx11 .
+
+km-dev:PredicateObjectMap_cace20d1-5216-4d66-978a-fd7364fed2c4 rr:objectMap _:node1at6j5kvjx11 .
+
+km-dev:TriplesMap_431a8159-3aee-45d4-8f1a-bf848e83e968 rr:predicateObjectMap km-dev:PredicateObjectMap_cace20d1-5216-4d66-978a-fd7364fed2c4 .
+
+km-dev:PredicateObjectMap_cace20d1-5216-4d66-978a-fd7364fed2c4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cace20d1-5216-4d66-978a-fd7364fed2c4 .
+
+km-dev:PredicateObjectMap_a5a45b07-a197-414e-abf6-02097234a152 rr:predicate gtfs:headsign .
+
+_:node1at6j5kvjx12 rr:column "trip_headsign" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasObjectMap _:node1at6j5kvjx12 .
+
+km-dev:PredicateObjectMap_a5a45b07-a197-414e-abf6-02097234a152 rr:objectMap _:node1at6j5kvjx12 .
+
+km-dev:TriplesMap_431a8159-3aee-45d4-8f1a-bf848e83e968 rr:predicateObjectMap km-dev:PredicateObjectMap_a5a45b07-a197-414e-abf6-02097234a152 .
+
+km-dev:PredicateObjectMap_a5a45b07-a197-414e-abf6-02097234a152 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a5a45b07-a197-414e-abf6-02097234a152 .
+
+km-dev:PredicateObjectMap_bedcca70-35d3-4be7-98e9-6c27e8e3428b rr:predicate gtfs:route .
+
+km-dev:RefObjectMap_a8217a5c-15b4-441c-9931-ec54eb20fbc1 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_fa4d6541-653c-46ca-92eb-2285b2a760b1 ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasObjectMap km-dev:RefObjectMap_a8217a5c-15b4-441c-9931-ec54eb20fbc1 .
+
+km-dev:PredicateObjectMap_bedcca70-35d3-4be7-98e9-6c27e8e3428b rr:objectMap km-dev:RefObjectMap_a8217a5c-15b4-441c-9931-ec54eb20fbc1 .
+
+km-dev:TriplesMap_431a8159-3aee-45d4-8f1a-bf848e83e968 rr:predicateObjectMap km-dev:PredicateObjectMap_bedcca70-35d3-4be7-98e9-6c27e8e3428b .
+
+km-dev:PredicateObjectMap_bedcca70-35d3-4be7-98e9-6c27e8e3428b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bedcca70-35d3-4be7-98e9-6c27e8e3428b .
+
+km-dev:PredicateObjectMap_7459b5cc-1603-43d9-90fc-c5f00c79baad rr:predicate gtfs:service .
+
+km-dev:RefObjectMap_e15a77b3-3f9c-4348-8f8d-34290603e0f1 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_84bbddee-ec6a-48e4-a971-6c02e5ebd8d8 ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasObjectMap km-dev:RefObjectMap_e15a77b3-3f9c-4348-8f8d-34290603e0f1 .
+
+km-dev:PredicateObjectMap_7459b5cc-1603-43d9-90fc-c5f00c79baad rr:objectMap km-dev:RefObjectMap_e15a77b3-3f9c-4348-8f8d-34290603e0f1 .
+
+km-dev:TriplesMap_431a8159-3aee-45d4-8f1a-bf848e83e968 rr:predicateObjectMap km-dev:PredicateObjectMap_7459b5cc-1603-43d9-90fc-c5f00c79baad .
+
+km-dev:PredicateObjectMap_7459b5cc-1603-43d9-90fc-c5f00c79baad a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7459b5cc-1603-43d9-90fc-c5f00c79baad .
+
+km-dev:PredicateObjectMap_02b0f210-30e4-439b-bc98-5d7a20994094 rr:predicate gtfs:shortName .
+
+_:node1at6j5kvjx13 rr:column "trip_short_name" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasObjectMap _:node1at6j5kvjx13 .
+
+km-dev:PredicateObjectMap_02b0f210-30e4-439b-bc98-5d7a20994094 rr:objectMap _:node1at6j5kvjx13 .
+
+km-dev:TriplesMap_431a8159-3aee-45d4-8f1a-bf848e83e968 rr:predicateObjectMap km-dev:PredicateObjectMap_02b0f210-30e4-439b-bc98-5d7a20994094 .
+
+km-dev:PredicateObjectMap_02b0f210-30e4-439b-bc98-5d7a20994094 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_02b0f210-30e4-439b-bc98-5d7a20994094 .
+
+km-dev:PredicateObjectMap_f0185381-2739-447d-8048-bb803c9104a2 rr:predicate km4c:routeLength .
+
+_:node1at6j5kvjx14 rr:column "lenght" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasObjectMap _:node1at6j5kvjx14 .
+
+km-dev:PredicateObjectMap_f0185381-2739-447d-8048-bb803c9104a2 rr:objectMap _:node1at6j5kvjx14 .
+
+km-dev:TriplesMap_431a8159-3aee-45d4-8f1a-bf848e83e968 rr:predicateObjectMap km-dev:PredicateObjectMap_f0185381-2739-447d-8048-bb803c9104a2 .
+
+km-dev:PredicateObjectMap_f0185381-2739-447d-8048-bb803c9104a2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f0185381-2739-447d-8048-bb803c9104a2 .
+
+km-dev:PredicateObjectMap_0a388bba-8a52-43e4-b360-6e8abd51a7d9 rr:predicate geo:hasGeometry .
+
+km-dev:RefObjectMap_ae4e742a-eb37-411a-8624-0b66f864aa60 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e67b2cfb-6c27-4a13-80a5-34b1738f0f0d ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasObjectMap km-dev:RefObjectMap_ae4e742a-eb37-411a-8624-0b66f864aa60 .
+
+km-dev:PredicateObjectMap_0a388bba-8a52-43e4-b360-6e8abd51a7d9 rr:objectMap km-dev:RefObjectMap_ae4e742a-eb37-411a-8624-0b66f864aa60 .
+
+km-dev:TriplesMap_431a8159-3aee-45d4-8f1a-bf848e83e968 rr:predicateObjectMap km-dev:PredicateObjectMap_0a388bba-8a52-43e4-b360-6e8abd51a7d9 .
+
+km-dev:PredicateObjectMap_0a388bba-8a52-43e4-b360-6e8abd51a7d9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0a388bba-8a52-43e4-b360-6e8abd51a7d9 .
+
+km-dev:TriplesMap_e67b2cfb-6c27-4a13-80a5-34b1738f0f0d a rr:TriplesMap .
+
+_:node1at6j5kvjx1 km-dev:hasTriplesMap km-dev:TriplesMap_e67b2cfb-6c27-4a13-80a5-34b1738f0f0d .
+
+km-dev:TriplesMap_e67b2cfb-6c27-4a13-80a5-34b1738f0f0d km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx15 rr:tableName "SELECT * FROM SiiMobility.TPLBus_trips" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasLogicalTable _:node1at6j5kvjx15 .
+
+km-dev:TriplesMap_e67b2cfb-6c27-4a13-80a5-34b1738f0f0d rr:logicalTable _:node1at6j5kvjx15 ;
+	rr:subjectMap _:node1at6j5kvjx16 .
+
+_:node1at6j5kvjx1 km-dev:hasSubjectMap _:node1at6j5kvjx16 .
+
+_:node1at6j5kvjx16 km-dev:isPartOfMapping _:node1at6j5kvjx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.opengis.net/ont/geosparql#Geometry1" ;
+	rr:class geo:Geometry ;
+	rr:template "http://www.disit.org/km4city/resource/{shape_id}" .
+
+km-dev:PredicateObjectMap_954b1d06-f249-449a-b34d-edcd01012d48 rr:predicate dcterms:identifier .
+
+_:node1at6j5kvjx17 rr:column "shape_id" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasObjectMap _:node1at6j5kvjx17 .
+
+km-dev:PredicateObjectMap_954b1d06-f249-449a-b34d-edcd01012d48 rr:objectMap _:node1at6j5kvjx17 .
+
+km-dev:TriplesMap_e67b2cfb-6c27-4a13-80a5-34b1738f0f0d rr:predicateObjectMap km-dev:PredicateObjectMap_954b1d06-f249-449a-b34d-edcd01012d48 .
+
+km-dev:PredicateObjectMap_954b1d06-f249-449a-b34d-edcd01012d48 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at6j5kvjx1 .
+
+_:node1at6j5kvjx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_954b1d06-f249-449a-b34d-edcd01012d48 .

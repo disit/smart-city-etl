@@ -1,0 +1,282 @@
+@prefix vann: <http://purl.org/vocab/vann/#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix km4cr: <http://www.disit.org/km4city/resource#> .
+@prefix km4c: <http://www.disit.org/km4city/schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix schema: <http://schema.org/#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix otn: <http://www.pms.ifi.uni-muenchen.de/OTN#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct: <http://purl.org/dc/terms/#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node19pa4lnimx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "Rivendite_ataf_altri_QI" ;
+	km-dev:modelPublicationTime "1435933269590"^^xsd:long ;
+	km-dev:modelVersion "1.5" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"km4cr\",\"hasBaseURI\":false},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"MD5\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RegularService1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#RegularService1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RegularService\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"address_syn\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://schema.org/streetAddress\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RegularService1\",\"DomainId\":\"http://www.disit.org/km4city/schema#RegularService1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RegularService\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"cap\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://schema.org/postalCode\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RegularService1\",\"DomainId\":\"http://www.disit.org/km4city/schema#RegularService1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RegularService\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"city\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://schema.org/addressLocality\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RegularService1\",\"DomainId\":\"http://www.disit.org/km4city/schema#RegularService1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RegularService\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"civic\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#houseNumber\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RegularService1\",\"DomainId\":\"http://www.disit.org/km4city/schema#RegularService1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RegularService\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"codice_toponimo\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Road1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#Road1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Road\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"SubclassRegular\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.w3.org/2004/02/skos/core#example\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RegularService1\",\"DomainId\":\"http://www.disit.org/km4city/schema#RegularService1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RegularService\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"province\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://schema.org/addressRegion\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RegularService1\",\"DomainId\":\"http://www.disit.org/km4city/schema#RegularService1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RegularService\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"denominazione\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://schema.org/name\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RegularService1\",\"DomainId\":\"http://www.disit.org/km4city/schema#RegularService1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RegularService\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"latitude\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":true,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"UnassignSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"latitude\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.w3.org/2003/01/geo/wgs84_pos#lat\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RegularService1\",\"DomainId\":\"http://www.disit.org/km4city/schema#RegularService1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RegularService\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"longitude\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":true,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"UnassignSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"longitude\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.w3.org/2003/01/geo/wgs84_pos#long\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RegularService1\",\"DomainId\":\"http://www.disit.org/km4city/schema#RegularService1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RegularService\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"km4cr\",\"hasBaseURI\":false},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"}]" .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 a rr:TriplesMap .
+
+_:node19pa4lnimx1 km-dev:hasTriplesMap km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx2 rr:tableName "Rivendite_ataf_altri_QI" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasLogicalTable _:node19pa4lnimx2 .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 rr:logicalTable _:node19pa4lnimx2 ;
+	rr:subjectMap _:node19pa4lnimx3 .
+
+_:node19pa4lnimx1 km-dev:hasSubjectMap _:node19pa4lnimx3 .
+
+_:node19pa4lnimx3 km-dev:isPartOfMapping _:node19pa4lnimx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.disit.org/km4city/schema#RegularService1" ;
+	rr:class km4c:RegularService ;
+	rr:template "http://www.disit.org/km4city/resource/{MD5}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_6b6c338e-0bc8-4a5a-8a33-fa7fb45162fc rr:predicate dcterms:identifier .
+
+_:node19pa4lnimx4 rr:column "MD5" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasObjectMap _:node19pa4lnimx4 .
+
+km-dev:PredicateObjectMap_6b6c338e-0bc8-4a5a-8a33-fa7fb45162fc rr:objectMap _:node19pa4lnimx4 .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 rr:predicateObjectMap km-dev:PredicateObjectMap_6b6c338e-0bc8-4a5a-8a33-fa7fb45162fc .
+
+km-dev:PredicateObjectMap_6b6c338e-0bc8-4a5a-8a33-fa7fb45162fc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6b6c338e-0bc8-4a5a-8a33-fa7fb45162fc .
+
+km-dev:PredicateObjectMap_b715e973-fc70-4b7c-a981-7a9812b12444 rr:predicate <http://schema.org/addressLocality> .
+
+_:node19pa4lnimx5 rr:column "city" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasObjectMap _:node19pa4lnimx5 .
+
+km-dev:PredicateObjectMap_b715e973-fc70-4b7c-a981-7a9812b12444 rr:objectMap _:node19pa4lnimx5 .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 rr:predicateObjectMap km-dev:PredicateObjectMap_b715e973-fc70-4b7c-a981-7a9812b12444 .
+
+km-dev:PredicateObjectMap_b715e973-fc70-4b7c-a981-7a9812b12444 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b715e973-fc70-4b7c-a981-7a9812b12444 .
+
+km-dev:PredicateObjectMap_47eab5bc-9fc7-4cc3-b3a1-22ee769a7cbd rr:predicate <http://schema.org/addressRegion> .
+
+_:node19pa4lnimx6 rr:column "province" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasObjectMap _:node19pa4lnimx6 .
+
+km-dev:PredicateObjectMap_47eab5bc-9fc7-4cc3-b3a1-22ee769a7cbd rr:objectMap _:node19pa4lnimx6 .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 rr:predicateObjectMap km-dev:PredicateObjectMap_47eab5bc-9fc7-4cc3-b3a1-22ee769a7cbd .
+
+km-dev:PredicateObjectMap_47eab5bc-9fc7-4cc3-b3a1-22ee769a7cbd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_47eab5bc-9fc7-4cc3-b3a1-22ee769a7cbd .
+
+km-dev:PredicateObjectMap_a0631cb5-44bb-4fa0-80d0-a3823c848d9a rr:predicate <http://schema.org/name> .
+
+_:node19pa4lnimx7 rr:column "denominazione" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasObjectMap _:node19pa4lnimx7 .
+
+km-dev:PredicateObjectMap_a0631cb5-44bb-4fa0-80d0-a3823c848d9a rr:objectMap _:node19pa4lnimx7 .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 rr:predicateObjectMap km-dev:PredicateObjectMap_a0631cb5-44bb-4fa0-80d0-a3823c848d9a .
+
+km-dev:PredicateObjectMap_a0631cb5-44bb-4fa0-80d0-a3823c848d9a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a0631cb5-44bb-4fa0-80d0-a3823c848d9a .
+
+km-dev:PredicateObjectMap_14a2b480-2018-4ae5-8af5-fb8dd9f8a7e5 rr:predicate <http://schema.org/postalCode> .
+
+_:node19pa4lnimx8 rr:column "cap" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasObjectMap _:node19pa4lnimx8 .
+
+km-dev:PredicateObjectMap_14a2b480-2018-4ae5-8af5-fb8dd9f8a7e5 rr:objectMap _:node19pa4lnimx8 .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 rr:predicateObjectMap km-dev:PredicateObjectMap_14a2b480-2018-4ae5-8af5-fb8dd9f8a7e5 .
+
+km-dev:PredicateObjectMap_14a2b480-2018-4ae5-8af5-fb8dd9f8a7e5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_14a2b480-2018-4ae5-8af5-fb8dd9f8a7e5 .
+
+km-dev:PredicateObjectMap_e88ff0be-ec76-4c0b-9b57-ab0245d9a2a3 rr:predicate <http://schema.org/streetAddress> .
+
+_:node19pa4lnimx9 rr:column "address_syn" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasObjectMap _:node19pa4lnimx9 .
+
+km-dev:PredicateObjectMap_e88ff0be-ec76-4c0b-9b57-ab0245d9a2a3 rr:objectMap _:node19pa4lnimx9 .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 rr:predicateObjectMap km-dev:PredicateObjectMap_e88ff0be-ec76-4c0b-9b57-ab0245d9a2a3 .
+
+km-dev:PredicateObjectMap_e88ff0be-ec76-4c0b-9b57-ab0245d9a2a3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e88ff0be-ec76-4c0b-9b57-ab0245d9a2a3 .
+
+km-dev:PredicateObjectMap_d2409c13-6e66-4132-ac94-38a64c6dabee rr:predicate km4c:houseNumber .
+
+_:node19pa4lnimx10 rr:column "civic" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasObjectMap _:node19pa4lnimx10 .
+
+km-dev:PredicateObjectMap_d2409c13-6e66-4132-ac94-38a64c6dabee rr:objectMap _:node19pa4lnimx10 .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 rr:predicateObjectMap km-dev:PredicateObjectMap_d2409c13-6e66-4132-ac94-38a64c6dabee .
+
+km-dev:PredicateObjectMap_d2409c13-6e66-4132-ac94-38a64c6dabee a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d2409c13-6e66-4132-ac94-38a64c6dabee .
+
+km-dev:PredicateObjectMap_2ad8c6d6-7db6-4b25-b43e-0513f56ac8c0 rr:predicate km4c:isInRoad .
+
+km-dev:RefObjectMap_0d709674-eb3e-4030-80fd-249857b58b39 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_9d9730b6-7d6b-4276-be3d-79c65887891d ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasObjectMap km-dev:RefObjectMap_0d709674-eb3e-4030-80fd-249857b58b39 .
+
+km-dev:PredicateObjectMap_2ad8c6d6-7db6-4b25-b43e-0513f56ac8c0 rr:objectMap km-dev:RefObjectMap_0d709674-eb3e-4030-80fd-249857b58b39 .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 rr:predicateObjectMap km-dev:PredicateObjectMap_2ad8c6d6-7db6-4b25-b43e-0513f56ac8c0 .
+
+km-dev:PredicateObjectMap_2ad8c6d6-7db6-4b25-b43e-0513f56ac8c0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2ad8c6d6-7db6-4b25-b43e-0513f56ac8c0 .
+
+km-dev:PredicateObjectMap_1b8c1709-0bfd-4600-b885-8876c7b13726 rr:predicate geo:lat .
+
+_:node19pa4lnimx11 rr:column "latitude" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasObjectMap _:node19pa4lnimx11 .
+
+km-dev:PredicateObjectMap_1b8c1709-0bfd-4600-b885-8876c7b13726 rr:objectMap _:node19pa4lnimx11 .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 rr:predicateObjectMap km-dev:PredicateObjectMap_1b8c1709-0bfd-4600-b885-8876c7b13726 .
+
+km-dev:PredicateObjectMap_1b8c1709-0bfd-4600-b885-8876c7b13726 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1b8c1709-0bfd-4600-b885-8876c7b13726 .
+
+km-dev:PredicateObjectMap_fe64a5ea-2433-4cc2-afe0-6db349806f6f rr:predicate geo:long .
+
+_:node19pa4lnimx12 rr:column "longitude" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasObjectMap _:node19pa4lnimx12 .
+
+km-dev:PredicateObjectMap_fe64a5ea-2433-4cc2-afe0-6db349806f6f rr:objectMap _:node19pa4lnimx12 .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 rr:predicateObjectMap km-dev:PredicateObjectMap_fe64a5ea-2433-4cc2-afe0-6db349806f6f .
+
+km-dev:PredicateObjectMap_fe64a5ea-2433-4cc2-afe0-6db349806f6f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fe64a5ea-2433-4cc2-afe0-6db349806f6f .
+
+km-dev:PredicateObjectMap_bb30094c-a195-436b-af9b-ae2a8d36227d rr:predicate skos:example .
+
+_:node19pa4lnimx13 rr:column "SubclassRegular" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasObjectMap _:node19pa4lnimx13 .
+
+km-dev:PredicateObjectMap_bb30094c-a195-436b-af9b-ae2a8d36227d rr:objectMap _:node19pa4lnimx13 .
+
+km-dev:TriplesMap_b01c8565-a063-400f-a1de-2076f19df1c9 rr:predicateObjectMap km-dev:PredicateObjectMap_bb30094c-a195-436b-af9b-ae2a8d36227d .
+
+km-dev:PredicateObjectMap_bb30094c-a195-436b-af9b-ae2a8d36227d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bb30094c-a195-436b-af9b-ae2a8d36227d .
+
+km-dev:TriplesMap_9d9730b6-7d6b-4276-be3d-79c65887891d a rr:TriplesMap .
+
+_:node19pa4lnimx1 km-dev:hasTriplesMap km-dev:TriplesMap_9d9730b6-7d6b-4276-be3d-79c65887891d .
+
+km-dev:TriplesMap_9d9730b6-7d6b-4276-be3d-79c65887891d km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx14 rr:tableName "Rivendite_ataf_altri_QI" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasLogicalTable _:node19pa4lnimx14 .
+
+km-dev:TriplesMap_9d9730b6-7d6b-4276-be3d-79c65887891d rr:logicalTable _:node19pa4lnimx14 ;
+	rr:subjectMap _:node19pa4lnimx15 .
+
+_:node19pa4lnimx1 km-dev:hasSubjectMap _:node19pa4lnimx15 .
+
+_:node19pa4lnimx15 km-dev:isPartOfMapping _:node19pa4lnimx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.disit.org/km4city/schema#Road1" ;
+	rr:class km4c:Road ;
+	rr:template "http://www.disit.org/km4city/resource/{codice_toponimo}" .
+
+km-dev:PredicateObjectMap_1f0cd650-513a-498e-87d9-95ef4f07a4df rr:predicate dcterms:identifier .
+
+_:node19pa4lnimx16 rr:column "codice_toponimo" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasObjectMap _:node19pa4lnimx16 .
+
+km-dev:PredicateObjectMap_1f0cd650-513a-498e-87d9-95ef4f07a4df rr:objectMap _:node19pa4lnimx16 .
+
+km-dev:TriplesMap_9d9730b6-7d6b-4276-be3d-79c65887891d rr:predicateObjectMap km-dev:PredicateObjectMap_1f0cd650-513a-498e-87d9-95ef4f07a4df .
+
+km-dev:PredicateObjectMap_1f0cd650-513a-498e-87d9-95ef4f07a4df a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19pa4lnimx1 .
+
+_:node19pa4lnimx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1f0cd650-513a-498e-87d9-95ef4f07a4df .

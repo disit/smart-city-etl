@@ -1,0 +1,91 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix transit: <http://vocab.org/transit/terms/> .
+@prefix km4cr: <http://www.disit.org/km4city/resource#> .
+@prefix km4c: <http://www.disit.org/km4city/schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <http://schema.org/> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix otn: <http://www.pms.ifi.uni-muenchen.de/OTN#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gtfs: <http://vocab.gtfs.org/terms#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1at3ttqcjx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "SELECT * FROM SiiMobility.TPLBus_shapes" ;
+	km-dev:modelPublicationTime "1474379573653"^^xsd:long ;
+	km-dev:modelVersion "1.5" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"ShapesTXTKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"gis:Geometry1 (add)\",\"DomainId\":\"http://www.opengis.net/ont/geosparql#Geometry1 (add)\",\"DomainUri\":\"http://www.opengis.net/ont/geosparql#Geometry\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"coordinates\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.opengis.net/ont/geosparql#asWKT\",\"isPrimary\":true,\"DomainLabel\":\"gis:Geometry1\",\"DomainId\":\"http://www.opengis.net/ont/geosparql#Geometry1\",\"DomainUri\":\"http://www.opengis.net/ont/geosparql#Geometry\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"}]" .
+
+km-dev:TriplesMap_78683cb8-9406-42a0-888e-1e5defc8ed64 a rr:TriplesMap .
+
+_:node1at3ttqcjx1 km-dev:hasTriplesMap km-dev:TriplesMap_78683cb8-9406-42a0-888e-1e5defc8ed64 .
+
+km-dev:TriplesMap_78683cb8-9406-42a0-888e-1e5defc8ed64 km-dev:isPartOfMapping _:node1at3ttqcjx1 .
+
+_:node1at3ttqcjx2 rr:tableName "SELECT * FROM SiiMobility.TPLBus_shapes" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1at3ttqcjx1 .
+
+_:node1at3ttqcjx1 km-dev:hasLogicalTable _:node1at3ttqcjx2 .
+
+km-dev:TriplesMap_78683cb8-9406-42a0-888e-1e5defc8ed64 rr:logicalTable _:node1at3ttqcjx2 ;
+	rr:subjectMap _:node1at3ttqcjx3 .
+
+_:node1at3ttqcjx1 km-dev:hasSubjectMap _:node1at3ttqcjx3 .
+
+_:node1at3ttqcjx3 km-dev:isPartOfMapping _:node1at3ttqcjx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.opengis.net/ont/geosparql#Geometry1" ;
+	rr:class gis:Geometry ;
+	rr:template "http://www.disit.org/km4city/resource/{ShapesTXTKey}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_780be79c-75de-4127-a1dd-a6018d606c61 rr:predicate dcterms:identifier .
+
+_:node1at3ttqcjx4 rr:column "ShapesTXTKey" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at3ttqcjx1 .
+
+_:node1at3ttqcjx1 km-dev:hasObjectMap _:node1at3ttqcjx4 .
+
+km-dev:PredicateObjectMap_780be79c-75de-4127-a1dd-a6018d606c61 rr:objectMap _:node1at3ttqcjx4 .
+
+km-dev:TriplesMap_78683cb8-9406-42a0-888e-1e5defc8ed64 rr:predicateObjectMap km-dev:PredicateObjectMap_780be79c-75de-4127-a1dd-a6018d606c61 .
+
+km-dev:PredicateObjectMap_780be79c-75de-4127-a1dd-a6018d606c61 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at3ttqcjx1 .
+
+_:node1at3ttqcjx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_780be79c-75de-4127-a1dd-a6018d606c61 .
+
+km-dev:PredicateObjectMap_351138db-d406-4de4-a268-3ac187f36769 rr:predicate gis:asWKT .
+
+_:node1at3ttqcjx5 rr:column "coordinates" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at3ttqcjx1 .
+
+_:node1at3ttqcjx1 km-dev:hasObjectMap _:node1at3ttqcjx5 .
+
+km-dev:PredicateObjectMap_351138db-d406-4de4-a268-3ac187f36769 rr:objectMap _:node1at3ttqcjx5 .
+
+km-dev:TriplesMap_78683cb8-9406-42a0-888e-1e5defc8ed64 rr:predicateObjectMap km-dev:PredicateObjectMap_351138db-d406-4de4-a268-3ac187f36769 .
+
+km-dev:PredicateObjectMap_351138db-d406-4de4-a268-3ac187f36769 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at3ttqcjx1 .
+
+_:node1at3ttqcjx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_351138db-d406-4de4-a268-3ac187f36769 .

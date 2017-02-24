@@ -1,0 +1,14 @@
+processName;param
+Alberti;http://opendata.comune.fi.it/od/ParkInfo_Alberti.json
+Beccaria;http://opendata.comune.fi.it/od/ParkInfo_Beccaria.json
+Careggi;http://opendata.comune.fi.it/od/ParkInfo_Careggi.json
+Fortezza;http://opendata.comune.fi.it/od/ParkInfo_Fortezza_Fiera.json
+Oltrarno;http://opendata.comune.fi.it/od/ParkInfo_Oltrarno.json
+Palazzo Giustizia;http://opendata.comune.fi.it/od/ParkInfo_Palazzo_Giustizia.json
+Parterre;http://opendata.comune.fi.it/od/ParkInfo_Parterre.json
+Pieraccini;http://opendata.comune.fi.it/od/ParkInfo_Pieraccini_Meyer.json
+Porta al Prato;http://opendata.comune.fi.it/od/ParkInfo_Porta_al_Prato.json
+San Lorenzo;http://opendata.comune.fi.it/od/ParkInfo_S_Lorenzo.json
+Sant'Ambrogio;http://opendata.comune.fi.it/od/ParkInfo_S_Ambrogio.json
+Stazione binario 16;http://opendata.comune.fi.it/od/ParkInfo_Stazione_Binario_16.json
+Stazione SMN;http://opendata.comune.fi.it/od/ParkInfo_Firenze_SMN.json

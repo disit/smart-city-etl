@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>Farmacie_non_geo_QI</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2016&#x2f;04&#x2f;18 10&#x3a;03&#x3a;23.683</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2016&#x2f;04&#x2f;18 10&#x3a;03&#x3a;23.683</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>codice_castale_conn</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>Elaborato_Sis_Distr</database>
+    <port>3306</port>
+    <username>disit</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79bb72cb9cbbcf</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Modified Java Script Value_isNumber 2</from><to>Job Executor</to><enabled>Y</enabled> </hop>
+  <hop> <from>Calculator</from><to>Modified Java Script Value_civic</to><enabled>Y</enabled> </hop>
+  <hop> <from>HBase Output</from><to>Replace in string 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Replace in string 3</from><to>Calculator</to><enabled>Y</enabled> </hop>
+  <hop> <from>Modified Java Script Value_civic</from><to>Modified Java Script Value 4_street</to><enabled>Y</enabled> </hop>
+  <hop> <from>HBase Input</from><to>Fix ID</to><enabled>Y</enabled> </hop>
+  <hop> <from>Fix ID</from><to>Select values</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values</from><to>Modified Java Script Value</to><enabled>Y</enabled> </hop>
+  <hop> <from>Modified Java Script Value</from><to>Add constants</to><enabled>Y</enabled> </hop>
+  <hop> <from>Replace in string 2</from><to>Modified Java Script Value_isNumber 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values 2</from><to>Modified Java Script Value 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Add constants</from><to>Mapping &#x28;sub-transformation&#x29;</to><enabled>Y</enabled> </hop>
+  <hop> <from>Mapping &#x28;sub-transformation&#x29;</from><to>Replace in string 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Modified Java Script Value 2</from><to>HBase Output</to><enabled>Y</enabled> </hop>
+  <hop> <from>Modified Java Script Value 4_street</from><to>Mapping &#x28;sub-transformation&#x29; 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Mapping &#x28;sub-transformation&#x29; 2</from><to>Select values 2</to><enabled>Y</enabled> </hop>
+  </order>
+  <step>
+    <name>Add constants</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>address_syn</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>Y</set_empty_string>
+      </field>
+      <field>
+        <name>codice_toponimo</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>Y</set_empty_string>
+      </field>
+      <field>
+        <name>TYPE</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>Farmacia_non_georeferenziata</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>example</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>Pharmacy</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>FinalStreetAddress</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>Y</set_empty_string>
+      </field>
+      <field>
+        <name>notes</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>375</xloc>
+      <yloc>62</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Calculator</name>
+    <type>Calculator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <calculation><field_name>civic</field_name>
+<calc_type>COPY_FIELD</calc_type>
+<field_a>streetAddress</field_a>
+<field_b/>
+<field_c/>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<remove>N</remove>
+<conversion_mask/>
+<decimal_symbol/>
+<grouping_symbol/>
+<currency_symbol/>
+</calculation>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>590</xloc>
+      <yloc>59</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Fix ID</name>
+    <type>StringOperations</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>identifier</in_stream_name>
+        <out_stream_name>identifier_fix</out_stream_name>
+        <trim_type>none</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char/>
+        <pad_len/>
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>112</xloc>
+      <yloc>78</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>HBase Input</name>
+    <type>HBaseInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+
+    <zookeeper_hosts>&#x24;&#x7b;ZOOKEEPER&#x7d;</zookeeper_hosts>
+
+    <zookeeper_port>&#x24;&#x7b;PORTHBASE&#x7d;</zookeeper_port>
+
+    <source_table_name>Farmacie_nonGeoRef</source_table_name>
+
+    <source_mapping_name>map_farmacieNonGeoRef</source_mapping_name>
+
+    <output_fields>
+        <field>
+            <table_name>Farmacie_nonGeoRef</table_name>
+
+            <mapping_name>map_farmacieNonGeoRef</mapping_name>
+
+            <alias>identifier</alias>
+
+            <family/>
+
+            <column/>
+
+            <key>Y</key>
+
+            <type>String</type>
+
+            <format/>
+
+        </field>
+        <field>
+            <table_name>Farmacie_nonGeoRef</table_name>
+
+            <mapping_name>map_farmacieNonGeoRef</mapping_name>
+
+            <alias>DENOMINAZIONE</alias>
+
+            <family>Family1</family>
+
+            <column>DENOMINAZIONE</column>
+
+            <key>N</key>
+
+            <type>String</type>
+
+            <format/>
+
+        </field>
+        <field>
+            <table_name>Farmacie_nonGeoRef</table_name>
+
+            <mapping_name>map_farmacieNonGeoRef</mapping_name>
+
+            <alias>DESCR_COMUNE</alias>
+
+            <family>Family1</family>
+
+            <column>DESCR_COMUNE</column>
+
+            <key>N</key>
+
+            <type>String</type>
+
+            <format/>
+
+        </field>
+        <field>
+            <table_name>Farmacie_nonGeoRef</table_name>
+
+            <mapping_name>map_farmacieNonGeoRef</mapping_name>
+
+            <alias>DESCR_PROVINCIA</alias>
+
+            <family>Family1</family>
+
+            <column>DESCR_PROVINCIA</column>
+
+            <key>N</key>
+
+            <type>String</type>
+
+            <format/>
+
+        </field>
+        <field>
+            <table_name>Farmacie_nonGeoRef</table_name>
+
+            <mapping_name>map_farmacieNonGeoRef</mapping_name>
+
+            <alias>FAX</alias>
+
+            <family>Family1</family>
+
+            <column>FAX</column>
+
+            <key>N</key>
+
+            <type>String</type>
+
+            <format/>
+
+        </field>
+        <field>
+            <table_name>Farmacie_nonGeoRef</table_name>
+
+            <mapping_name>map_farmacieNonGeoRef</mapping_name>
+
+            <alias>ID_UNIVERSALE</alias>
+
+            <family>Family1</family>
+
+            <column>ID_UNIVERSALE</column>
+
+            <key>N</key>
+
+            <type>String</type>
+
+            <format/>
+
+        </field>
+        <field>
+            <table_name>Farmacie_nonGeoRef</table_name>
+
+            <mapping_name>map_farmacieNonGeoRef</mapping_name>
+
+            <alias>TELEFONO</alias>
+
+            <family>Family1</family>
+
+            <column>TELEFONO</column>
+
+            <key>N</key>
+
+            <type>String</type>
+
+            <format/>
+
+        </field>
+        <field>
+            <table_name>Farmacie_nonGeoRef</table_name>
+
+            <mapping_name>map_farmacieNonGeoRef</mapping_name>
+
+            <alias>VIA</alias>
+
+            <family>Family1</family>
+
+            <column>VIA</column>
+
+            <key>N</key>
+
+            <type>String</type>
+
+            <format/>
+
+        </field>
+        <field>
+            <table_name>Farmacie_nonGeoRef</table_name>
+
+            <mapping_name>map_farmacieNonGeoRef</mapping_name>
+
+            <alias>actualDate</alias>
+
+            <family>Family1</family>
+
+            <column>actualDate</column>
+
+            <key>N</key>
+
+            <type>String</type>
+
+            <format/>
+
+        </field>
+        <field>
+            <table_name>Farmacie_nonGeoRef</table_name>
+
+            <mapping_name>map_farmacieNonGeoRef</mapping_name>
+
+            <alias>processName</alias>
+
+            <family>Family1</family>
+
+            <column>processName</column>
+
+            <key>N</key>
+
+            <type>String</type>
+
+            <format/>
+
+        </field>
+        <field>
+            <table_name>Farmacie_nonGeoRef</table_name>
+
+            <mapping_name>map_farmacieNonGeoRef</mapping_name>
+
+            <alias>sigla</alias>
+
+            <family>Family1</family>
+
+            <column>sigla</column>
+
+            <key>N</key>
+
+            <type>String</type>
+
+            <format/>
+
+        </field>
+        <field>
+            <table_name>Farmacie_nonGeoRef</table_name>
+
+            <mapping_name>map_farmacieNonGeoRef</mapping_name>
+
+            <alias>timestamp</alias>
+
+            <family>Family1</family>
+
+            <column>timestamp</column>
+
+            <key>N</key>
+
+            <type>Integer</type>
+
+            <format>&#x23;&#x3b;-&#x23;</format>
+
+        </field>
+    </output_fields>
+    <match_any_filter>N</match_any_filter>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>33</xloc>
+      <yloc>47</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>HBase Output</name>
+    <type>HBaseOutput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+
+    <zookeeper_hosts>&#x24;&#x7b;ZOOKEEPER&#x7d;</zookeeper_hosts>
+
+    <zookeeper_port>&#x24;&#x7b;PORTHBASE&#x7d;</zookeeper_port>
+
+    <target_table_name>Farmacie_nonGeoRef_QI</target_table_name>
+
+    <target_mapping_name>map_farmacieNonGeoRef_QI</target_mapping_name>
+
+    <disable_wal>N</disable_wal>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>631</xloc>
+      <yloc>171</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Job Executor</name>
+    <type>JobExecutor</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <specification_method>filename</specification_method>
+    <job_object_id/>
+    <job_name/>
+    <filename>&#x2f;&#x2f;&#x2f;media&#x2f;Trasformazioni&#x2f;TrasformazioneFarmacie_nonGeoRef&#x2f;QI&#x2f;Job_DB_like_farmacie.kjb</filename>
+    <directory_path/>
+    <group_size>1</group_size>
+    <group_field/>
+    <group_time/>
+          <parameters>       <variablemapping><variable>PAROLA</variable><field>parola</field><input/></variablemapping>
+       <variablemapping><variable>INDIRIZZO</variable><field>indirizzo</field><input/></variablemapping>
+       <variablemapping><variable>IND_ORIG</variable><field>indirizzo_ORIG</field><input/></variablemapping>
+       <variablemapping><variable>DESCR_COMUNE</variable><field>DESCR_COMUNE</field><input/></variablemapping>
+       <variablemapping><variable>KEY</variable><field>FinalKey</field><input/></variablemapping>
+    <inherit_all_vars>Y</inherit_all_vars>
+    </parameters>
+    <execution_result_target_step/>
+    <execution_time_field>ExecutionTime</execution_time_field>
+    <execution_result_field>ExecutionResult</execution_result_field>
+    <execution_errors_field>ExecutionNrErrors</execution_errors_field>
+    <execution_lines_read_field>ExecutionLinesRead</execution_lines_read_field>
+    <execution_lines_written_field>ExecutionLinesWritten</execution_lines_written_field>
+    <execution_lines_input_field>ExecutionLinesInput</execution_lines_input_field>
+    <execution_lines_output_field>ExecutionLinesOutput</execution_lines_output_field>
+    <execution_lines_rejected_field>ExecutionLinesRejected</execution_lines_rejected_field>
+    <execution_lines_updated_field>ExecutionLinesUpdated</execution_lines_updated_field>
+    <execution_lines_deleted_field>ExecutionLinesDeleted</execution_lines_deleted_field>
+    <execution_files_retrieved_field>ExecutionFilesRetrieved</execution_files_retrieved_field>
+    <execution_exit_status_field>ExecutionExitStatus</execution_exit_status_field>
+    <execution_log_text_field>ExecutionLogText</execution_log_text_field>
+    <execution_log_channelid_field>ExecutionLogChannelId</execution_log_channelid_field>
+    <result_rows_target_step/>
+      <result_rows_field><name>match2</name><type>String</type><length>-1</length><precision>-1</precision></result_rows_field>
+      <result_rows_field><name>COD_TOP</name><type>String</type><length>-1</length><precision>-1</precision></result_rows_field>
+    <result_files_target_step/>
+    <result_files_file_name_field>FileName</result_files_file_name_field>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>87</xloc>
+      <yloc>164</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Mapping &#x28;sub-transformation&#x29;</name>
+    <type>Mapping</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <specification_method>filename</specification_method>
+    <trans_object_id/>
+    <trans_name/>
+    <filename>&#x2f;&#x2f;&#x2f;media&#x2f;Trasformazioni&#x2f;TrasformazioneFarmacie_nonGeoRef&#x2f;QI&#x2f;Modify_phone.ktr</filename>
+    <directory_path/>
+    <mappings>
+      <input>
+    <mapping>    <input_step/>
+    <output_step/>
+    <main_path>Y</main_path>
+    <rename_on_output>Y</rename_on_output>
+    <description/>
+       <connector><parent>TELEFONO</parent><child>phone</child></connector>
+       <connector><parent>notes</parent><child>notes</child></connector>
+    </mapping>      </input>
+      <output>
+    <mapping>    <input_step/>
+    <output_step/>
+    <main_path>Y</main_path>
+    <rename_on_output>N</rename_on_output>
+    <description/>
+    </mapping>      </output>
+          <parameters>    <inherit_all_vars>Y</inherit_all_vars>
+    </parameters>
+    </mappings>
+    <allow_multiple_input>N</allow_multiple_input>
+    <allow_multiple_output>N</allow_multiple_output>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>445</xloc>
+      <yloc>1</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Mapping &#x28;sub-transformation&#x29; 2</name>
+    <type>Mapping</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <specification_method>filename</specification_method>
+    <trans_object_id/>
+    <trans_name/>
+    <filename>&#x2f;&#x2f;&#x2f;media&#x2f;Trasformazioni&#x2f;TrasformazioneFarmacie_nonGeoRef&#x2f;QI&#x2f;Modify_fax.ktr</filename>
+    <directory_path/>
+    <mappings>
+      <input>
+    <mapping>    <input_step/>
+    <output_step/>
+    <main_path>Y</main_path>
+    <rename_on_output>Y</rename_on_output>
+    <description/>
+    </mapping>      </input>
+      <output>
+    <mapping>    <input_step/>
+    <output_step/>
+    <main_path>Y</main_path>
+    <rename_on_output>N</rename_on_output>
+    <description/>
+    </mapping>      </output>
+          <parameters>    <inherit_all_vars>Y</inherit_all_vars>
+    </parameters>
+    </mappings>
+    <allow_multiple_input>N</allow_multiple_input>
+    <allow_multiple_output>N</allow_multiple_output>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>964</xloc>
+      <yloc>135</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xa;&#xa;var FinalKey &#x3d; identifier_fix&#x3b;&#xa; &#xa;var FAX_mod &#x3d; FAX.replace&#x28;&#x2f;NULL&#x2f;gi, &#x22;&#x22;&#x29;&#x3b;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>FinalKey</name>
+        <rename>FinalKey</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>FAX_mod</name>
+        <rename>FAX_mod</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>273</xloc>
+      <yloc>111</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value 2</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xa;var indirizzo_ORIG &#x3d; Address&#x3b;&#xa;var indirizzo &#x3d; Address&#x3b;&#xa;if&#x28;indirizzo &#x3d;&#x3d; &#x22;VIA MICHELI&#x22;&#x29;&#x7b;&#xa;	indirizzo &#x3d; &#x22;VIA PIER ANTONIO MICHELI&#x22;&#x3b;&#xa;&#x7d;else if &#x28;indirizzo &#x3d;&#x3d; &#x22;STAZIONE STATUTO&#x22;&#x29;&#x7b;&#xa;	indirizzo &#x3d; &#x22;PIAZZA LUDOVICO ANTONIO MURATORI&#x22;&#x3b;&#xa;	&#x7d;else&#x7b;&#xa;	var index &#x3d; indirizzo.indexOf&#x28;&#x22;ANGOLO&#x22;&#x29;&#x3b;&#xa;	if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;	indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;	&#x7d;else&#x7b;&#xa;		index &#x3d; indirizzo.indexOf&#x28;&#x22;SPECOLA&#x22;&#x29;&#x3b;&#xa;		if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;		indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;		&#x7d;else&#x7b;&#xa;			index &#x3d; indirizzo.indexOf&#x28;&#x22;INCROCIO&#x22;&#x29;&#x3b;&#xa;			if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;			indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;			&#x7d;else&#x7b;&#xa;				index &#x3d; indirizzo.indexOf&#x28;&#x22;LATO&#x22;&#x29;&#x3b;&#xa;				if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;				indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;				&#x7d;else&#x7b;&#xa;					index &#x3d; indirizzo.indexOf&#x28;&#x22;&#x5e;&#x22;&#x29;&#x3b;&#xa;					if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;					indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;					&#x7d;else&#x7b;&#xa;						index &#x3d; indirizzo.indexOf&#x28;&#x22;PROSSIMIT&#x22;&#x29;&#x3b;&#xa;						if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;						indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;						&#x7d;else&#x7b;&#xa;							index &#x3d; indirizzo.indexOf&#x28;&#x22;CONFLUENZA&#x22;&#x29;&#x3b;&#xa;							if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;							indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;							&#x7d;else&#x7b;&#xa;								index &#x3d; indirizzo.indexOf&#x28;&#x22;INTERSEZIONE&#x22;&#x29;&#x3b;&#xa;								if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;								indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;								&#x7d;else&#x7b;&#xa;									index &#x3d; indirizzo.indexOf&#x28;&#x22;ANG.&#x22;&#x29;&#x3b;&#xa;									if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;									indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;									&#x7d;else&#x7b;&#xa;										index &#x3d; indirizzo.indexOf&#x28;&#x22;CIVCO&#x22;&#x29;&#x3b;&#xa;										if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;										indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;										&#x7d;else&#x7b;&#xa;											index &#x3d; indirizzo.indexOf&#x28;&#x22;ACCANTO&#x22;&#x29;&#x3b;&#xa;											if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;											indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;											&#x7d;else&#x7b;&#xa;												index &#x3d; indirizzo.indexOf&#x28;&#x22;ANG &#x22;&#x29;&#x3b;&#xa;												if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;												indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;												&#x7d;else&#x7b;&#xa;													index &#x3d; indirizzo.indexOf&#x28;&#x22;SCUOLA&#x22;&#x29;&#x3b;&#xa;													if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;													indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;													&#x7d;else&#x7b;&#xa;														index &#x3d; indirizzo.indexOf&#x28;&#x22; - &#x22;&#x29;&#x3b;&#xa;														if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;														indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;														&#x7d;else&#x7b;&#xa;															index &#x3d; indirizzo.indexOf&#x28;&#x22;INCR &#x22;&#x29;&#x3b;&#xa;															if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;															indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;															&#x7d;else&#x7b;&#xa;																index &#x3d; indirizzo.indexOf&#x28;&#x22;DAVANTI&#x22;&#x29;&#x3b;&#xa;																if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;																indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;																&#x7d;else&#x7b;&#xa;																	index &#x3d; indirizzo.indexOf&#x28;&#x22; FRONTE&#x22;&#x29;&#x3b;&#xa;																	if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;																	indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;																	&#x7d;else&#x7b;&#xa;																		index &#x3d; indirizzo.indexOf&#x28;&#x22;ALTEZZA&#x22;&#x29;&#x3b;&#xa;																		if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;																		indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;																		&#x7d;else&#x7b;&#xa;																			index &#x3d; indirizzo.indexOf&#x28;&#x22;PARCHEGGIO&#x22;&#x29;&#x3b;&#xa;																			if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;																			indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;																			&#x7d;else&#x7b;&#xa;																				index &#x3d; indirizzo.indexOf&#x28;&#x22;INTERNO&#x22;&#x29;&#x3b;&#xa;																				if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;																				indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;																				&#x7d;else&#x7b;&#xa;																					index &#x3d; indirizzo.indexOf&#x28;&#x22;&#x28;&#x22;&#x29;&#x3b;&#xa;																					if &#x28;index &#x21;&#x3d; -1&#x29;&#x7b;&#xa;																					indirizzo &#x3d; indirizzo.slice&#x28;0,index-1&#x29;&#x3b;&#xa;																					&#x7d;&#xa;																				&#x7d;&#xa;																			&#x7d;&#xa;																		&#x7d;&#xa;																	&#x7d;&#xa;																&#x7d;&#xa;															&#x7d;&#xa;														&#x7d;&#xa;													&#x7d;	&#xa;												&#x7d;	&#xa;											&#x7d;	&#xa;										&#x7d;	&#xa;									&#x7d;	&#xa;								&#x7d;	&#xa;							&#x7d;		&#xa;						&#x7d;	&#xa;					&#x7d;	&#xa;				&#x7d;	&#xa;			&#x7d;&#xa;		&#x7d;&#xa;	&#x7d;&#xa;&#x7d;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>indirizzo_ORIG</name>
+        <rename>indirizzo_ORIG</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>indirizzo</name>
+        <rename>indirizzo</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>789</xloc>
+      <yloc>176</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value 4_street</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xa;&#xa;var street0 &#x3d; streetAddress.replace&#x28;&#x2f;LOC. SETTIGNANO - &#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var street1 &#x3d; street0.replace&#x28;&#x2f;VIA 20 SETTEMBRE&#x2f;g,&#x22;VIA VENTI SETTEMBRE&#x22;&#x29;&#x3b;&#xa;var street2 &#x3d; street1.replace&#x28;&#x2f;VIA 24 MAGGIO&#x2f;g,&#x22;VIA VENTIQUATTRO MAGGIO&#x22;&#x29;&#x3b;&#xa;var street21 &#x3d; street2.replace&#x28;&#x2f;&#x5e;&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var street3&#x3d; street21.replace&#x28;&#x2f;PIAZZA 1 MAGGIO&#x2f;g,&#x22;PIAZZA PRIMO MAGGIO&#x22;&#x29;&#x3b;&#xa;var street31 &#x3d; street3.replace&#x28;&#x2f;PIAZZA 26 GIUGNO&#x2f;g,&#x22;PIAZZA VENTISEI GIUGNO&#x22;&#x29;&#x3b;&#xa;var street4 &#x3d; street31.replace&#x28;&#x2f;VIA 4 QUERCI&#x2f;g,&#x22;VIA QUATTRO QUERCI&#x22;&#x29;&#x3b;&#xa;var street5 &#x3d; street4.replace&#x28;&#x2f;VIA 2 GIUGNO&#x2f;g,&#x22;VIA DUE GIUGNO&#x22;&#x29;&#x3b;&#xa;var street6 &#x3d; street5.replace&#x28;&#x2f;VIA 25 APRILE&#x2f;g,&#x22;VIA VENTICINQUE APRILE&#x22;&#x29;&#x3b;&#xa;var street7 &#x3d; street6.replace&#x28;&#x2f;VIA 13 MARTIRI&#x2f;g,&#x22;VIA TREDICI MARTIRI&#x22;&#x29;&#x3b;&#xa;var street8 &#x3d; street7.replace&#x28;&#x2f;N&#x5c;.&#x2f;g, &#x22;, &#x22;&#x29;&#x3b;&#xa;var street81 &#x3d; street8.replace&#x28;&#x2f;LOC&#x5c;.&#x2f;gi, &#x22;, &#x22;&#x29;&#x3b;&#xa;var street82 &#x3d; street81.replace&#x28;&#x2f;LoC&#x5c;.&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var street9 &#x3d; street82.replace&#x28;&#x2f;-.&#x2a;&#x2f;g, &#x22;, &#x22;&#x29;&#x3b;&#xa;var street10 &#x3d; street9.replace&#x28;&#x2f;,.&#x2a;&#x2f;g, &#x22;&#x22;&#x29;&#x3b;&#xa;var street101 &#x3d; street10.replace&#x28;&#x2f;C&#x5c;&#x2f;O.&#x2a;&#x2f;g, &#x22;&#x22;&#x29;&#x3b;&#xa;&#x2f;&#x2f;var street102 &#x3d; street101.replace&#x28;&#x2f;STAZIONE .&#x2a;&#x2f;g,&#x22;STAZIONE&#x22;&#x3d;&#x3b;&#xa;var street11 &#x3d; street101.replace&#x28;&#x2f;&#x5b;0-9&#x5d;.&#x2a;&#x2f;g, &#x22;, &#x22;&#x29;&#x3b;&#xa;var street &#x3d; street11.replace&#x28;&#x2f;,&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>street</name>
+        <rename>street</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>937</xloc>
+      <yloc>58</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value_civic</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xa;&#xa;&#xa;var civic1 &#x3d; civic.replace&#x28;&#x2f;,&#x2f;g,&#x22; &#x22;&#x29;&#x3b;&#xa;var civic2 &#x3d; civic1.replace&#x28;&#x2f;VIA 24 MAGGIO&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var civic3&#x3d; civic2.replace&#x28;&#x2f;PIAZZA 1&#x5c;&#x5e; MAGGIO&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var civic31 &#x3d; civic3.replace&#x28;&#x2f;VIA 4 QUERCI&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var civic33 &#x3d; civic31.replace&#x28;&#x2f;VIA 2 GIUGNO&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var civic34 &#x3d; civic33.replace&#x28;&#x2f;VIA 20 SETTEMBRE&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var civic35 &#x3d; civic34.replace&#x28;&#x2f;VIA 25 APRILE&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var civic36 &#x3d; civic35.replace&#x28;&#x2f;VIA 13 MARTIRI&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var civic4 &#x3d; civic36.replace&#x28;&#x2f;&#x5b;a-z&#x5d;&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var civic5 &#x3d; civic4.replace&#x28;&#x2f;N&#x5c;.&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;&#x2f;&#x2f;var civic 51 &#x3d; civic5.replace&#x28;&#x2f;99-97-91A-91B-91C&#x2f;g,&#x22;99 97 91a 91b 91c&#x22;&#x29;&#x3b;&#xa;var civic56 &#x3d; civic5.replace&#x28;&#x2f; B&#x5c;&#x2f;C&#x5c;&#x2f;D&#x2f;g,&#x22;b&#x2f;c&#x2f;d&#x22;&#x29;&#x3b;&#xa;var civic6 &#x3d; civic56.replace&#x28;&#x2f;A-B&#x2f;gi,&#x22;a&#x2f;b&#x22;&#x29;&#x3b;&#xa;var civic7 &#x3d; civic6.replace&#x28;&#x2f;&#x5c;&#x2f;R&#x2f;g,&#x22;&#x2f;r&#x22;&#x29;&#x3b;&#xa;var civic8 &#x3d; civic7.replace&#x28;&#x2f;&#x5c;&#x2f;C&#x2f;g,&#x22;&#x2f;c&#x22;&#x29;&#x3b;&#xa;var civic9 &#x3d; civic8.replace&#x28;&#x2f;&#x5c;&#x2f;D&#x2f;g,&#x22;&#x2f;d&#x22;&#x29;&#x3b;&#xa;var civic10 &#x3d; civic9.replace&#x28;&#x2f;&#x5c;&#x2f;A&#x2f;gi,&#x22;&#x2f;a&#x22;&#x29;&#x3b;&#xa;&#xa;var civic11 &#x3d; civic10.replace&#x28;&#x2f;62-64-66-68&#x5c;&#x2f;R&#x2f;gi,&#x22;62&#x2f;r 64&#x2f;r 66&#x2f;r 68&#x2f;r&#x22;&#x29;&#x3b; &#xa;var civic12 &#x3d; civic11.replace&#x28;&#x2f;&#x5c;&#x2f;B&#x2f;gi,&#x22;&#x2f;b&#x22;&#x29;&#x3b;&#xa;var civic13 &#x3d; civic12.replace&#x28;&#x2f;&#x5c;&#x2f;G&#x2f;gi,&#x22;&#x2f;g&#x22;&#x29;&#x3b;&#xa;var civic14 &#x3d; civic13.replace&#x28;&#x2f;&#x5b;A-Z&#x5d;&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var civic15 &#x3d; civic14.replace&#x28;&#x2f;&#x5c;.&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var civic16 &#x3d; civic15.replace&#x28;&#x2f; - &#x2f;g,&#x22;  &#x22;&#x29;&#x3b;&#xa;var civic17 &#x3d; civic16.replace&#x28;&#x2f;-&#x2f;g,&#x22;&#x2f;&#x22;&#x29;&#x3b;&#xa;var civic18 &#x3d; civic17.replace&#x28;&#x2f;&#x5c;&#x27;&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var civic19 &#x3d; civic18.replace&#x28;&#x2f;&#x5c;&#x2f;&#x2f;g,&#x22; &#x22;&#x29;&#xa;var civic20 &#x3d; civic19.replace&#x28;&#x2f;&#xc2;&#xb0;&#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var civic21 &#x3d; civic20.trim&#x28;&#x29;&#x3b;&#xa;&#x2f;&#x2f;var civic20 &#x3d; civic19.replace&#x28;&#x2f;  &#x2f;g,&#x22;&#x22;&#x29;&#x3b;&#xa;var civic_number &#x3d; civic21&#x3b;&#xa;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>civic_number</name>
+        <rename>civic_number</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>723</xloc>
+      <yloc>59</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value_isNumber 2</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xa;&#xa;var campo &#x3d; indirizzo&#x3b;&#xa;var str &#x3d; campo.split&#x28;&#x22; &#x22;&#x29;&#x3b;&#xa;var parola &#x3d; null&#x3b;&#xa;var regex &#x3d; &#x2f;&#x28;&#x5b;A-Z&#x5d;&#x2b;&#x5c;.&#x5b;A-Z&#x5d;&#x3f;&#x5c;.&#x3f;&#x29;&#x2f;&#x3b;&#xa;&#xa;&#xa;&#xa;var lunghezza &#x3d; 0&#x3b;&#xa;&#xa;&#xa;&#x2f;&#x2f;INIDIRIZZI MAPPATI IN MODO ERRATO&#xa;if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556376&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DI SAN FELICE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556378&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DELLE CASE NUOVE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556379&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;FRANCESCO TALENTI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556393&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VITTORIO EMANUELE II&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556419&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GABRIELE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556423&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PIAZZA DELLE CURE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556427&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;XXIV MAGGIO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556441&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;ROMERO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556470&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PRIMO MAGGIO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556492&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VITTORIO VENETO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556496&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;MACHIAVELLI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556516&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;MARTIRI DELLA LIBERTA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556526&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;V. EMANUELE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556541&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA PROPOSITURA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556542&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;TOSCO ROMAGNOLA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556546&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;TOSCO ROMAGNOLA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556547&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;TOSCO ROMAGNOLA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556556&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;XXIV MAGGIO&#x22;&#x3b;&#xa;&#x7d; &#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556565&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CORSO ITALI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556570&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;MEDICEO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556573&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;LUIGI BIANCHI&#x22;&#x3b;&#xa;&#x7d; 	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556576&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CONTE FAZIO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556578&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VENEZIA GIULIA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556584&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;MARTIN LUTHER KING&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556597&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CARL MARX&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556608&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GIUSEPPE GARIBALDI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556609&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;FELIKS BIKONACKI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556611&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PIAZZA GRAND&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556612&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA GRAND&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556617&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA GRAND&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556620&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GIUSEPPE MAZZINI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556621&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DAMIANO CHIESA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556625&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CORSO AMEDE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556627&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PIAZZA GRAND&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556630&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIALE ITALI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556634&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA GRAND&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556635&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA GRAND&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556636&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;FRATELLI BANDIERA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556641&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;FRANCESCO REDI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556642&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GIUSEPPE GARIBALDI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556666&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIALE ITALI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556687&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;S.C. DI VILLAMAGNA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556692&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;TOSCO ROMAGNOLA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556703&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;SAN FRANCESCO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556705&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PIAZZA DEL CARMIN&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556716&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CORSO MATTEOTTI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556717&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PIAZZA DELLA CASA BIANC&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556725&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;NAZZARIO SAURO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556733&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GUGLIELMO MARCONI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556746&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;COSIMO RIDOLFI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556750&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VITTORIO VENETO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556759&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VAL D&#x27;ELSA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556765&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;SENESE ROMANA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556770&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;RUGGERO GRIECO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556770&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;SAN MATTEO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556793&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;NICCOLO&#x27; ANGELI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556815&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CORSO ITALI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556816&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CORSO ITALI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556819&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;LUIGI GORI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556827&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;NAZIONALE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556828&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA PIEV&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556829&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GIUSEPPE GARIBALDI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556831&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;NAZIONALE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556835&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CARLO LANDI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556846&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;SANTO STEFANO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556852&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA ROM&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556853&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;MARCO PERENNIO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556857&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CAMPO DI MARTE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556863&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;RIGUTINO EST&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556867&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CORSO ITALIA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556868&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CORSO ITALIA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556872&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;MONTE FALCO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556874&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PONTE ALLA CHIASSA&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556876&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA MARCONI&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556898&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VITTORIO EMANUELE&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556899&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VITTORIO EMANUELE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556904&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA ROMA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556915&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;BERLINGUER&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556916&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;MORTELLICCIO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556918&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VITTORIO EMANUELE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556956&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA LIBERTA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556958&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;MARTIRI DELLA NICCIOLETA &#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556964&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DELLE COLLACCHIE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556965&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;IV NOVEMBRE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556969&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DI PUNTA ALA&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556969&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DI VIA ITALIA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556984&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;FABIO MASSIMO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556990&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA DI MEZZO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556996&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA ROMA&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557014&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CORSO ITALIA&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557025&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;B. RICASOLI&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557038&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA NUOVA&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557045&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;ARETINA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557061&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GROSSETANA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557062&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VITTORIO EMANUELE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557070&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;26 GIUGNO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557072&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;BRASCHI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557097&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;BUOZZI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557101&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;ANTONIO GRAMSCI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557104&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PIAZZA DON MINZONI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557106&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;MARSILIO FICINO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557122&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA DELLA REPUBBLICA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557123&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DELLA STAZIONE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557127&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DAMIANO CHIESA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557127&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PIAZZA VITTORIO EMANUELE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557141&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA BORGO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557151&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CARLO ROSSELLI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557157&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA VENEZIA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557159&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PIAZZA GINO MENCONI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557163&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIALE XX SETTEMBRE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557164&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIALE XX SETTEMBRE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557165&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CAPITANO MICHELE FIORILLO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557173&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA RONCHI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557177&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIALE ROMA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557180&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GIOACCHINO ROSSINI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557180&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GIOACCHINO ROSSINI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557192&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA VITTORIO EMANUELE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557198&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PADRE IGNAZIO DA CARRARA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557212&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;XXIV MAGGIO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557213&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PIAZZA GIOSU&#xc8; CARDUCCI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557214&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA GIOSU&#xc8; CARDUCCI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557222&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GIUSEPPE MAZZINI VIAREGGIO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557223&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;MARCO POLO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557225&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;MONTE CAVALLO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557231&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;BONAPARTE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557233&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CESARE BATTISTI VIAREGGIO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557235&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;SAN GIACOMO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557239&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;LOGHETTO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557246&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GIOVANNI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557249&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA EUROPA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557261&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA NAZIONALE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557271&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;POPOLO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557303&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA ROMA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557304&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PROVINCIALE PESCAGLIA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557305&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CAPANNORI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557316&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GIUSTI GIUSEPPE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557319&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;FRANCESCA UGGIA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557324&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA ALDO ROSSI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557336&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA LUCCHESE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557344&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PROVINCIALE PRATESE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557345&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CARLO MARX&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557351&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VOLTA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557359&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA FIORENTINA&#x22;&#x3b;&#xa;&#x7d;	 	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557361&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA FIORENTINA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557364&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;XXIV MAGGIO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557367&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PORTA AL BORGO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557368&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;SESTINI&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557369&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;ORAFI&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557372&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;FILIPPO PACINI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557373&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA NAZIONALE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557374&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;LEONARDO DA VINCI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557375&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA PISA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557384&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PONTE DELLA VENTURI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557402&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;LORENZO CIULLI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557407&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PIAZZA MERCATALE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557408&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA FIORENTINA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557410&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA FIRENZE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557414&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DON PIO VANNUCCHI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557414&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIALE MONTEGRAPPA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557424&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA DEL PURGATORIO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557426&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA PISTOIESE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557429&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;BALBO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557432&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA ROMA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557435&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIALE MONTEGRAPPA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557442&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;FOSSO DEL MASI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557443&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA CAVA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557448&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DEL BISENZIO SASSETA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557452&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PIAZZA DI SAN IACOPINO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557456&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DELL&#x27;AGNOLO&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557457&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DELLA CREZIA&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557462&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;SAN GALLO&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557464&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA LUNGA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557468&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DELLA VIGNA NUOVA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557472&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DI SAN GIOVANNI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557475&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DI SAN LORENZO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557476&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DELLA SCALA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557477&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DEI CALZAIOLI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557484&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA GUELFA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557485&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GIACOMO PUCCINI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557487&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PORTA ROSSA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557489&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PINTI&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557493&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;IL PRATO&#x22;&#x3b;&#xa;&#x7d;	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557494&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DI SAN GIOVANNI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557501&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;SILVANI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557503&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DELLE CAVE DI MONTERIPALDI&#x22;&#x3b;&#xa;&#x7d; 	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557504&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;NAZARIO SAURO&#x22;&#x3b;&#xa;&#x7d; 	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557505&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIALE EUROPA&#x22;&#x3b;&#xa;&#x7d; 	&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557506&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VIA GUILLA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557511&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DI PORTA ROMANA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557516&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GIAMPAOLO ORSINI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557647&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;VITTORIO EMANUELE&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200800000568456&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GIOVANNI MINIATI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200800000636979&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;DI MATRAIA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200900013469479&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;ROMANA OVEST&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200900013963689&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;SAMINIATESE SAN PIERINO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001201000015105833&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;PIANO DI CONCA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001201000015126159&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;FRAZIONE PENNA&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001201000024116607&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;COLONNELLO ANDREONI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001201000025123627&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;IL BORGO&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556453&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;XIII MARTIRI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556485&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;CAPOCCHINI&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556427&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;24&#x22;&#x3b;&#xa;&#x7d;&#xa;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556401&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;GABRIELE&#x22;&#x3b;&#xa;&#x7d;&#xa;&#xa; &#x2f;&#x2f; METTI PAROLA SBAGLIATA PER NON TROVARE ALCUN MATCH&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556452&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556500&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556502&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556503&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556504&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556506&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556507&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556508&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556574&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556600&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556680&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556696&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556697&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556727&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556811&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556837&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556851&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556887&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556888&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556902&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556919&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556922&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556929&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556935&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556968&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000556992&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557015&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557077&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557092&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557105&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557111&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557116&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557117&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557118&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557120&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557125&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557133&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557134&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557137&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557140&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557143&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557144&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557145&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557146&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557147&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557155&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557179&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557227&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557228&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557236&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557252&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557259&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557309&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557332&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557337&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557338&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557339&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557377&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557391&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557392&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001200700000557463&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else if &#x28;FinalKey&#x3d;&#x3d; &#x22;SIS000001201000015105857&#x22;&#x29;&#x7b;&#xa;	parola &#x3d; &#x22;aaaaaaaaaaaaaaaaaaa&#x22;&#x3b;&#xa;&#x7d;&#xa;else&#x7b;&#xa;	for &#x28;var i&#x3d;0&#x3b; i&#x3c;str.length&#x3b; i&#x2b;&#x2b;&#x29;&#x7b;&#xa;    if &#x28;&#x28;str&#x5b;i&#x5d;.length &#x3e; lunghezza&#x29; &#x26;&#x26;&#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;PIANO&#x27;&#x29;&#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;DELLA&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;PIAZZA&#x27;&#x29;&#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;VIUZZO&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;VIALE&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;PIAZZETTA&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;DELL&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;DELLO&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;DELLE&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;XXVII&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;LATO&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;DALLA&#x27;&#x29; &#x26;&#x26; &#x28;&#x21;regex.test&#x28;str&#x5b;i&#x5d;&#x29;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;GIOVANNI&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;GIUSEPPE&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;ANTONIO&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;FRANCESCO&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;BENEDETTO&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;FERDINANDO&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;FILIPPO&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;ALESSANDRO&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;LORENZO&#x27;&#x29;&#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;PONTE&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;GIOVAN&#x27;&#x29; &#x26;&#x26; &#x28;str&#x5b;i&#x5d; &#x21;&#x3d; &#x27;VINCENZO&#x27;&#x29;&#x29;&#x7b;&#xa;        lunghezza &#x3d; str&#x5b;i&#x5d;.length&#x3b;&#xa;        &#xa;		parola &#x3d; str&#x5b;i&#x5d;&#x3b;&#xa;     &#x7d;&#xa;	&#xa;	&#x7d;&#xa;&#x7d;&#xa;&#xa; 	 	&#xa; 	</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>parola</name>
+        <rename>parola</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>289</xloc>
+      <yloc>250</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Replace in string 2</name>
+    <type>ReplaceString</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>indirizzo</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>&#x27;</replace_string>
+        <replace_by_string> </replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>511</xloc>
+      <yloc>169</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Replace in string 3</name>
+    <type>ReplaceString</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>streetAddress</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>C.</replace_string>
+        <replace_by_string>C.</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>streetAddress</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>CANOVA</replace_string>
+        <replace_by_string>ANTONIO CANOVA</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>streetAddress</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>XX </replace_string>
+        <replace_by_string>VENTI </replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>streetAddress</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>ARGINGROSSO</replace_string>
+        <replace_by_string>DELL&#x27;ARGIN GROSSO</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>streetAddress</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>PONTE A JOZZI</replace_string>
+        <replace_by_string>IOZZI</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>streetAddress</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>DELLE 3 PIETRE</replace_string>
+        <replace_by_string>DELLE TRE PIETRE</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>streetAddress</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>TORRE AGLI</replace_string>
+        <replace_by_string>DELLA TORRE DEGLI AGLI</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>streetAddress</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>XI AGOSTO</replace_string>
+        <replace_by_string>UNDICI AGOSTO</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>streetAddress</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>GEMIGNANI</replace_string>
+        <replace_by_string>FRANCESCO GEMINIANI</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>streetAddress</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>Q.SELLA</replace_string>
+        <replace_by_string>QUINTINO SELLA</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>streetAddress</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>G.VILLANI</replace_string>
+        <replace_by_string>GIOVANNI VILLANI</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>streetAddress</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>LOC. SETTIGNANO - V. D&#x27;ANNUNZIO 55&#x2f;R</replace_string>
+        <replace_by_string>V. D&#x27;ANNUNZIO 55&#x2f;R - LOC. SETTIGNANO </replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>streetAddress</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>VIA DELLE COLLACCHE</replace_string>
+        <replace_by_string>VIA DELLE COLLACCHIE</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>508</xloc>
+      <yloc>73</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>identifier_fix</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DENOMINAZIONE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DESCR_COMUNE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DESCR_PROVINCIA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FAX</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_UNIVERSALE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TELEFONO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>VIA</name>
+        <rename>streetAddress</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>actualDate</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>processName</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>sigla</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>timestamp</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>identifier</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>193</xloc>
+      <yloc>45</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>FinalKey</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DENOMINAZIONE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DESCR_COMUNE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DESCR_PROVINCIA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ID_UNIVERSALE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TELEFONO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>actualDate</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>processName</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>sigla</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>timestamp</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>address_syn</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codice_toponimo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>street</name>
+        <rename>Address</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>streetAddress</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>civic_number</name>
+        <rename>Civic_n</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>identifier</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TYPE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>example</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>identifier_fix</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>civic</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FAX_mod</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FinalStreetAddress</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1054</xloc>
+      <yloc>184</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+
+</transformation>

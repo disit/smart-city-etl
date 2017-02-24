@@ -1,0 +1,238 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix transit: <http://vocab.org/transit/terms/> .
+@prefix km4cr: <http://www.disit.org/km4city/resource#> .
+@prefix km4c: <http://www.disit.org/km4city/schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <http://schema.org/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix otn: <http://www.pms.ifi.uni-muenchen.de/OTN#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gtfs: <http://vocab.gtfs.org/terms#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1at8o9m7dx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "SELECT * FROM SiiMobility.TPLBus_routes" ;
+	km-dev:modelPublicationTime "1474541443309"^^xsd:long ;
+	km-dev:modelVersion "1.4" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"RoutesTXTKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Route1 (add)\",\"DomainId\":\"http://vocab.gtfs.org/terms#Route1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Route\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"route_color\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://vocab.gtfs.org/terms#color\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Route1\",\"DomainId\":\"http://vocab.gtfs.org/terms#Route1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Route\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"route_long_name\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://vocab.gtfs.org/terms#longName\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Route1\",\"DomainId\":\"http://vocab.gtfs.org/terms#Route1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Route\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"route_short_name\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://vocab.gtfs.org/terms#shortName\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Route1\",\"DomainId\":\"http://vocab.gtfs.org/terms#Route1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Route\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"route_text_color\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://vocab.gtfs.org/terms#textColor\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Route1\",\"DomainId\":\"http://vocab.gtfs.org/terms#Route1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Route\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"route_type\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://vocab.gtfs.org/terms#routeType\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Route1\",\"DomainId\":\"http://vocab.gtfs.org/terms#Route1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Route\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"RoutesTXTKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:Route1\",\"DomainId\":\"http://vocab.gtfs.org/terms#Route1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Route\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"agency_id\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"isPrimary\":true,\"FullType\":\"http://purl.org/dc/terms/identifier\",\"DomainLabel\":\"gtfs:Agency1 (add)\",\"DomainId\":\"http://vocab.gtfs.org/terms#Agency1 (add)\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Agency\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[{\"edgeId\":\"http://xmlns.com/foaf/0.1/page\",\"edgeTargetId\":\"http://xmlns.com/foaf/0.1/Document1\",\"edgeSourceId\":\"http://vocab.gtfs.org/terms#Route1\"}],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP1:WS20181AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://vocab.gtfs.org/terms#Agency\",\"edgeId\":\"http://vocab.gtfs.org/terms#agency\",\"edgeTargetId\":\"http://vocab.gtfs.org/terms#Agency1\",\"edgeSourceId\":\"http://vocab.gtfs.org/terms#Route1\",\"edgeSourceUri\":\"http://vocab.gtfs.org/terms#Route\"}],\"type\":\"other\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Transformation\"],\"inputParameters\":[{\"name\":\"newColumnName\",\"value\":\"type\",\"type\":\"other\"},{\"name\":\"transformationCode\",\"value\":\"return \\\"http://vocab.gtfs.org/terms#Bus\\\"\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"route_type\"}],\"type\":\"hNodeId\"},{\"name\":\"errorDefaultValue\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SubmitPythonTransformationCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"value\":\"isUriOfClass\",\"type\":\"other\"},{\"name\":\"metaPropertyValue\",\"value\":\"http://vocab.gtfs.org/terms#RouteType\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"type\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"isPrimary\":true,\"FullType\":\"http://isi.edu/integration/karma/dev#classLink\",\"DomainLabel\":\"gtfs:RouteType1 (add)\",\"DomainId\":\"http://vocab.gtfs.org/terms#RouteType1 (add)\",\"DomainUri\":\"http://vocab.gtfs.org/terms#RouteType\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetMetaPropertyCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"route_type\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":true,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"UnassignSemanticTypeCommand\"}]" .
+
+km-dev:TriplesMap_c71b8dfa-c2f6-42de-8929-1d5a70663c1c a rr:TriplesMap .
+
+_:node1at8o9m7dx1 km-dev:hasTriplesMap km-dev:TriplesMap_c71b8dfa-c2f6-42de-8929-1d5a70663c1c .
+
+km-dev:TriplesMap_c71b8dfa-c2f6-42de-8929-1d5a70663c1c km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx2 rr:tableName "SELECT * FROM SiiMobility.TPLBus_routes" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasLogicalTable _:node1at8o9m7dx2 .
+
+km-dev:TriplesMap_c71b8dfa-c2f6-42de-8929-1d5a70663c1c rr:logicalTable _:node1at8o9m7dx2 ;
+	rr:subjectMap _:node1at8o9m7dx3 .
+
+_:node1at8o9m7dx1 km-dev:hasSubjectMap _:node1at8o9m7dx3 .
+
+_:node1at8o9m7dx3 km-dev:isPartOfMapping _:node1at8o9m7dx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vocab.gtfs.org/terms#Agency1" ;
+	rr:class gtfs:Agency ;
+	rr:template "http://www.disit.org/km4city/resource/{agency_id}" .
+
+km-dev:PredicateObjectMap_d316efef-48b5-491e-b0d3-197053b9ac97 rr:predicate dcterms:identifier .
+
+_:node1at8o9m7dx4 rr:column "agency_id" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasObjectMap _:node1at8o9m7dx4 .
+
+km-dev:PredicateObjectMap_d316efef-48b5-491e-b0d3-197053b9ac97 rr:objectMap _:node1at8o9m7dx4 .
+
+km-dev:TriplesMap_c71b8dfa-c2f6-42de-8929-1d5a70663c1c rr:predicateObjectMap km-dev:PredicateObjectMap_d316efef-48b5-491e-b0d3-197053b9ac97 .
+
+km-dev:PredicateObjectMap_d316efef-48b5-491e-b0d3-197053b9ac97 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d316efef-48b5-491e-b0d3-197053b9ac97 .
+
+km-dev:TriplesMap_0f04d4ff-07a4-4e8f-925c-70d70e5f7220 a rr:TriplesMap .
+
+_:node1at8o9m7dx1 km-dev:hasTriplesMap km-dev:TriplesMap_0f04d4ff-07a4-4e8f-925c-70d70e5f7220 .
+
+km-dev:TriplesMap_0f04d4ff-07a4-4e8f-925c-70d70e5f7220 km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx5 rr:tableName "SELECT * FROM SiiMobility.TPLBus_routes" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasLogicalTable _:node1at8o9m7dx5 .
+
+km-dev:TriplesMap_0f04d4ff-07a4-4e8f-925c-70d70e5f7220 rr:logicalTable _:node1at8o9m7dx5 ;
+	rr:subjectMap _:node1at8o9m7dx6 .
+
+_:node1at8o9m7dx1 km-dev:hasSubjectMap _:node1at8o9m7dx6 .
+
+_:node1at8o9m7dx6 km-dev:isPartOfMapping _:node1at8o9m7dx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vocab.gtfs.org/terms#Route1" ;
+	rr:class gtfs:Route ;
+	rr:template "http://www.disit.org/km4city/resource/{RoutesTXTKey}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_46a3525b-a22e-454c-8e72-9cff592d104a rr:predicate dcterms:identifier .
+
+_:node1at8o9m7dx7 rr:column "RoutesTXTKey" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasObjectMap _:node1at8o9m7dx7 .
+
+km-dev:PredicateObjectMap_46a3525b-a22e-454c-8e72-9cff592d104a rr:objectMap _:node1at8o9m7dx7 .
+
+km-dev:TriplesMap_0f04d4ff-07a4-4e8f-925c-70d70e5f7220 rr:predicateObjectMap km-dev:PredicateObjectMap_46a3525b-a22e-454c-8e72-9cff592d104a .
+
+km-dev:PredicateObjectMap_46a3525b-a22e-454c-8e72-9cff592d104a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_46a3525b-a22e-454c-8e72-9cff592d104a .
+
+km-dev:PredicateObjectMap_c1d98c78-d99b-411b-8f9d-d33e05f615da rr:predicate gtfs:agency .
+
+km-dev:RefObjectMap_4f65c416-928f-4c57-9bd6-ec2f90d93de6 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_c71b8dfa-c2f6-42de-8929-1d5a70663c1c ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasObjectMap km-dev:RefObjectMap_4f65c416-928f-4c57-9bd6-ec2f90d93de6 .
+
+km-dev:PredicateObjectMap_c1d98c78-d99b-411b-8f9d-d33e05f615da rr:objectMap km-dev:RefObjectMap_4f65c416-928f-4c57-9bd6-ec2f90d93de6 .
+
+km-dev:TriplesMap_0f04d4ff-07a4-4e8f-925c-70d70e5f7220 rr:predicateObjectMap km-dev:PredicateObjectMap_c1d98c78-d99b-411b-8f9d-d33e05f615da .
+
+km-dev:PredicateObjectMap_c1d98c78-d99b-411b-8f9d-d33e05f615da a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c1d98c78-d99b-411b-8f9d-d33e05f615da .
+
+km-dev:PredicateObjectMap_3e88e975-05f5-4ee4-ae74-26d8e6ac8251 rr:predicate gtfs:color .
+
+_:node1at8o9m7dx8 rr:column "route_color" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasObjectMap _:node1at8o9m7dx8 .
+
+km-dev:PredicateObjectMap_3e88e975-05f5-4ee4-ae74-26d8e6ac8251 rr:objectMap _:node1at8o9m7dx8 .
+
+km-dev:TriplesMap_0f04d4ff-07a4-4e8f-925c-70d70e5f7220 rr:predicateObjectMap km-dev:PredicateObjectMap_3e88e975-05f5-4ee4-ae74-26d8e6ac8251 .
+
+km-dev:PredicateObjectMap_3e88e975-05f5-4ee4-ae74-26d8e6ac8251 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3e88e975-05f5-4ee4-ae74-26d8e6ac8251 .
+
+km-dev:PredicateObjectMap_8b2d1e0b-2472-40da-93be-309fc2b3d914 rr:predicate gtfs:longName .
+
+_:node1at8o9m7dx9 rr:column "route_long_name" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasObjectMap _:node1at8o9m7dx9 .
+
+km-dev:PredicateObjectMap_8b2d1e0b-2472-40da-93be-309fc2b3d914 rr:objectMap _:node1at8o9m7dx9 .
+
+km-dev:TriplesMap_0f04d4ff-07a4-4e8f-925c-70d70e5f7220 rr:predicateObjectMap km-dev:PredicateObjectMap_8b2d1e0b-2472-40da-93be-309fc2b3d914 .
+
+km-dev:PredicateObjectMap_8b2d1e0b-2472-40da-93be-309fc2b3d914 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8b2d1e0b-2472-40da-93be-309fc2b3d914 .
+
+km-dev:PredicateObjectMap_8d3e45dc-6cf2-404b-900a-8589716a35a5 rr:predicate gtfs:routeType .
+
+km-dev:RefObjectMap_95d0b9e6-dee1-4270-8c6f-c08254affd72 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_0cbfc2ab-5a67-4fd3-b2d1-5af2f3f03675 ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasObjectMap km-dev:RefObjectMap_95d0b9e6-dee1-4270-8c6f-c08254affd72 .
+
+km-dev:PredicateObjectMap_8d3e45dc-6cf2-404b-900a-8589716a35a5 rr:objectMap km-dev:RefObjectMap_95d0b9e6-dee1-4270-8c6f-c08254affd72 .
+
+km-dev:TriplesMap_0f04d4ff-07a4-4e8f-925c-70d70e5f7220 rr:predicateObjectMap km-dev:PredicateObjectMap_8d3e45dc-6cf2-404b-900a-8589716a35a5 .
+
+km-dev:PredicateObjectMap_8d3e45dc-6cf2-404b-900a-8589716a35a5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8d3e45dc-6cf2-404b-900a-8589716a35a5 .
+
+km-dev:PredicateObjectMap_81b09935-2a42-4d5a-af6e-11f84818c76b rr:predicate gtfs:shortName .
+
+_:node1at8o9m7dx10 rr:column "route_short_name" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasObjectMap _:node1at8o9m7dx10 .
+
+km-dev:PredicateObjectMap_81b09935-2a42-4d5a-af6e-11f84818c76b rr:objectMap _:node1at8o9m7dx10 .
+
+km-dev:TriplesMap_0f04d4ff-07a4-4e8f-925c-70d70e5f7220 rr:predicateObjectMap km-dev:PredicateObjectMap_81b09935-2a42-4d5a-af6e-11f84818c76b .
+
+km-dev:PredicateObjectMap_81b09935-2a42-4d5a-af6e-11f84818c76b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_81b09935-2a42-4d5a-af6e-11f84818c76b .
+
+km-dev:PredicateObjectMap_db0b7d5f-7bae-409b-9eef-ecd8fda6ec1a rr:predicate gtfs:textColor .
+
+_:node1at8o9m7dx11 rr:column "route_text_color" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasObjectMap _:node1at8o9m7dx11 .
+
+km-dev:PredicateObjectMap_db0b7d5f-7bae-409b-9eef-ecd8fda6ec1a rr:objectMap _:node1at8o9m7dx11 .
+
+km-dev:TriplesMap_0f04d4ff-07a4-4e8f-925c-70d70e5f7220 rr:predicateObjectMap km-dev:PredicateObjectMap_db0b7d5f-7bae-409b-9eef-ecd8fda6ec1a .
+
+km-dev:PredicateObjectMap_db0b7d5f-7bae-409b-9eef-ecd8fda6ec1a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_db0b7d5f-7bae-409b-9eef-ecd8fda6ec1a .
+
+km-dev:TriplesMap_0cbfc2ab-5a67-4fd3-b2d1-5af2f3f03675 a rr:TriplesMap .
+
+_:node1at8o9m7dx1 km-dev:hasTriplesMap km-dev:TriplesMap_0cbfc2ab-5a67-4fd3-b2d1-5af2f3f03675 .
+
+km-dev:TriplesMap_0cbfc2ab-5a67-4fd3-b2d1-5af2f3f03675 km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx12 rr:tableName "SELECT * FROM SiiMobility.TPLBus_routes" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1at8o9m7dx1 .
+
+_:node1at8o9m7dx1 km-dev:hasLogicalTable _:node1at8o9m7dx12 .
+
+km-dev:TriplesMap_0cbfc2ab-5a67-4fd3-b2d1-5af2f3f03675 rr:logicalTable _:node1at8o9m7dx12 ;
+	rr:subjectMap _:node1at8o9m7dx13 .
+
+_:node1at8o9m7dx1 km-dev:hasSubjectMap _:node1at8o9m7dx13 .
+
+_:node1at8o9m7dx13 km-dev:isPartOfMapping _:node1at8o9m7dx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vocab.gtfs.org/terms#RouteType2" ;
+	rr:class gtfs:RouteType ;
+	rr:template "{type}" .

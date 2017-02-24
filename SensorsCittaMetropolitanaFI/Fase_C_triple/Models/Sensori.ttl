@@ -1,0 +1,414 @@
+@prefix vann: <http://purl.org/vocab/vann/#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix km4cr: <http://www.disit.org/km4city/resource#> .
+@prefix km4c: <http://www.disit.org/km4city/schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix schema: <http://schema.org/#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix tzont: <http://www.w3.org/2006/timezone#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix otn: <http://www.pms.ifi.uni-muenchen.de/OTN#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct: <http://purl.org/dc/terms/#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node195qfhdf5x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "sensori44" ;
+	km-dev:modelPublicationTime "1415006696934"^^xsd:long ;
+	km-dev:modelVersion "1.5" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"measurementSiteReference\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:SensorSite1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#SensorSite1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#SensorSite\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"km4cr\",\"hasBaseURI\":false},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"observationID\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"measurementTimeDefault\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"time:Instant1 (add)\",\"DomainId\":\"http://www.w3.org/2006/time#Instant1 (add)\",\"DomainUri\":\"http://www.w3.org/2006/time#Instant\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:dateTime\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"averageVehicleSpeed\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#averageSpeed\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"threshold\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#thresholdPerc\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"value\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#speedPercentile\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"vehicleFlow\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#vehicleFlow\",\"isPrimary\":true,\"DomainLabel\":\"km4c:SensorSite1\",\"DomainId\":\"http://www.disit.org/km4city/schema#SensorSite1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#SensorSite\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"vehicleFlow\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#vehicleFlow\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"occupancy\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#occupancy\",\"isPrimary\":true,\"DomainLabel\":\"km4c:SensorSite1\",\"DomainId\":\"http://www.disit.org/km4city/schema#SensorSite1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#SensorSite\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"occupancy\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#occupancy\",\"isPrimary\":true,\"DomainLabel\":\"km4c:SensorSite1\",\"DomainId\":\"http://www.disit.org/km4city/schema#SensorSite1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#SensorSite\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"occupancy\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#occupancy\",\"isPrimary\":true,\"DomainLabel\":\"km4c:SensorSite1\",\"DomainId\":\"http://www.disit.org/km4city/schema#SensorSite1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#SensorSite\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"occupancy\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#occupancy\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"concentration\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#concentration\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"averageDistanceHeadway\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#averageDistance\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"averageTimeHeadway\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#averageTime\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"measurementTimeDefault\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"time:Instant2\",\"DomainId\":\"http://www.w3.org/2006/time#Instant2\",\"DomainUri\":\"http://www.w3.org/2006/time#Instant\"},{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":false,\"DomainLabel\":\"km4c:Observation1\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:dateTime\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"measurementTimeDefault\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"time:Instant2\",\"DomainId\":\"http://www.w3.org/2006/time#Instant2\",\"DomainUri\":\"http://www.w3.org/2006/time#Instant\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:dateTime\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"km4cr\",\"hasBaseURI\":false},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"measurementSiteReference\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:SensorSite1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#SensorSite1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#SensorSite\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"observationID\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"measurementTimeDefault\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"time:Instant1 (add)\",\"DomainId\":\"http://www.w3.org/2006/time#Instant1 (add)\",\"DomainUri\":\"http://www.w3.org/2006/time#Instant\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:dateTime\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"measurementTimeDefault2\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/date\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:dateTime\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"averageVehicleSpeed\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#averageSpeed\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"threshold\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#thresholdPerc\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RoadElement1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#RoadElement1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RoadElement\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"threshold\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#thresholdPerc\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"value\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#speedPercentile\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"vehicleFlow\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#vehicleFlow\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"occupancy\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#occupancy\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"concentration\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#concentration\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RoadElement1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#RoadElement1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RoadElement\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"concentration\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#concentration\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RoadElement1\",\"DomainId\":\"http://www.disit.org/km4city/schema#RoadElement1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RoadElement\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"concentration\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#concentration\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"averageDistanceHeadway\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#averageDistance\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"averageTimeHeadway\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#averageTime\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Observation2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Observation2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Observation\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"}]" .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 a rr:TriplesMap .
+
+_:node195qfhdf5x1 km-dev:hasTriplesMap km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x2 rr:tableName "sensori44" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasLogicalTable _:node195qfhdf5x2 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 rr:logicalTable _:node195qfhdf5x2 ;
+	rr:subjectMap _:node195qfhdf5x3 .
+
+_:node195qfhdf5x1 km-dev:hasSubjectMap _:node195qfhdf5x3 .
+
+_:node195qfhdf5x3 km-dev:isPartOfMapping _:node195qfhdf5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.disit.org/km4city/schema#Observation2" ;
+	rr:class km4c:Observation ;
+	rr:template "http://www.disit.org/km4city/resource/{observationID}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_769950dc-b5c4-4e10-8175-23797045f112 rr:predicate dcterms:date .
+
+_:node195qfhdf5x4 rr:column "measurementTimeDefault2" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#dateTime" ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap _:node195qfhdf5x4 .
+
+km-dev:PredicateObjectMap_769950dc-b5c4-4e10-8175-23797045f112 rr:objectMap _:node195qfhdf5x4 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 rr:predicateObjectMap km-dev:PredicateObjectMap_769950dc-b5c4-4e10-8175-23797045f112 .
+
+km-dev:PredicateObjectMap_769950dc-b5c4-4e10-8175-23797045f112 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_769950dc-b5c4-4e10-8175-23797045f112 .
+
+km-dev:PredicateObjectMap_83ae30b2-a54e-4e68-a5a6-6d41a5ef416b rr:predicate dcterms:identifier .
+
+_:node195qfhdf5x5 rr:column "observationID" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap _:node195qfhdf5x5 .
+
+km-dev:PredicateObjectMap_83ae30b2-a54e-4e68-a5a6-6d41a5ef416b rr:objectMap _:node195qfhdf5x5 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 rr:predicateObjectMap km-dev:PredicateObjectMap_83ae30b2-a54e-4e68-a5a6-6d41a5ef416b .
+
+km-dev:PredicateObjectMap_83ae30b2-a54e-4e68-a5a6-6d41a5ef416b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_83ae30b2-a54e-4e68-a5a6-6d41a5ef416b .
+
+km-dev:PredicateObjectMap_96a0f56a-5050-43e0-9bd3-981a6915f340 rr:predicate km4c:averageDistance .
+
+_:node195qfhdf5x6 rr:column "averageDistanceHeadway" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap _:node195qfhdf5x6 .
+
+km-dev:PredicateObjectMap_96a0f56a-5050-43e0-9bd3-981a6915f340 rr:objectMap _:node195qfhdf5x6 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 rr:predicateObjectMap km-dev:PredicateObjectMap_96a0f56a-5050-43e0-9bd3-981a6915f340 .
+
+km-dev:PredicateObjectMap_96a0f56a-5050-43e0-9bd3-981a6915f340 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_96a0f56a-5050-43e0-9bd3-981a6915f340 .
+
+km-dev:PredicateObjectMap_3560b8e4-bf10-4b0d-9390-e1dc629656d1 rr:predicate km4c:averageSpeed .
+
+_:node195qfhdf5x7 rr:column "averageVehicleSpeed" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap _:node195qfhdf5x7 .
+
+km-dev:PredicateObjectMap_3560b8e4-bf10-4b0d-9390-e1dc629656d1 rr:objectMap _:node195qfhdf5x7 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 rr:predicateObjectMap km-dev:PredicateObjectMap_3560b8e4-bf10-4b0d-9390-e1dc629656d1 .
+
+km-dev:PredicateObjectMap_3560b8e4-bf10-4b0d-9390-e1dc629656d1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3560b8e4-bf10-4b0d-9390-e1dc629656d1 .
+
+km-dev:PredicateObjectMap_7965e5db-400c-45b3-b72b-a3c99af02c4e rr:predicate km4c:averageTime .
+
+_:node195qfhdf5x8 rr:column "averageTimeHeadway" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap _:node195qfhdf5x8 .
+
+km-dev:PredicateObjectMap_7965e5db-400c-45b3-b72b-a3c99af02c4e rr:objectMap _:node195qfhdf5x8 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 rr:predicateObjectMap km-dev:PredicateObjectMap_7965e5db-400c-45b3-b72b-a3c99af02c4e .
+
+km-dev:PredicateObjectMap_7965e5db-400c-45b3-b72b-a3c99af02c4e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7965e5db-400c-45b3-b72b-a3c99af02c4e .
+
+km-dev:PredicateObjectMap_b7c95558-f849-43ea-9d50-fc04d8643cba rr:predicate km4c:concentration .
+
+_:node195qfhdf5x9 rr:column "concentration" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap _:node195qfhdf5x9 .
+
+km-dev:PredicateObjectMap_b7c95558-f849-43ea-9d50-fc04d8643cba rr:objectMap _:node195qfhdf5x9 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 rr:predicateObjectMap km-dev:PredicateObjectMap_b7c95558-f849-43ea-9d50-fc04d8643cba .
+
+km-dev:PredicateObjectMap_b7c95558-f849-43ea-9d50-fc04d8643cba a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b7c95558-f849-43ea-9d50-fc04d8643cba .
+
+km-dev:PredicateObjectMap_1fabe6c4-bdd1-470b-9984-639d786e01ce rr:predicate km4c:measuredBySensor .
+
+km-dev:RefObjectMap_9ff8d63e-4bf8-4bde-ad5c-29715f5dbf46 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e48ad23b-b93b-44fb-9d12-dc475fdd0457 ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap km-dev:RefObjectMap_9ff8d63e-4bf8-4bde-ad5c-29715f5dbf46 .
+
+km-dev:PredicateObjectMap_1fabe6c4-bdd1-470b-9984-639d786e01ce rr:objectMap km-dev:RefObjectMap_9ff8d63e-4bf8-4bde-ad5c-29715f5dbf46 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 rr:predicateObjectMap km-dev:PredicateObjectMap_1fabe6c4-bdd1-470b-9984-639d786e01ce .
+
+km-dev:PredicateObjectMap_1fabe6c4-bdd1-470b-9984-639d786e01ce a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1fabe6c4-bdd1-470b-9984-639d786e01ce .
+
+km-dev:PredicateObjectMap_64f81d45-e62f-4943-9404-bcaae2b604ac rr:predicate km4c:measuredTime .
+
+km-dev:RefObjectMap_675ab93f-7b23-4a74-bca6-8265cb168352 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_591f434e-64b3-489d-8842-2045a0060bd3 ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap km-dev:RefObjectMap_675ab93f-7b23-4a74-bca6-8265cb168352 .
+
+km-dev:PredicateObjectMap_64f81d45-e62f-4943-9404-bcaae2b604ac rr:objectMap km-dev:RefObjectMap_675ab93f-7b23-4a74-bca6-8265cb168352 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 rr:predicateObjectMap km-dev:PredicateObjectMap_64f81d45-e62f-4943-9404-bcaae2b604ac .
+
+km-dev:PredicateObjectMap_64f81d45-e62f-4943-9404-bcaae2b604ac a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_64f81d45-e62f-4943-9404-bcaae2b604ac .
+
+km-dev:PredicateObjectMap_1c8386e1-f70e-4c74-acab-2d6579470113 rr:predicate km4c:occupancy .
+
+_:node195qfhdf5x10 rr:column "occupancy" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap _:node195qfhdf5x10 .
+
+km-dev:PredicateObjectMap_1c8386e1-f70e-4c74-acab-2d6579470113 rr:objectMap _:node195qfhdf5x10 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 rr:predicateObjectMap km-dev:PredicateObjectMap_1c8386e1-f70e-4c74-acab-2d6579470113 .
+
+km-dev:PredicateObjectMap_1c8386e1-f70e-4c74-acab-2d6579470113 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1c8386e1-f70e-4c74-acab-2d6579470113 .
+
+km-dev:PredicateObjectMap_e9c29dc5-b4d2-4b03-96f7-e7374060901e rr:predicate km4c:speedPercentile .
+
+_:node195qfhdf5x11 rr:column "value" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap _:node195qfhdf5x11 .
+
+km-dev:PredicateObjectMap_e9c29dc5-b4d2-4b03-96f7-e7374060901e rr:objectMap _:node195qfhdf5x11 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 rr:predicateObjectMap km-dev:PredicateObjectMap_e9c29dc5-b4d2-4b03-96f7-e7374060901e .
+
+km-dev:PredicateObjectMap_e9c29dc5-b4d2-4b03-96f7-e7374060901e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e9c29dc5-b4d2-4b03-96f7-e7374060901e .
+
+km-dev:PredicateObjectMap_a0c2f668-890f-43e4-832b-33ec7db3978f rr:predicate km4c:thresholdPerc .
+
+_:node195qfhdf5x12 rr:column "threshold" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap _:node195qfhdf5x12 .
+
+km-dev:PredicateObjectMap_a0c2f668-890f-43e4-832b-33ec7db3978f rr:objectMap _:node195qfhdf5x12 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 rr:predicateObjectMap km-dev:PredicateObjectMap_a0c2f668-890f-43e4-832b-33ec7db3978f .
+
+km-dev:PredicateObjectMap_a0c2f668-890f-43e4-832b-33ec7db3978f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a0c2f668-890f-43e4-832b-33ec7db3978f .
+
+km-dev:PredicateObjectMap_bcb4de1c-9beb-4a52-b388-d528103e0ff1 rr:predicate km4c:vehicleFlow .
+
+_:node195qfhdf5x13 rr:column "vehicleFlow" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap _:node195qfhdf5x13 .
+
+km-dev:PredicateObjectMap_bcb4de1c-9beb-4a52-b388-d528103e0ff1 rr:objectMap _:node195qfhdf5x13 .
+
+km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 rr:predicateObjectMap km-dev:PredicateObjectMap_bcb4de1c-9beb-4a52-b388-d528103e0ff1 .
+
+km-dev:PredicateObjectMap_bcb4de1c-9beb-4a52-b388-d528103e0ff1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bcb4de1c-9beb-4a52-b388-d528103e0ff1 .
+
+km-dev:TriplesMap_e48ad23b-b93b-44fb-9d12-dc475fdd0457 a rr:TriplesMap .
+
+_:node195qfhdf5x1 km-dev:hasTriplesMap km-dev:TriplesMap_e48ad23b-b93b-44fb-9d12-dc475fdd0457 .
+
+km-dev:TriplesMap_e48ad23b-b93b-44fb-9d12-dc475fdd0457 km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x14 rr:tableName "sensori44" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasLogicalTable _:node195qfhdf5x14 .
+
+km-dev:TriplesMap_e48ad23b-b93b-44fb-9d12-dc475fdd0457 rr:logicalTable _:node195qfhdf5x14 ;
+	rr:subjectMap _:node195qfhdf5x15 .
+
+_:node195qfhdf5x1 km-dev:hasSubjectMap _:node195qfhdf5x15 .
+
+_:node195qfhdf5x15 km-dev:isPartOfMapping _:node195qfhdf5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.disit.org/km4city/schema#SensorSite1" ;
+	rr:class km4c:SensorSite ;
+	rr:template "http://www.disit.org/km4city/resource/{measurementSiteReference}" .
+
+km-dev:PredicateObjectMap_2c987f22-2c47-4e1e-be84-347041525819 rr:predicate km4c:hasObservation .
+
+km-dev:RefObjectMap_4c9336d0-0980-407e-888f-9d0401b34938 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap km-dev:RefObjectMap_4c9336d0-0980-407e-888f-9d0401b34938 .
+
+km-dev:PredicateObjectMap_2c987f22-2c47-4e1e-be84-347041525819 rr:objectMap km-dev:RefObjectMap_4c9336d0-0980-407e-888f-9d0401b34938 .
+
+km-dev:TriplesMap_e48ad23b-b93b-44fb-9d12-dc475fdd0457 rr:predicateObjectMap km-dev:PredicateObjectMap_2c987f22-2c47-4e1e-be84-347041525819 .
+
+km-dev:PredicateObjectMap_2c987f22-2c47-4e1e-be84-347041525819 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2c987f22-2c47-4e1e-be84-347041525819 .
+
+km-dev:PredicateObjectMap_c9aa3286-b91e-4b98-84d4-816bd7a0f5f2 rr:predicate km4c:hasObservation .
+
+km-dev:RefObjectMap_fc43bcbb-5a1f-4351-915b-d27a82df2fbf a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap km-dev:RefObjectMap_fc43bcbb-5a1f-4351-915b-d27a82df2fbf .
+
+km-dev:PredicateObjectMap_c9aa3286-b91e-4b98-84d4-816bd7a0f5f2 rr:objectMap km-dev:RefObjectMap_fc43bcbb-5a1f-4351-915b-d27a82df2fbf .
+
+km-dev:TriplesMap_e48ad23b-b93b-44fb-9d12-dc475fdd0457 rr:predicateObjectMap km-dev:PredicateObjectMap_c9aa3286-b91e-4b98-84d4-816bd7a0f5f2 .
+
+km-dev:PredicateObjectMap_c9aa3286-b91e-4b98-84d4-816bd7a0f5f2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c9aa3286-b91e-4b98-84d4-816bd7a0f5f2 .
+
+km-dev:PredicateObjectMap_e9065713-d550-40fb-b460-e9a877ae1ce3 rr:predicate dcterms:identifier .
+
+_:node195qfhdf5x16 rr:column "measurementSiteReference" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap _:node195qfhdf5x16 .
+
+km-dev:PredicateObjectMap_e9065713-d550-40fb-b460-e9a877ae1ce3 rr:objectMap _:node195qfhdf5x16 .
+
+km-dev:TriplesMap_e48ad23b-b93b-44fb-9d12-dc475fdd0457 rr:predicateObjectMap km-dev:PredicateObjectMap_e9065713-d550-40fb-b460-e9a877ae1ce3 .
+
+km-dev:PredicateObjectMap_e9065713-d550-40fb-b460-e9a877ae1ce3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e9065713-d550-40fb-b460-e9a877ae1ce3 .
+
+km-dev:TriplesMap_591f434e-64b3-489d-8842-2045a0060bd3 a rr:TriplesMap .
+
+_:node195qfhdf5x1 km-dev:hasTriplesMap km-dev:TriplesMap_591f434e-64b3-489d-8842-2045a0060bd3 .
+
+km-dev:TriplesMap_591f434e-64b3-489d-8842-2045a0060bd3 km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x17 rr:tableName "sensori44" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasLogicalTable _:node195qfhdf5x17 .
+
+km-dev:TriplesMap_591f434e-64b3-489d-8842-2045a0060bd3 rr:logicalTable _:node195qfhdf5x17 ;
+	rr:subjectMap _:node195qfhdf5x18 .
+
+_:node195qfhdf5x1 km-dev:hasSubjectMap _:node195qfhdf5x18 .
+
+_:node195qfhdf5x18 km-dev:isPartOfMapping _:node195qfhdf5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2006/time#Instant2" ;
+	rr:class time:Instant ;
+	rr:template "http://www.disit.org/km4city/resource/{measurementTimeDefault}" .
+
+km-dev:PredicateObjectMap_0fe5e6dd-5cda-4133-9663-934e11e2af74 rr:predicate km4c:instantObserv .
+
+km-dev:RefObjectMap_e66e972e-4a00-40c5-83df-d13fe9287e57 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap km-dev:RefObjectMap_e66e972e-4a00-40c5-83df-d13fe9287e57 .
+
+km-dev:PredicateObjectMap_0fe5e6dd-5cda-4133-9663-934e11e2af74 rr:objectMap km-dev:RefObjectMap_e66e972e-4a00-40c5-83df-d13fe9287e57 .
+
+km-dev:TriplesMap_591f434e-64b3-489d-8842-2045a0060bd3 rr:predicateObjectMap km-dev:PredicateObjectMap_0fe5e6dd-5cda-4133-9663-934e11e2af74 .
+
+km-dev:PredicateObjectMap_0fe5e6dd-5cda-4133-9663-934e11e2af74 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0fe5e6dd-5cda-4133-9663-934e11e2af74 .
+
+km-dev:PredicateObjectMap_abf51098-c1f4-41a0-a98e-b73245c245fc rr:predicate km4c:instantObserv .
+
+km-dev:RefObjectMap_d8b341e6-ca82-494e-932f-0dab2739904d a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6143a906-03cc-4e0e-8594-0625c3ccdce1 ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap km-dev:RefObjectMap_d8b341e6-ca82-494e-932f-0dab2739904d .
+
+km-dev:PredicateObjectMap_abf51098-c1f4-41a0-a98e-b73245c245fc rr:objectMap km-dev:RefObjectMap_d8b341e6-ca82-494e-932f-0dab2739904d .
+
+km-dev:TriplesMap_591f434e-64b3-489d-8842-2045a0060bd3 rr:predicateObjectMap km-dev:PredicateObjectMap_abf51098-c1f4-41a0-a98e-b73245c245fc .
+
+km-dev:PredicateObjectMap_abf51098-c1f4-41a0-a98e-b73245c245fc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_abf51098-c1f4-41a0-a98e-b73245c245fc .
+
+km-dev:PredicateObjectMap_06856d78-1245-4337-8e9a-7a5830aa567d rr:predicate dcterms:identifier .
+
+_:node195qfhdf5x19 rr:column "measurementTimeDefault" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#dateTime" ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasObjectMap _:node195qfhdf5x19 .
+
+km-dev:PredicateObjectMap_06856d78-1245-4337-8e9a-7a5830aa567d rr:objectMap _:node195qfhdf5x19 .
+
+km-dev:TriplesMap_591f434e-64b3-489d-8842-2045a0060bd3 rr:predicateObjectMap km-dev:PredicateObjectMap_06856d78-1245-4337-8e9a-7a5830aa567d .
+
+km-dev:PredicateObjectMap_06856d78-1245-4337-8e9a-7a5830aa567d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195qfhdf5x1 .
+
+_:node195qfhdf5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_06856d78-1245-4337-8e9a-7a5830aa567d .

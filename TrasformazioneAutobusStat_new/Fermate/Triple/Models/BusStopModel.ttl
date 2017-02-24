@@ -1,0 +1,181 @@
+@prefix vann: <http://purl.org/vocab/vann/#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix km4cr: <http://www.disit.org/km4city/resource#> .
+@prefix km4c: <http://www.disit.org/km4city/schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix schema: <http://schema.org/#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix otn: <http://www.pms.ifi.uni-muenchen.de/OTN#> .
+@prefix dct: <http://purl.org/dc/terms/#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node19dfggmf8x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "5_Lotto_Metropolitano_Firenze_f" ;
+	km-dev:modelPublicationTime "1423228557801"^^xsd:long ;
+	km-dev:modelVersion "1.5" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"km4cr\",\"hasBaseURI\":false},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"IDBusStop\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:BusStop1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#BusStop1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#BusStop\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"Municipality\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Municipality1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#Municipality1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Municipality\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"nameBusStop\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://xmlns.com/foaf/0.1/name\",\"isPrimary\":true,\"DomainLabel\":\"km4c:BusStop1\",\"DomainId\":\"http://www.disit.org/km4city/schema#BusStop1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#BusStop\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"lt\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.w3.org/2003/01/geo/wgs84_pos#lat\",\"isPrimary\":true,\"DomainLabel\":\"km4c:BusStop1\",\"DomainId\":\"http://www.disit.org/km4city/schema#BusStop1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#BusStop\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"lg\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.w3.org/2003/01/geo/wgs84_pos#long\",\"isPrimary\":true,\"DomainLabel\":\"km4c:BusStop1\",\"DomainId\":\"http://www.disit.org/km4city/schema#BusStop1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#BusStop\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"IDBusStop\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":true,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"UnassignSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"CodeBusStop\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:BusStop1\",\"DomainId\":\"http://www.disit.org/km4city/schema#BusStop1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#BusStop\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"}]" .
+
+km-dev:TriplesMap_945d0fa2-6716-4ece-954b-3c7cbeb6f10d a rr:TriplesMap .
+
+_:node19dfggmf8x1 km-dev:hasTriplesMap km-dev:TriplesMap_945d0fa2-6716-4ece-954b-3c7cbeb6f10d .
+
+km-dev:TriplesMap_945d0fa2-6716-4ece-954b-3c7cbeb6f10d km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x2 rr:tableName "5_Lotto_Metropolitano_Firenze_f" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasLogicalTable _:node19dfggmf8x2 .
+
+km-dev:TriplesMap_945d0fa2-6716-4ece-954b-3c7cbeb6f10d rr:logicalTable _:node19dfggmf8x2 ;
+	rr:subjectMap _:node19dfggmf8x3 .
+
+_:node19dfggmf8x1 km-dev:hasSubjectMap _:node19dfggmf8x3 .
+
+_:node19dfggmf8x3 km-dev:isPartOfMapping _:node19dfggmf8x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.disit.org/km4city/schema#BusStop1" ;
+	rr:class km4c:BusStop ;
+	rr:template "http://www.disit.org/km4city/resource/{CodeBusStop}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_aa260cee-6cfc-4483-a091-69e5275e41d4 rr:predicate dcterms:identifier .
+
+_:node19dfggmf8x4 rr:column "CodeBusStop" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasObjectMap _:node19dfggmf8x4 .
+
+km-dev:PredicateObjectMap_aa260cee-6cfc-4483-a091-69e5275e41d4 rr:objectMap _:node19dfggmf8x4 .
+
+km-dev:TriplesMap_945d0fa2-6716-4ece-954b-3c7cbeb6f10d rr:predicateObjectMap km-dev:PredicateObjectMap_aa260cee-6cfc-4483-a091-69e5275e41d4 .
+
+km-dev:PredicateObjectMap_aa260cee-6cfc-4483-a091-69e5275e41d4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_aa260cee-6cfc-4483-a091-69e5275e41d4 .
+
+km-dev:PredicateObjectMap_88d0fa5d-eb14-4caf-b1d0-254e8fe015d2 rr:predicate km4c:isInMunicipality .
+
+km-dev:RefObjectMap_f9b8c050-6973-4782-a1d0-96257cdfe5a2 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4d6a47fa-c695-49a0-8526-c48f0fc282c5 ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasObjectMap km-dev:RefObjectMap_f9b8c050-6973-4782-a1d0-96257cdfe5a2 .
+
+km-dev:PredicateObjectMap_88d0fa5d-eb14-4caf-b1d0-254e8fe015d2 rr:objectMap km-dev:RefObjectMap_f9b8c050-6973-4782-a1d0-96257cdfe5a2 .
+
+km-dev:TriplesMap_945d0fa2-6716-4ece-954b-3c7cbeb6f10d rr:predicateObjectMap km-dev:PredicateObjectMap_88d0fa5d-eb14-4caf-b1d0-254e8fe015d2 .
+
+km-dev:PredicateObjectMap_88d0fa5d-eb14-4caf-b1d0-254e8fe015d2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_88d0fa5d-eb14-4caf-b1d0-254e8fe015d2 .
+
+km-dev:PredicateObjectMap_7ae72dea-59e6-41fc-93f7-05fe90ca7d47 rr:predicate geo:lat .
+
+_:node19dfggmf8x5 rr:column "lt" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasObjectMap _:node19dfggmf8x5 .
+
+km-dev:PredicateObjectMap_7ae72dea-59e6-41fc-93f7-05fe90ca7d47 rr:objectMap _:node19dfggmf8x5 .
+
+km-dev:TriplesMap_945d0fa2-6716-4ece-954b-3c7cbeb6f10d rr:predicateObjectMap km-dev:PredicateObjectMap_7ae72dea-59e6-41fc-93f7-05fe90ca7d47 .
+
+km-dev:PredicateObjectMap_7ae72dea-59e6-41fc-93f7-05fe90ca7d47 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7ae72dea-59e6-41fc-93f7-05fe90ca7d47 .
+
+km-dev:PredicateObjectMap_aa9f5622-9e1b-4bf6-8651-25f3c829ff6a rr:predicate geo:long .
+
+_:node19dfggmf8x6 rr:column "lg" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasObjectMap _:node19dfggmf8x6 .
+
+km-dev:PredicateObjectMap_aa9f5622-9e1b-4bf6-8651-25f3c829ff6a rr:objectMap _:node19dfggmf8x6 .
+
+km-dev:TriplesMap_945d0fa2-6716-4ece-954b-3c7cbeb6f10d rr:predicateObjectMap km-dev:PredicateObjectMap_aa9f5622-9e1b-4bf6-8651-25f3c829ff6a .
+
+km-dev:PredicateObjectMap_aa9f5622-9e1b-4bf6-8651-25f3c829ff6a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_aa9f5622-9e1b-4bf6-8651-25f3c829ff6a .
+
+km-dev:PredicateObjectMap_63746b46-c6d7-475e-b345-d2a784fabf06 rr:predicate foaf:name .
+
+_:node19dfggmf8x7 rr:column "nameBusStop" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasObjectMap _:node19dfggmf8x7 .
+
+km-dev:PredicateObjectMap_63746b46-c6d7-475e-b345-d2a784fabf06 rr:objectMap _:node19dfggmf8x7 .
+
+km-dev:TriplesMap_945d0fa2-6716-4ece-954b-3c7cbeb6f10d rr:predicateObjectMap km-dev:PredicateObjectMap_63746b46-c6d7-475e-b345-d2a784fabf06 .
+
+km-dev:PredicateObjectMap_63746b46-c6d7-475e-b345-d2a784fabf06 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_63746b46-c6d7-475e-b345-d2a784fabf06 .
+
+km-dev:TriplesMap_4d6a47fa-c695-49a0-8526-c48f0fc282c5 a rr:TriplesMap .
+
+_:node19dfggmf8x1 km-dev:hasTriplesMap km-dev:TriplesMap_4d6a47fa-c695-49a0-8526-c48f0fc282c5 .
+
+km-dev:TriplesMap_4d6a47fa-c695-49a0-8526-c48f0fc282c5 km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x8 rr:tableName "5_Lotto_Metropolitano_Firenze_f" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasLogicalTable _:node19dfggmf8x8 .
+
+km-dev:TriplesMap_4d6a47fa-c695-49a0-8526-c48f0fc282c5 rr:logicalTable _:node19dfggmf8x8 ;
+	rr:subjectMap _:node19dfggmf8x9 .
+
+_:node19dfggmf8x1 km-dev:hasSubjectMap _:node19dfggmf8x9 .
+
+_:node19dfggmf8x9 km-dev:isPartOfMapping _:node19dfggmf8x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.disit.org/km4city/schema#Municipality2" ;
+	rr:class km4c:Municipality ;
+	rr:template "http://www.disit.org/km4city/resource/{Municipality}" .
+
+km-dev:PredicateObjectMap_783592c7-8a90-4327-a026-5ec1922a7bd8 rr:predicate dcterms:identifier .
+
+_:node19dfggmf8x10 rr:column "Municipality" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasObjectMap _:node19dfggmf8x10 .
+
+km-dev:PredicateObjectMap_783592c7-8a90-4327-a026-5ec1922a7bd8 rr:objectMap _:node19dfggmf8x10 .
+
+km-dev:TriplesMap_4d6a47fa-c695-49a0-8526-c48f0fc282c5 rr:predicateObjectMap km-dev:PredicateObjectMap_783592c7-8a90-4327-a026-5ec1922a7bd8 .
+
+km-dev:PredicateObjectMap_783592c7-8a90-4327-a026-5ec1922a7bd8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19dfggmf8x1 .
+
+_:node19dfggmf8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_783592c7-8a90-4327-a026-5ec1922a7bd8 .

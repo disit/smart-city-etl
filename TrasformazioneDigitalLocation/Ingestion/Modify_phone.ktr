@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>Modify_phone</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject>Mapping input specification</subject></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject>Mapping output specification</subject></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2014&#x2f;08&#x2f;21 10&#x3a;52&#x3a;57.973</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2014&#x2f;08&#x2f;21 10&#x3a;52&#x3a;57.973</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <order>
+  <hop> <from>Remove international prefix</from><to>Filter rows</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows</from><to>split blocchi telefono</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values</from><to>Append streams</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values 2</from><to>Append streams</to><enabled>Y</enabled> </hop>
+  <hop> <from>Mapping input specification</from><to>Remove international prefix</to><enabled>Y</enabled> </hop>
+  <hop> <from>Append streams</from><to>Mapping output specification</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows</from><to>Select values 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values 3</from><to>Select values</to><enabled>Y</enabled> </hop>
+  <hop> <from>split blocchi telefono</from><to>Select values 4</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values 4</from><to>Select values 2</to><enabled>Y</enabled> </hop>
+  </order>
+  <step>
+    <name>Append streams</name>
+    <type>Append</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<head_name>Select values</head_name>
+<tail_name>Select values 2</tail_name>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>581</xloc>
+      <yloc>135</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>split blocchi telefono</send_true_to>
+<send_false_to>Select values 3</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>number_output</leftvalue>
+ <function>CONTAINS</function>
+ <rightvalue/>
+ <value><name>constant</name><type>String</type><text> </text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>244</xloc>
+      <yloc>140</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Mapping input specification</name>
+    <type>MappingInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>phone</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>notes</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+        <select_unspecified>N</select_unspecified>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>97</xloc>
+      <yloc>29</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Mapping output specification</name>
+    <type>MappingOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>752</xloc>
+      <yloc>124</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Remove international prefix</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xa;&#xa;var number &#x3d; phone&#x3b;&#xa;var number_output&#x3b;&#xa;var number1 &#x3d; phone&#x3b;&#xa;&#xa;if&#x28;phone &#x21;&#x3d; null&#x29;&#x7b;&#xa;var phone1 &#x3d; number1.replace&#x28;&#x2f;&#x5e;&#x28;0039&#x29;&#x7c;&#x5e;&#x28;39&#x29;&#x2f;, &#x27;&#x27;&#x29;&#x3b; &#x2f;&#x2f;toglie lo 0039 iniziale&#xa;var phone2 &#x3d; phone1.replace&#x28;&#x2f;&#x5e;&#x28;&#x5c;&#x2b;39&#x29;&#x2f;, &#x27;&#x27;&#x29;&#x3b; &#x2f;&#x2f;toglie il &#x2b;39 iniziale&#xa;var phone3 &#x3d; phone2.replace&#x28;&#x2f;&#x28;&#x28;&#x5c;s&#x29;&#x3f;&#x5c;&#x2b;39&#x29;&#x2f;g, &#x27;&#x27;&#x29;&#x3b; &#x2f;&#x2f;toglie i &#x2b;39 multipli&#xa;var phone4 &#x3d; phone3.replace&#x28;&#x2f;&#x5c;&#x2b;44&#x2f;, &#x27;0044&#x27;&#x29;&#x3b; &#x2f;&#x2f; sostituisce il &#x2b;44 con lo 0044&#xa;&#xa;var phone5 &#x3d; phone4.replace&#x28;&#x2f;&#x5e;&#x28;&#x5c;s&#x29;&#x2f;, &#x27;&#x27;&#x29;&#x3b; &#x2f;&#x2f; toglie lo spazio iniziale&#xa;var phone6 &#x3d; phone5.replace&#x28;&#x2f;&#x5c;&#x2f;&#x2f;g, &#x27; &#x27;&#x29;&#x3b; &#x2f;&#x2f; rimuove tutti gli &#x2f;&#xa;var phone7 &#x3d; phone6.replace&#x28;&#x2f;&#x5c;-&#x2f;g, &#x27; &#x27;&#x29;&#x3b; &#x2f;&#x2f;rimuove tutti i -&#xa;var phone8 &#x3d; phone7.replace&#x28;&#x2f;&#x5b;&#x5e;0-9&#x5c;s&#x5d;&#x2f;g, &#x27;&#x27;&#x29;&#x3b; &#x2f;&#x2f; rimuove tutti i caratteri speciali e quelli letterali&#xa;var phone9 &#x3d; phone8.replace&#x28;&#x2f;&#x5c;s&#x2b;&#x2f;g, &#x27; &#x27;&#x29;&#x3b; &#x2f;&#x2f; rimuove gli spazi multipli&#xa;var phone10 &#x3d; phone9.replace&#x28;&#x2f;&#x5e;5&#x7c;&#x5e;&#x28;005&#x29;&#x2f;, &#x27;05&#x27;&#x29;&#x3b; &#x2f;&#x2f; aggiungo lo 0 iniziale&#xa;number_output &#x3d; phone10&#x3b;&#xa;&#x7d;&#xa;else&#xa;&#x7b;&#xa;	number_output &#x3d; &#x27;&#x27;&#x3b;&#xa;&#x7d;&#xa;&#xa;	</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>number</name>
+        <rename>number</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>number_output</name>
+        <rename>number_output</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>99</xloc>
+      <yloc>140</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>number_output</name>
+        <rename>phone</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>notes</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>Y</select_unspecified>
+      <remove>        <name>number</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>458</xloc>
+      <yloc>140</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>num1</name>
+        <rename>phone</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>notesMod</name>
+        <rename>notes</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>Y</select_unspecified>
+      <remove>        <name>num2</name>
+      </remove>      <remove>        <name>number</name>
+      </remove>      <remove>        <name>number_output</name>
+      </remove>      <remove>        <name>numero</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>548</xloc>
+      <yloc>297</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>split blocchi telefono</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xa;&#xa;var notesMod&#x3d;&#x22;&#x22;&#x3b;&#xa;var numero &#x3d; number_output&#x3b;&#xa;var num1 &#x3d; &#x22;&#x22;&#x3b;&#xa;var num2 &#x3d; &#x22;&#x22;&#x3b;&#xa;var num3 &#x3d; &#x22;&#x22;&#x3b;&#xa;var res &#x3d; numero.split&#x28;&#x22; &#x22;&#x29;&#x3b;&#xa;var cifre_suffix&#x3b;&#xa;var prefix_list &#x3d; &#x5b;&#x22;06&#x22;, &#x22;055&#x22;, &#x22;050&#x22;, &#x22;0573&#x22;, &#x22;0574&#x22;, &#x22;0575&#x22;, &#x22;0577&#x22;, &#x22;0564&#x22;, &#x22;0565&#x22;, &#x22;0566&#x22;, &#x22;0571&#x22;, &#x22;0572&#x22;, &#x22;0578&#x22;, &#x22;0583&#x22;, &#x22;0584&#x22;, &#x22;0585&#x22;, &#x22;0587&#x22;, &#x22;0586&#x22;, &#x22;0588&#x22;, &#x22;0187&#x22;, &#x22;330&#x22;, &#x22;331&#x22;, &#x22;332&#x22;, &#x22;333&#x22;, &#x22;334&#x22;, &#x22;335&#x22;, &#x22;336&#x22;, &#x22;337&#x22;, &#x22;338&#x22;, &#x22;339&#x22;, &#x22;360&#x22;, &#x22;366&#x22;, &#x22;368&#x22;, &#x22;340&#x22;, &#x22;342&#x22;, &#x22;344&#x22;, &#x22;345&#x22;, &#x22;346&#x22;, &#x22;347&#x22;, &#x22;348&#x22;, &#x22;349&#x22;, &#x22;320&#x22;, &#x22;324&#x22;, &#x22;327&#x22;, &#x22;328&#x22;, &#x22;329&#x22;, &#x22;380&#x22;, &#x22;388&#x22;, &#x22;389&#x22;, &#x22;391&#x22;, &#x22;392&#x22;, &#x22;393&#x22;, &#x22;377&#x22;&#x5d;&#x3b;&#xa;&#xa;if&#x28;numero &#x21;&#x3d; null&#x29;&#xa;&#x7b;&#xa;if &#x28;res.length &#x3d;&#x3d; 2&#x29;&#x7b;&#xa;    if&#x28;&#x28;res&#x5b;0&#x5d;.length &#x3c;&#x3d;4&#x29;&#x26;&#x26;&#x28;res&#x5b;1&#x5d;.length&#x3e;&#x3d;4&#x29;&#x29;&#x7b;&#xa;        num1 &#x3d; res&#x5b;0&#x5d;&#x2b;res&#x5b;1&#x5d;&#x3b;&#xa;        &#x2f;&#x2f;alert&#x28;&#x22;caso1.1&#x22;&#x29;&#x3b;&#xa;    &#x7d;else&#x7b;&#xa;        if&#x28;&#x28;res&#x5b;0&#x5d;.length &#x3e;4&#x29;&#x26;&#x26;&#x28;res&#x5b;1&#x5d;.length&#x3e;7&#x29;&#x29;&#x7b;&#xa;            num1 &#x3d; res&#x5b;0&#x5d;&#x3b;&#xa;            num2 &#x3d; res&#x5b;1&#x5d;&#x3b;&#xa;            &#x2f;&#x2f;alert&#x28;&#x22;caso1.2&#x22;&#x29;&#x3b;&#xa;        &#x7d;else&#x7b;&#xa;			if&#x28;&#x28;res&#x5b;1&#x5d;.length &#x3c; res&#x5b;0&#x5d;.length&#x29;&#x26;&#x26;&#x28;res&#x5b;1&#x5d;.length&#x3e;3&#x29;&#x29;&#x7b;&#xa;				if&#x28;&#x28;res&#x5b;0&#x5d;.slice&#x28;0,3&#x29; &#x3d;&#x3d; &#x22;055&#x22;&#x29;&#x7c;&#x7c;&#x28;res&#x5b;0&#x5d;.slice&#x28;0,3&#x29; &#x3d;&#x3d; &#x22;050&#x22;&#x29;&#x29;&#x7b;&#xa;					num1 &#x3d; res&#x5b;0&#x5d;&#x3b;&#xa;            		num2 &#x3d; res&#x5b;0&#x5d;.slice&#x28;0,3&#x29;&#x2b;res&#x5b;1&#x5d;&#x3b;&#xa;				&#x7d;&#xa;				else&#x7b;&#xa;					num1 &#x3d; res&#x5b;0&#x5d;&#x3b;&#xa;            		num2 &#x3d; res&#x5b;0&#x5d;.slice&#x28;0,4&#x29;&#x2b;res&#x5b;1&#x5d;&#x3b;&#xa;				&#x7d;&#xa;			&#x7d;&#xa;			else&#x7b;&#xa;            	cifre_suffix &#x3d; res&#x5b;1&#x5d;.length&#x3b;&#xa;            	num1 &#x3d; res&#x5b;0&#x5d;&#x3b;&#xa;            	var num1_temp &#x3d; num1.slice&#x28;0, &#x28;num1.length - cifre_suffix&#x29;&#x29;&#x3b;&#xa;            	num2 &#x3d; num1_temp&#x2b;res&#x5b;1&#x5d;&#x3b;&#xa;            	&#x2f;&#x2f;alert&#x28;&#x22;caso1.3&#x22;&#x29;&#x3b;&#xa;            &#x7d;&#xa;        &#x7d;&#xa;    &#x7d;&#xa;&#x7d;&#xa;else&#x7b;&#xa;    if&#x28;res.length &#x3d;&#x3d;3&#x29;&#x7b;&#xa;        if&#x28;&#x28;res&#x5b;0&#x5d;.length &#x3c;&#x3d;4&#x29;&#x26;&#x26;&#x28;res&#x5b;1&#x5d;.length&#x3e;4&#x29;&#x29;&#x7b;&#xa;            if&#x28;res&#x5b;2&#x5d;.length &#x3e; 7&#x29;&#x7b;&#xa;                num1 &#x3d; res&#x5b;0&#x5d;&#x2b;res&#x5b;1&#x5d;&#x3b;&#xa;                num2 &#x3d; res&#x5b;2&#x5d;&#x3b;&#xa;                &#x2f;&#x2f;alert&#x28;&#x22;caso2.1&#x22;&#x29;&#x3b;&#xa;             &#x7d;else&#x7b;&#xa;                 if&#x28;res&#x5b;2&#x5d;.length &#x3c; 4&#x29;&#x7b;&#xa;                     cifre_suffix &#x3d; res&#x5b;2&#x5d;.length&#x3b;&#xa;                     num1 &#x3d; res&#x5b;0&#x5d;&#x2b;res&#x5b;1&#x5d;&#x3b;&#xa;                     var num2_temp &#x3d; num1.slice&#x28;0, &#x28;num1.length - cifre_suffix&#x29;&#x29;&#x3b;&#xa;                     num2 &#x3d; num2_temp&#x2b;res&#x5b;2&#x5d;&#x3b;&#xa;                     &#x2f;&#x2f;alert&#x28;&#x22;caso2.2&#x22;&#x29;&#x3b;&#xa;                 &#xa;                 &#x7d;&#xa;                 else&#x7b;&#xa;                      num1&#x3d;res&#x5b;0&#x5d;&#x2b;res&#x5b;1&#x5d;&#x3b;&#xa;                      num2&#x3d;res&#x5b;0&#x5d;&#x2b;res&#x5b;2&#x5d;&#x3b;&#xa;                      &#x2f;&#x2f;alert&#x28;&#x22;caso2.3&#x22;&#x29;&#x3b;&#xa;                 &#x7d;&#xa;			&#x7d;&#xa;		&#x7d;	&#xa;		&#xa;		if&#x28;&#x28;res&#x5b;0&#x5d;.length &#x3c;&#x3d;4&#x29;&#x26;&#x26;&#x28;res&#x5b;1&#x5d;.length&#x3c;&#x3d;4&#x29;&#x29;&#x7b;&#xa;                 num1&#x3d;res&#x5b;0&#x5d;&#x2b;res&#x5b;1&#x5d;&#x2b;res&#x5b;2&#x5d;&#x3b;&#xa;                 &#x2f;&#x2f;alert&#x28;&#x22;caso2.4&#x22;&#x29;&#x3b;&#xa;        &#x7d;&#xa;        else &#x7b;&#xa;			if&#x28;res&#x5b;0&#x5d;.length&#x3e;7&#x29;&#x7b;&#xa;                if&#x28;&#x28;res&#x5b;1&#x5d;.length&#x3c;&#x3d;4&#x29; &#x26;&#x26; &#x28;res&#x5b;2&#x5d;.length &#x3e; 4&#x29;&#x29;&#x7b;&#xa;                    num1 &#x3d; res&#x5b;0&#x5d;&#x3b;&#xa;                    num2 &#x3d; res&#x5b;1&#x5d;&#x2b;res&#x5b;2&#x5d;&#x3b;&#xa;                    &#x2f;&#x2f;alert&#x28;&#x22;caso2.5&#x22;&#x29;&#x3b;&#xa;				&#x7d;else&#x7b;&#xa;                    if&#x28;&#x28;res&#x5b;1&#x5d;.length &#x3e; 7&#x29; &#x26;&#x26;  &#x28;res&#x5b;2&#x5d;.length &#x3e; 7&#x29;&#x29;&#x7b;&#xa;                        num1 &#x3d; res&#x5b;0&#x5d;&#x3b;&#xa;                        num2 &#x3d; res&#x5b;1&#x5d;&#x3b;&#xa;                        num3 &#x3d; res&#x5b;2&#x5d;&#x3b;&#xa;                        &#x2f;&#x2f;alert&#x28;&#x22;caso2.6&#x22;&#x29;&#x3b;&#xa;                    &#x7d;&#xa;                    else&#x7b;&#xa;                        if&#x28;&#x28;res&#x5b;1&#x5d;.length &#x3c; 4&#x29;&#x26;&#x26;&#x28;res&#x5b;2&#x5d;.length &#x3c; 4&#x29;&#x29;&#x7b;&#xa;                        cifre_suffix &#x3d; res&#x5b;1&#x5d;.length&#x3b;&#xa;                        num1 &#x3d; res&#x5b;0&#x5d;&#x3b;&#xa;                        var num3_temp &#x3d; num1.slice&#x28;0, &#x28;num1.length - cifre_suffix&#x29;&#x29;&#x3b;&#xa;                        num2 &#x3d; num3_temp&#x2b;res&#x5b;1&#x5d;&#x3b;&#xa;                        cifre_suffix &#x3d; res&#x5b;2&#x5d;.length&#x3b;&#xa;                        var num4_temp &#x3d; num1.slice&#x28;0, &#x28;num1.length - cifre_suffix&#x29;&#x29;&#x3b;&#xa;                        num3 &#x3d; num4_temp&#x2b;res&#x5b;2&#x5d;&#x3b;&#xa;                        &#x2f;&#x2f;alert&#x28;&#x22;caso2.7&#x22;&#x29;&#x3b;&#xa;						&#x7d;	&#xa;					&#x7d;&#xa;				&#x7d;&#xa;             &#xa;			&#x7d;&#xa;                else&#x7b;&#xa;                    &#x2f;&#x2f;alert&#x28;&#x22;caso diverso&#x22;&#x29;&#x3b;&#xa;                &#x7d;&#xa;		&#x7d;&#xa;    &#xa;	&#x7d;&#xa;	else&#x7b;&#xa;		&#x2f;&#x2f;alert&#x28;&#x22;lunghezza maggiore di 3&#x3a; &#x22;&#x2b;res.length&#x29;&#x3b;&#xa;		var lunghezza &#x3d; res.length&#x3b;&#xa;		var i&#x3b;&#xa;		var prefix&#x3b;&#xa;		var num6_temp &#x3d; &#x22;&#x22;&#x3b;&#xa;		if &#x28;&#x28;res&#x5b;0&#x5d;.length&#x3c;5&#x29;&#x26;&#x26;&#x28;res&#x5b;1&#x5d;.length&#x3e;&#x3d;5&#x29;&#x29;&#x7b;&#xa;			prefix &#x3d; res&#x5b;0&#x5d;&#x3b;&#xa;			num1 &#x3d; res&#x5b;0&#x5d;&#x2b;res&#x5b;1&#x5d;&#x3b;&#xa;			for&#x28;i &#x3d; 2&#x3b; i&#x3c;lunghezza&#x3b; i&#x2b;&#x2b;&#x29;&#x7b;&#xa;				if&#x28;&#x28;prefix_list.indexOf&#x28;res&#x5b;i&#x5d;&#x29;&#x21;&#x3d; -1&#x29; &#x26;&#x26; &#x28;res&#x5b;i&#x2b;1&#x5d; &#x21;&#x3d; null&#x29; &#x26;&#x26; &#x28;res&#x5b;i&#x2b;1&#x5d;.length &#x3e;3&#x29;&#x29;&#x7b;&#xa;					prefix &#x3d; res&#x5b;i&#x5d;&#x3b;&#xa;				&#x7d;else&#x7b;&#xa;					if&#x28;res&#x5b;i&#x5d;.length &#x3c;4&#x29;&#x7b;&#xa;						cifre_suffix &#x3d; res&#x5b;i&#x5d;.length&#x3b;&#xa;						if &#x28;num6_temp &#x21;&#x3d; &#x22;&#x22;&#x29;&#x7b;&#xa;						var num7_temp &#x3d; num6_temp.slice&#x28;0, &#x28;num6_temp.length - cifre_suffix&#x29;&#x29;&#x3b;&#xa;                        num2 &#x3d; num2&#x2b;&#x22; - &#x22;&#x2b;num6_temp&#x2b;res&#x5b;i&#x5d;&#x3b;&#xa;						&#x7d;else&#x7b;&#xa;							var num8_temp &#x3d; num1.slice&#x28;0, &#x28;num1.length - cifre_suffix&#x29;&#x29;&#x3b;&#xa;                       		num2 &#x3d; num2&#x2b;&#x22; - &#x22;&#x2b;num8_temp&#x2b;res&#x5b;i&#x5d;&#x3b;&#xa;							&#x7d;&#xa;					&#x7d;else&#x7b;&#xa;						num6_temp &#x3d; prefix&#x2b;res&#x5b;i&#x5d;&#x3b;&#xa;						num2 &#x3d; num2&#x2b;&#x22; - &#x22;&#x2b;num6_temp&#x3b;&#xa;					&#x7d;&#xa;				&#x7d;&#xa;			&#x7d;&#xa;		&#x7d;&#xa;		&#xa;	&#x7d;&#xa;&#x7d;&#xa;&#x7d;&#xa;&#xa;if &#x28;num3 &#x21;&#x3d; &#x22;&#x22;&#x29;&#x7b;&#xa;num2 &#x3d; num2&#x2b;&#x22; - &#x22;&#x2b;num3&#x3b;&#xa;&#x7d;&#xa;&#xa;num2 &#x3d; num2.replace&#x28;&#x2f;&#x5e;&#x28; - &#x29;&#x2f;,&#x22;&#x22;&#x29;&#x3b;&#xa;&#x2f;&#x2f;alert&#x28;&#x22;numero 1&#x3a; &#x22;&#x2b;num1&#x29;&#x3b;&#xa;&#x2f;&#x2f;alert&#x28;&#x22;numero 2&#x3a; &#x22;&#x2b;num2&#x29;&#x3b;&#xa;&#x2f;&#x2f;alert&#x28;&#x22;numero 3&#x3a; &#x22;&#x2b;num3&#x29;&#x3b;&#xa;if &#x28;num2.length &#x3e;0&#x29;&#x7b;&#xa;	if &#x28;notes &#x21;&#x3d; null  &#x26;&#x26; notes.length &#x3e;0&#x29;&#x7b;&#xa;		notesMod &#x3d; notes &#x2b;&#x22; Phone additional&#x3a; &#x22;&#x2b;num2&#x3b;&#xa;	&#x7d;else &#x7b;&#xa;		notesMod &#x3d; &#x22;Phone additional&#x3a; &#x22;&#x2b;num2&#x3b;&#xa;	&#x7d;&#xa;&#x7d;&#xa;else &#x7b;&#xa;		notesMod &#x3d; notes&#x3b;&#xa;&#x7d;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>numero</name>
+        <rename>numero</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>num1</name>
+        <rename>num1</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>num2</name>
+        <rename>num2</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>notesMod</name>
+        <rename>notesMod</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>307</xloc>
+      <yloc>297</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values 3</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>        <select_unspecified>Y</select_unspecified>
+      <remove>        <name>phone</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>342</xloc>
+      <yloc>140</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values 4</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>        <select_unspecified>Y</select_unspecified>
+      <remove>        <name>phone</name>
+      </remove>      <remove>        <name>notes</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>436</xloc>
+      <yloc>297</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+
+</transformation>

@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>modify_civic</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2014&#x2f;09&#x2f;15 11&#x3a;32&#x3a;52.684</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2014&#x2f;09&#x2f;15 11&#x3a;32&#x3a;52.684</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <order>
+  <hop> <from>Filter rows</from><to>Split civic and text 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Split civic and text 2</from><to>extract other civic num 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>civicN start with char</from><to>Filter rows</to><enabled>Y</enabled> </hop>
+  <hop> <from>extract other civic num 2</from><to>clean primary civicNum</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values</from><to>Append streams</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values 2</from><to>Append streams</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows</from><to>Create civic and civicSecondary</to><enabled>Y</enabled> </hop>
+  <hop> <from>Create civic and civicSecondary</from><to>Select values</to><enabled>Y</enabled> </hop>
+  <hop> <from>Append streams</from><to>Put civic num and other info in note</to><enabled>Y</enabled> </hop>
+  <hop> <from>Mapping input specification</from><to>civicN start with char</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values 3</from><to>Mapping output specification</to><enabled>Y</enabled> </hop>
+  <hop> <from>clean primary civicNum</from><to>Select values 4</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values 4</from><to>Select values 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Put civic num and other info in note</from><to>Select values 5</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values 5</from><to>Select values 3</to><enabled>Y</enabled> </hop>
+  </order>
+  <step>
+    <name>Append streams</name>
+    <type>Append</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<head_name>Select values 2</head_name>
+<tail_name>Select values</tail_name>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>382</xloc>
+      <yloc>254</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Create civic and civicSecondary</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>civic1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>0</length>
+        <precision>-1</precision>
+        <set_empty_string>Y</set_empty_string>
+      </field>
+      <field>
+        <name>civicSecondary</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>0</length>
+        <precision>-1</precision>
+        <set_empty_string>Y</set_empty_string>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>382</xloc>
+      <yloc>95</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Create civic and civicSecondary</send_true_to>
+<send_false_to>Split civic and text 2</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>result</leftvalue>
+ <function>&#x3d;</function>
+ <rightvalue/>
+ <value><name>constant</name><type>Boolean</type><text>Y</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>384</xloc>
+      <yloc>24</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Mapping input specification</name>
+    <type>MappingInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>civic</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>addressTemp</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>notes</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+        <select_unspecified>N</select_unspecified>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>110</xloc>
+      <yloc>22</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Mapping output specification</name>
+    <type>MappingOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>112</xloc>
+      <yloc>88</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Put civic num and other info in note</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>var note2&#x3d;&#x22;&#x22;&#xa;&#xa;&#xa;if&#x28;civicSecondary&#x21;&#x3d;&#x22;&#x22; &#x26;&#x26; &#x28;notes&#x21;&#x3d;&#x22;&#x22; &#x26;&#x26; notes&#x21;&#x3d;null&#x29;&#x29;&#x7b;&#xa;	note2&#x3d;notes&#x2b;&#x22;, other civic numbers&#x3a; &#x22;&#x2b;civicSecondary&#xa;&#x7d;&#xa;if&#x28;civicSecondary&#x21;&#x3d;&#x22;&#x22; &#x26;&#x26; &#x28;notes&#x3d;&#x3d;&#x22;&#x22; &#x26;&#x26; notes&#x3d;&#x3d;null&#x29;&#x29;&#x7b;&#xa;	note2&#x3d;&#x22;other civic numbers&#x3a; &#x22;&#x2b;civicSecondary&#xa;&#x7d;&#xa;if&#x28;civicSecondary&#x3d;&#x3d;&#x22;&#x22; &#x26;&#x26; &#x28;notes&#x21;&#x3d;&#x22;&#x22; &#x26;&#x26; notes&#x21;&#x3d;null&#x29;&#x29;&#x7b;&#xa;	note2&#x3d;notes&#xa;&#x7d;&#xa;if&#x28;addressInfo&#x21;&#x3d;&#x22;&#x22; &#x26;&#x26; note2&#x21;&#x3d;&#x22;&#x22;&#x29;&#x7b;&#xa;	note2&#x3d;note2&#x2b;&#x22;, general information&#x3a; &#x22;&#x2b;addressInfo&#xa;&#x7d;&#xa;if&#x28;addressInfo&#x21;&#x3d;&#x22;&#x22; &#x26;&#x26; note2&#x3d;&#x3d;&#x22;&#x22;&#x29;&#x7b;&#xa;	note2&#x3d;&#x22;general information&#x3a; &#x22;&#x2b;addressInfo&#xa;&#x7d;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>note2</name>
+        <rename>note2</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>168</xloc>
+      <yloc>254</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>civic1</name>
+        <rename>civic</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>notes</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>civic</name>
+        <rename>addressInfo</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>civicSecondary</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>Y</select_unspecified>
+      <remove>        <name>addressTemp</name>
+      </remove>      <remove>        <name>result</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>385</xloc>
+      <yloc>170</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>firstCivic</name>
+        <rename>civic</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>notes</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>civicText3</name>
+        <rename>addressInfo</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>civicNum3</name>
+        <rename>civicSecondary</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>Y</select_unspecified>
+      <remove>        <name>addressTemp</name>
+      </remove>      <remove>        <name>result</name>
+      </remove>      <remove>        <name>result_1</name>
+      </remove>      <remove>        <name>civicNum</name>
+      </remove>      <remove>        <name>line</name>
+      </remove>      <remove>        <name>civicText</name>
+      </remove>      <remove>        <name>result_2</name>
+      </remove>      <remove>        <name>slash</name>
+      </remove>      <remove>        <name>civicNum2</name>
+      </remove>      <remove>        <name>line2</name>
+      </remove>      <remove>        <name>civicText2</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>797</xloc>
+      <yloc>255</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values 3</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>civic</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>note2</name>
+        <rename>notes</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>addressInfo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>civicSecondary</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>Y</select_unspecified>
+      <remove>        <name>addressInfo</name>
+      </remove>      <remove>        <name>civicSecondary</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>35</xloc>
+      <yloc>172</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values 4</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>        <select_unspecified>Y</select_unspecified>
+      <remove>        <name>civic</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>796</xloc>
+      <yloc>139</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values 5</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>        <select_unspecified>Y</select_unspecified>
+      <remove>        <name>notes</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>169</xloc>
+      <yloc>171</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Split civic and text 2</name>
+    <type>RegexEval</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <script><![CDATA[^([0-9]+\/?BIS|[0-9]+\/?[A-Za-z]{1}|[0-9]+)([ -]*| ?- ?|)(.*)]]></script>    <matcher>civic</matcher>
+    <resultfieldname>result</resultfieldname>
+    <usevar>N</usevar>
+    <allowcapturegroups>Y</allowcapturegroups>
+    <replacefields>N</replacefields>
+    <canoneq>N</canoneq>
+    <caseinsensitive>N</caseinsensitive>
+    <comment>N</comment>
+    <dotall>N</dotall>
+    <multiline>N</multiline>
+    <unicode>N</unicode>
+    <unix>N</unix>
+    <fields>
+      <field>
+        <name>civicNum</name>
+        <type>String</type>
+        <format/>
+        <group/>
+        <decimal/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif/>
+        <ifnull/>
+        <trimtype>none</trimtype>
+      </field>
+      <field>
+        <name>line</name>
+        <type>String</type>
+        <format/>
+        <group/>
+        <decimal/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif/>
+        <ifnull/>
+        <trimtype>none</trimtype>
+      </field>
+      <field>
+        <name>civicText</name>
+        <type>String</type>
+        <format/>
+        <group/>
+        <decimal/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif/>
+        <ifnull/>
+        <trimtype>none</trimtype>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>490</xloc>
+      <yloc>25</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>civicN start with char</name>
+    <type>RegexEval</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <script><![CDATA[(^[A-Za-z].*)]]></script>    <matcher>civic</matcher>
+    <resultfieldname>result</resultfieldname>
+    <usevar>N</usevar>
+    <allowcapturegroups>N</allowcapturegroups>
+    <replacefields>N</replacefields>
+    <canoneq>N</canoneq>
+    <caseinsensitive>N</caseinsensitive>
+    <comment>N</comment>
+    <dotall>N</dotall>
+    <multiline>N</multiline>
+    <unicode>N</unicode>
+    <unix>N</unix>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>256</xloc>
+      <yloc>24</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>clean primary civicNum</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#xa;&#xa;&#xa;&#xa;&#x2f;&#x2f;Eliminazione slash &#x22;&#x2f;&#x22; in fondo al numero civico &#x22;secondario&#x22;&#xa;&#xa;var civicNum3&#x3b;&#xa;var firstCivic&#x3d;civicNum&#xa;if&#x28;civicNum2&#x21;&#x3d;null&#x29;&#x7b;&#xa;civicNum3&#x3d;civicNum2.replace&#x28;&#x2f;&#x5c;&#x2f;&#x24;&#x2f;, &#x22;&#x22;&#x29;&#x3b;&#x7d;&#xa;else&#x7b;civicNum3&#x3d;&#x22;&#x22;&#x7d;&#x3b;&#xa;&#xa;&#x2f;&#x2f;Eliminazione caratteri speciali in fondo al testo &#x22;aggiuntivo&#x22;&#xa;&#xa;if&#x28;civicText2&#x21;&#x3d;null&#x29;&#x7b;&#xa;var civicText3&#x3d;civicText2.replace&#x28;&#x2f;&#x28;&#x5b;- &#x5c;&#x2f;_.&#x5d;&#x2b;&#x29;&#x24;&#x2f;, &#x22;&#x22;&#x29;&#x3b;&#x7d;&#xa;else&#x7b;civicText3&#x3d;&#x22;&#x22;&#x7d;&#x3b;&#xa;&#xa;&#x2f;&#x2f;Controllo qualit&#xe0; del testo aggiuntivo. Se ci sono caratteri&#xa;&#x2f;&#x2f;monosillabi vengono aggiunti ai numeri civici, in quanto quasi&#xa;&#x2f;&#x2f;sicuramente fanno parte di quest&#x27;ultimo&#xa;&#xa;if &#x28;civicText3.length&#x3d;&#x3d;1&#x29;&#x7b;&#xa;	if&#x28;civicText3.match&#x28;&#x2f;&#x28;&#x5b;A-Za-z&#x5d;&#x29;&#x2f;&#x29;&#x29;&#x7b;&#xa;		if&#x28;civicNum3.length&#x3d;&#x3d;0&#x29;&#x7b;&#xa;			civicNum&#x3d;civicNum&#x2b;civicText3&#xa;			civicText3&#x3d;&#x22;&#x22;&#x7d;&#xa;		else&#x7b;&#xa;		civicNum3&#x3d;civicNum3&#x2b;civicText3&#xa;		civicText3&#x3d;&#x22;&#x22;&#x7d;&#xa;	&#x7d;&#xa;&#x2f;&#x2f;Controllo qualit&#xe0; del testo aggiuntivo. Se ci sono caratteri&#xa;&#x2f;&#x2f;concatenati con caratteri speciali &#x28;ad esempio M-N-O, oppure M&#x2f;N&#x2f;O&#x29; &#xa;&#x2f;&#x2f;vengono aggiunti ai numeri civici, in quanto quasi&#xa;&#x2f;&#x2f;sicuramente fanno parte di quest&#x27;ultimo&#xa;&#x7d;&#xa;&#xa;if&#x28;civicText3.match&#x28;&#x2f;&#x5e;&#x28;&#x5b;A-Za-z&#x5d;-&#x7c;&#x5b;A-Za-z&#x5d;&#x5c;&#x2f;&#x29;&#x2b;&#x28;&#x5b;A-Za-z&#x5d; &#x29;&#x28;.&#x2a;&#x29;&#x2f;&#x29;&#x29;&#x7b;&#xa;	var regex&#x3d;&#x2f;&#x5e;&#x28;&#x5b;A-Za-z&#x5d;-&#x7c;&#x5b;A-Za-z&#x5d;&#x5c;&#x2f;&#x29;&#x2b;&#x28;&#x5b;A-Za-z&#x5d; &#x29;&#x28;.&#x2a;&#x29;&#x2f;&#xa;	civicNumChar&#x3d;regex.exec&#x28;civicText3&#x29;&#xa;    if&#x28;civicNum3.length&#x3d;&#x3d;0&#x29;&#x7b;&#xa;		firstCivic&#x3d;civicNum&#x2b;&#x22; &#x22;&#x2b;civicNumChar&#x5b;1&#x5d;&#x2b;civicNumChar&#x5b;2&#x5d;&#xa;        civicText3&#x3d;civicNumChar&#x5b;3&#x5d;&#xa;		civicText3.trim&#x28;&#x29;&#xa;		firstCivic.trim&#x28;&#x29;&#x7d;&#xa;	else&#x7b;&#xa;		civicNum3&#x3d;civicNum3&#x2b;&#x22; &#x22;&#x2b;civicNumChar&#x5b;1&#x5d;&#x2b;civicNumChar&#x5b;2&#x5d;&#xa;        civicText3&#x3d;civicNumChar&#x5b;3&#x5d;&#xa;		civicText3.trim&#x28;&#x29;&#xa;		civicNum3.trim&#x28;&#x29;&#x7d;&#xa;&#x7d;&#xa;else if&#x28;civicText3.match&#x28;&#x2f;&#x5e;&#x28;&#x5b;A-Za-z&#x5d;-&#x7c;&#x5b;A-Za-z&#x5d;&#x5c;&#x2f;&#x29;&#x2b;&#x28;&#x5b;A-Za-z&#x5d;&#x29;&#x28;.&#x2a;&#x29;&#x2f;&#x29;&#x29;&#x7b;&#xa;	var regex&#x3d;&#x2f;&#x5e;&#x28;&#x5b;A-Za-z&#x5d;-&#x7c;&#x5b;A-Za-z&#x5d;&#x5c;&#x2f;&#x29;&#x2b;&#x28;&#x5b;A-Za-z&#x5d;&#x29;&#x28;.&#x2a;&#x29;&#x2f;&#xa;	civicNumChar&#x3d;regex.exec&#x28;civicText3&#x29;&#xa;	if&#x28;civicNum3.length&#x3d;&#x3d;0&#x29;&#x7b;&#xa;		firstCivic&#x3d;civicNum&#x2b;&#x22; &#x22;&#x2b;civicNumChar&#x5b;1&#x5d;&#x2b;civicNumChar&#x5b;2&#x5d;&#xa;        civicText3&#x3d;civicNumChar&#x5b;3&#x5d;&#xa;		civicText3.trim&#x28;&#x29;&#xa;		firstCivic.trim&#x28;&#x29;&#x7d;&#xa;	else&#x7b;&#xa;		civicNum3&#x3d;civicNum3&#x2b;&#x22; &#x22;&#x2b;civicNumChar&#x5b;1&#x5d;&#x2b;civicNumChar&#x5b;2&#x5d;&#xa;        civicText3&#x3d;civicNumChar&#x5b;3&#x5d;&#xa;		civicText3.trim&#x28;&#x29;&#xa;		civicNum3.trim&#x28;&#x29;&#x7d;&#xa;&#x7d;&#xa;&#xa;&#x2f;&#x2f;Controllo qualit&#xe0; del testo aggiuntivo. Se il testo comincia con un unico&#xa;&#x2f;&#x2f;carattere seguito da una linea &#x22;-&#x22; oppure un unico carattere seguito da un&#xa;&#x2f;&#x2f;testo rachiuso tra parentesi &#x28;es. A &#x28;ESEMPIO&#x29;&#x29; allora il carattere viene aggiunto&#xa;&#x2f;&#x2f;ai numeri civici&#xa;&#xa;if&#x28;civicText3.match&#x28;&#x2f;&#x5e;&#x28;&#x5b;A-Za-z -&#x5d;&#x5b; -&#x5d;&#x2a; &#x29;&#x28;.&#x2a;&#x29;&#x2f;&#x29;&#x29;&#x7b;&#xa;	var regex&#x3d;&#x2f;&#x5e;&#x28;&#x5b;A-Za-z -&#x5d;&#x5b; -&#x5d;&#x2a; &#x29;&#x28;.&#x2a;&#x29;&#x2f;&#xa;	civicNumChar&#x3d;regex.exec&#x28;civicText3&#x29;&#xa;	if&#x28;civicNum3.length&#x3d;&#x3d;0&#x29;&#x7b;&#xa;		firstCivic&#x3d;firstCivic&#x2b;&#x22; &#x22;&#x2b;civicNumChar&#x5b;1&#x5d;&#xa;		civicText3&#x3d;civicNumChar&#x5b;2&#x5d;&#x7d;&#xa;	else&#x7b;&#xa;		civicNum3&#x3d;civicNum3&#x2b;&#x22; &#x22;&#x2b;civicNumChar&#x5b;1&#x5d;&#x7d;&#xa;		civicText3&#x3d;civicNumChar&#x5b;2&#x5d;&#xa;&#x7d;&#xa;&#xa;&#x2f;&#x2f;Eliminare le lineette in fondo a firstCivic, civicNum3. &#x28;esempio 68 H - -&#x29;&#xa;&#xa;if&#x28;firstCivic&#x21;&#x3d;null&#x29;&#x7b;firstCivic&#x3d;firstCivic.replace&#x28;&#x2f;&#x28;&#x5b;- &#x5d;&#x2a;&#x29;&#x24;&#x2f;, &#x22;&#x22;&#x29;&#x7d;&#xa;if&#x28;civicNum3&#x21;&#x3d;null&#x29;&#x7b;civicNum3&#x3d;civicNum3.replace&#x28;&#x2f;&#x28;&#x5b;- &#x5d;&#x2a;&#x29;&#x24;&#x2f;, &#x22;&#x22;&#x29;&#x7d;&#xa;&#xa;&#x2f;&#x2f;Elimina il testo aggiuntivo composto da soli caratteri speciali e eliminazione &#xa;&#x2f;&#x2f;degli spazi,punti e lineette dall&#x27;inizio del testo aggiuntivo&#xa;&#xa;if&#x28;civicText3.match&#x28;&#x2f;&#x5e;&#x28;&#x5c;W&#x2a;&#x29;&#x5c;s&#x3f;&#x24;&#x2f;&#x29;&#x29;&#x7b;civicText3&#x3d;&#x22;&#x22;&#x7d;&#xa;if&#x28;civicText3&#x21;&#x3d;null&#x29;&#x7b;civicText3&#x3d;civicText3.replace&#x28;&#x2f;&#x5e;&#x28;&#x5b; &#x5c;.-&#x5d;&#x2a;&#x29;&#x2f;, &#x22;&#x22;&#x29;&#x7d;&#xa;&#xa;&#x2f;&#x2f;Caso in cui civicText3 inizi col simbolo &#xb0;. Quando questo accade significa che il numero&#xa;&#x2f;&#x2f;che lo precedeva, finito sicuramente nel campo civicNum3, indicava il numero del piano, della zona&#xa;&#x2f;&#x2f;o di qualsiasi cosa a cui quel simbolo facesse riferimento&#xa;&#xa;if &#x28;civicText3.match&#x28;&#x2f;&#x5e;&#x28;&#xb0;&#x29;&#x2f;&#x29; &#x26;&#x26; civicNum3&#x21;&#x3d;null&#x29;&#x7b;&#xa;	civicText3&#x3d;civicNum3&#x2b;&#x22; &#x22;&#x2b;civicText3&#xa;	civicNum3&#x3d;&#x22;&#x22;&#x7d;&#xa;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>civicNum3</name>
+        <rename>civicNum3</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>civicText3</name>
+        <rename>civicText3</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>firstCivic</name>
+        <rename>firstCivic</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>799</xloc>
+      <yloc>27</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>extract other civic num 2</name>
+    <type>RegexEval</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <script><![CDATA[^([ \/]*|)([0-9 \/-]*)([ -]*| ?- ?|)(.*)]]></script>    <matcher>civicText</matcher>
+    <resultfieldname>result</resultfieldname>
+    <usevar>N</usevar>
+    <allowcapturegroups>Y</allowcapturegroups>
+    <replacefields>N</replacefields>
+    <canoneq>N</canoneq>
+    <caseinsensitive>N</caseinsensitive>
+    <comment>N</comment>
+    <dotall>N</dotall>
+    <multiline>N</multiline>
+    <unicode>N</unicode>
+    <unix>N</unix>
+    <fields>
+      <field>
+        <name>slash</name>
+        <type>String</type>
+        <format/>
+        <group/>
+        <decimal/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif/>
+        <ifnull/>
+        <trimtype>none</trimtype>
+      </field>
+      <field>
+        <name>civicNum2</name>
+        <type>String</type>
+        <format/>
+        <group/>
+        <decimal/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif/>
+        <ifnull/>
+        <trimtype>none</trimtype>
+      </field>
+      <field>
+        <name>line2</name>
+        <type>String</type>
+        <format/>
+        <group/>
+        <decimal/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif/>
+        <ifnull/>
+        <trimtype>none</trimtype>
+      </field>
+      <field>
+        <name>civicText2</name>
+        <type>String</type>
+        <format/>
+        <group/>
+        <decimal/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif/>
+        <ifnull/>
+        <trimtype>none</trimtype>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>649</xloc>
+      <yloc>26</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+
+</transformation>

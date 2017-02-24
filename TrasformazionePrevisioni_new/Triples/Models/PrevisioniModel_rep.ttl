@@ -1,0 +1,415 @@
+@prefix vann: <http://purl.org/vocab/vann/#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix km4cr: <http://www.disit.org/km4city/resource#> .
+@prefix km4c: <http://www.disit.org/km4city/schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix schema: <http://schema.org/#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix tzont: <http://www.w3.org/2006/timezone#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix otn: <http://www.pms.ifi.uni-muenchen.de/OTN#> .
+@prefix dct: <http://purl.org/dc/terms/#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1987sb7n1x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "previ_meteo_Abetone_xmlrep" ;
+	km-dev:modelPublicationTime "1417603817185"^^xsd:long ;
+	km-dev:modelVersion "1.5" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"km4cr\",\"hasBaseURI\":false},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"reportKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"Istat\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Municipality1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#Municipality1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Municipality\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"comune\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://xmlns.com/foaf/0.1/name\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Municipality2\",\"DomainId\":\"http://www.disit.org/km4city/schema#Municipality2\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Municipality\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"fase\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#lunarPhase\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"luna_sorge\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#moonrise\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:time\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"luna_tramonta\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#sunrise\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:time\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"luna_tramonta\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#moonset\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:time\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"W3C_date\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://schema.org/value\",\"isPrimary\":true,\"DomainLabel\":\"time:Instant1 (add)\",\"DomainId\":\"http://www.w3.org/2006/time#Instant1\",\"DomainUri\":\"http://www.w3.org/2006/time#Instant\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:dateTime\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"time_ms\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"time:Instant1\",\"DomainId\":\"http://www.w3.org/2006/time#Instant1\",\"DomainUri\":\"http://www.w3.org/2006/time#Instant\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:dateTimeStamp\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"ora_altezza\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#heightHour\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"ora_altezza\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#heightHour\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:time\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"sole_altezza\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#sunHeight\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:time\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"sole_altezza\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#sunHeight\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:float\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"sole_sorge\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#sunrise\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Province1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#Province1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Province\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:time\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"sole_sorge\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#sunrise\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:time\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"sole_tramonta\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#sunset\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Province1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#Province1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Province\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:time\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"sole_tramonta\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#sunset\",\"isPrimary\":true,\"DomainLabel\":\"km4c:Province1\",\"DomainId\":\"http://www.disit.org/km4city/schema#Province1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#Province\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:time\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"sole_tramonta\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#sunset\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:time\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"}]" .
+
+km-dev:TriplesMap_c7da08fc-7e70-4cfa-b3b8-7a30b1dc28af a rr:TriplesMap .
+
+_:node1987sb7n1x1 km-dev:hasTriplesMap km-dev:TriplesMap_c7da08fc-7e70-4cfa-b3b8-7a30b1dc28af .
+
+km-dev:TriplesMap_c7da08fc-7e70-4cfa-b3b8-7a30b1dc28af km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x2 rr:tableName "previ_meteo_Abetone_xmlrep" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasLogicalTable _:node1987sb7n1x2 .
+
+km-dev:TriplesMap_c7da08fc-7e70-4cfa-b3b8-7a30b1dc28af rr:logicalTable _:node1987sb7n1x2 ;
+	rr:subjectMap _:node1987sb7n1x3 .
+
+_:node1987sb7n1x1 km-dev:hasSubjectMap _:node1987sb7n1x3 .
+
+_:node1987sb7n1x3 km-dev:isPartOfMapping _:node1987sb7n1x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.disit.org/km4city/schema#Municipality2" ;
+	rr:class km4c:Municipality ;
+	rr:template "http://www.disit.org/km4city/resource/{Istat}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_e5bc92aa-f80e-47d7-a6f9-e914bcbdbc76 rr:predicate dcterms:identifier .
+
+_:node1987sb7n1x4 rr:column "Istat" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap _:node1987sb7n1x4 .
+
+km-dev:PredicateObjectMap_e5bc92aa-f80e-47d7-a6f9-e914bcbdbc76 rr:objectMap _:node1987sb7n1x4 .
+
+km-dev:TriplesMap_c7da08fc-7e70-4cfa-b3b8-7a30b1dc28af rr:predicateObjectMap km-dev:PredicateObjectMap_e5bc92aa-f80e-47d7-a6f9-e914bcbdbc76 .
+
+km-dev:PredicateObjectMap_e5bc92aa-f80e-47d7-a6f9-e914bcbdbc76 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e5bc92aa-f80e-47d7-a6f9-e914bcbdbc76 .
+
+km-dev:PredicateObjectMap_a6ae3007-5ac3-4034-ac20-68cf3ee0c469 rr:predicate km4c:hasWeatherReport .
+
+km-dev:RefObjectMap_dff1d041-7dca-4718-a827-8a55c0431293 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap km-dev:RefObjectMap_dff1d041-7dca-4718-a827-8a55c0431293 .
+
+km-dev:PredicateObjectMap_a6ae3007-5ac3-4034-ac20-68cf3ee0c469 rr:objectMap km-dev:RefObjectMap_dff1d041-7dca-4718-a827-8a55c0431293 .
+
+km-dev:TriplesMap_c7da08fc-7e70-4cfa-b3b8-7a30b1dc28af rr:predicateObjectMap km-dev:PredicateObjectMap_a6ae3007-5ac3-4034-ac20-68cf3ee0c469 .
+
+km-dev:PredicateObjectMap_a6ae3007-5ac3-4034-ac20-68cf3ee0c469 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a6ae3007-5ac3-4034-ac20-68cf3ee0c469 .
+
+km-dev:PredicateObjectMap_ffa619a4-9ab0-42c5-b985-626d3af78029 rr:predicate foaf:name .
+
+_:node1987sb7n1x5 rr:column "comune" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap _:node1987sb7n1x5 .
+
+km-dev:PredicateObjectMap_ffa619a4-9ab0-42c5-b985-626d3af78029 rr:objectMap _:node1987sb7n1x5 .
+
+km-dev:TriplesMap_c7da08fc-7e70-4cfa-b3b8-7a30b1dc28af rr:predicateObjectMap km-dev:PredicateObjectMap_ffa619a4-9ab0-42c5-b985-626d3af78029 .
+
+km-dev:PredicateObjectMap_ffa619a4-9ab0-42c5-b985-626d3af78029 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ffa619a4-9ab0-42c5-b985-626d3af78029 .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb a rr:TriplesMap .
+
+_:node1987sb7n1x1 km-dev:hasTriplesMap km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x6 rr:tableName "previ_meteo_Abetone_xmlrep" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasLogicalTable _:node1987sb7n1x6 .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb rr:logicalTable _:node1987sb7n1x6 ;
+	rr:subjectMap _:node1987sb7n1x7 .
+
+_:node1987sb7n1x1 km-dev:hasSubjectMap _:node1987sb7n1x7 .
+
+_:node1987sb7n1x7 km-dev:isPartOfMapping _:node1987sb7n1x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.disit.org/km4city/schema#WeatherReport1" ;
+	rr:class km4c:WeatherReport ;
+	rr:template "http://www.disit.org/km4city/resource/{reportKey}" .
+
+km-dev:PredicateObjectMap_cd7a6ab0-d213-4f6f-9e98-28e0428e8110 rr:predicate km4c:refersToMunicipality .
+
+km-dev:RefObjectMap_cd38223e-a892-437e-bd23-98e86efa149c a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_c7da08fc-7e70-4cfa-b3b8-7a30b1dc28af ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap km-dev:RefObjectMap_cd38223e-a892-437e-bd23-98e86efa149c .
+
+km-dev:PredicateObjectMap_cd7a6ab0-d213-4f6f-9e98-28e0428e8110 rr:objectMap km-dev:RefObjectMap_cd38223e-a892-437e-bd23-98e86efa149c .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb rr:predicateObjectMap km-dev:PredicateObjectMap_cd7a6ab0-d213-4f6f-9e98-28e0428e8110 .
+
+km-dev:PredicateObjectMap_cd7a6ab0-d213-4f6f-9e98-28e0428e8110 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cd7a6ab0-d213-4f6f-9e98-28e0428e8110 .
+
+km-dev:PredicateObjectMap_e4a2648e-ae53-46ff-aff0-3794b4f6f796 rr:predicate km4c:refersToMunicipality .
+
+km-dev:RefObjectMap_9c1a4001-2fc9-4c86-9f01-63bd81630d9a a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_c7da08fc-7e70-4cfa-b3b8-7a30b1dc28af ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap km-dev:RefObjectMap_9c1a4001-2fc9-4c86-9f01-63bd81630d9a .
+
+km-dev:PredicateObjectMap_e4a2648e-ae53-46ff-aff0-3794b4f6f796 rr:objectMap km-dev:RefObjectMap_9c1a4001-2fc9-4c86-9f01-63bd81630d9a .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb rr:predicateObjectMap km-dev:PredicateObjectMap_e4a2648e-ae53-46ff-aff0-3794b4f6f796 .
+
+km-dev:PredicateObjectMap_e4a2648e-ae53-46ff-aff0-3794b4f6f796 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e4a2648e-ae53-46ff-aff0-3794b4f6f796 .
+
+km-dev:PredicateObjectMap_4c4ce8bb-49ce-4895-a316-d88752d91def rr:predicate dcterms:identifier .
+
+_:node1987sb7n1x8 rr:column "reportKey" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap _:node1987sb7n1x8 .
+
+km-dev:PredicateObjectMap_4c4ce8bb-49ce-4895-a316-d88752d91def rr:objectMap _:node1987sb7n1x8 .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb rr:predicateObjectMap km-dev:PredicateObjectMap_4c4ce8bb-49ce-4895-a316-d88752d91def .
+
+km-dev:PredicateObjectMap_4c4ce8bb-49ce-4895-a316-d88752d91def a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4c4ce8bb-49ce-4895-a316-d88752d91def .
+
+km-dev:PredicateObjectMap_fdd53082-b9c2-4201-8a76-3a37a670d660 rr:predicate km4c:heightHour .
+
+_:node1987sb7n1x9 rr:column "ora_altezza" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#time" ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap _:node1987sb7n1x9 .
+
+km-dev:PredicateObjectMap_fdd53082-b9c2-4201-8a76-3a37a670d660 rr:objectMap _:node1987sb7n1x9 .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb rr:predicateObjectMap km-dev:PredicateObjectMap_fdd53082-b9c2-4201-8a76-3a37a670d660 .
+
+km-dev:PredicateObjectMap_fdd53082-b9c2-4201-8a76-3a37a670d660 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fdd53082-b9c2-4201-8a76-3a37a670d660 .
+
+km-dev:PredicateObjectMap_3663b7fc-209f-4350-9f96-25400b9e786d rr:predicate km4c:lunarPhase .
+
+_:node1987sb7n1x10 rr:column "fase" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap _:node1987sb7n1x10 .
+
+km-dev:PredicateObjectMap_3663b7fc-209f-4350-9f96-25400b9e786d rr:objectMap _:node1987sb7n1x10 .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb rr:predicateObjectMap km-dev:PredicateObjectMap_3663b7fc-209f-4350-9f96-25400b9e786d .
+
+km-dev:PredicateObjectMap_3663b7fc-209f-4350-9f96-25400b9e786d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3663b7fc-209f-4350-9f96-25400b9e786d .
+
+km-dev:PredicateObjectMap_444118b2-e0d0-4956-b20d-d0c1ebab9498 rr:predicate km4c:moonrise .
+
+_:node1987sb7n1x11 rr:column "luna_sorge" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#time" ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap _:node1987sb7n1x11 .
+
+km-dev:PredicateObjectMap_444118b2-e0d0-4956-b20d-d0c1ebab9498 rr:objectMap _:node1987sb7n1x11 .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb rr:predicateObjectMap km-dev:PredicateObjectMap_444118b2-e0d0-4956-b20d-d0c1ebab9498 .
+
+km-dev:PredicateObjectMap_444118b2-e0d0-4956-b20d-d0c1ebab9498 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_444118b2-e0d0-4956-b20d-d0c1ebab9498 .
+
+km-dev:PredicateObjectMap_a459a910-7b24-4d42-a08f-3504052a7b0e rr:predicate km4c:moonset .
+
+_:node1987sb7n1x12 rr:column "luna_tramonta" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#time" ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap _:node1987sb7n1x12 .
+
+km-dev:PredicateObjectMap_a459a910-7b24-4d42-a08f-3504052a7b0e rr:objectMap _:node1987sb7n1x12 .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb rr:predicateObjectMap km-dev:PredicateObjectMap_a459a910-7b24-4d42-a08f-3504052a7b0e .
+
+km-dev:PredicateObjectMap_a459a910-7b24-4d42-a08f-3504052a7b0e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a459a910-7b24-4d42-a08f-3504052a7b0e .
+
+km-dev:PredicateObjectMap_6cfeeacd-3a53-49f2-8b86-2989ebb994bb rr:predicate km4c:sunHeight .
+
+_:node1987sb7n1x13 rr:column "sole_altezza" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap _:node1987sb7n1x13 .
+
+km-dev:PredicateObjectMap_6cfeeacd-3a53-49f2-8b86-2989ebb994bb rr:objectMap _:node1987sb7n1x13 .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb rr:predicateObjectMap km-dev:PredicateObjectMap_6cfeeacd-3a53-49f2-8b86-2989ebb994bb .
+
+km-dev:PredicateObjectMap_6cfeeacd-3a53-49f2-8b86-2989ebb994bb a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6cfeeacd-3a53-49f2-8b86-2989ebb994bb .
+
+km-dev:PredicateObjectMap_014a980b-e704-46f2-96ab-811e40936a83 rr:predicate km4c:sunrise .
+
+_:node1987sb7n1x14 rr:column "sole_sorge" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#time" ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap _:node1987sb7n1x14 .
+
+km-dev:PredicateObjectMap_014a980b-e704-46f2-96ab-811e40936a83 rr:objectMap _:node1987sb7n1x14 .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb rr:predicateObjectMap km-dev:PredicateObjectMap_014a980b-e704-46f2-96ab-811e40936a83 .
+
+km-dev:PredicateObjectMap_014a980b-e704-46f2-96ab-811e40936a83 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_014a980b-e704-46f2-96ab-811e40936a83 .
+
+km-dev:PredicateObjectMap_0d38cfbb-1f59-49b7-8366-dbf1b6a7d898 rr:predicate km4c:sunset .
+
+_:node1987sb7n1x15 rr:column "sole_tramonta" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#time" ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap _:node1987sb7n1x15 .
+
+km-dev:PredicateObjectMap_0d38cfbb-1f59-49b7-8366-dbf1b6a7d898 rr:objectMap _:node1987sb7n1x15 .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb rr:predicateObjectMap km-dev:PredicateObjectMap_0d38cfbb-1f59-49b7-8366-dbf1b6a7d898 .
+
+km-dev:PredicateObjectMap_0d38cfbb-1f59-49b7-8366-dbf1b6a7d898 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0d38cfbb-1f59-49b7-8366-dbf1b6a7d898 .
+
+km-dev:PredicateObjectMap_9477811c-92c4-4df2-84f0-972240689a23 rr:predicate km4c:updateTime .
+
+km-dev:RefObjectMap_d887a69f-cef5-4a92-90eb-70fe9da80161 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_0c7c07c1-7da6-4fa4-93f3-1b4d9885a29b ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap km-dev:RefObjectMap_d887a69f-cef5-4a92-90eb-70fe9da80161 .
+
+km-dev:PredicateObjectMap_9477811c-92c4-4df2-84f0-972240689a23 rr:objectMap km-dev:RefObjectMap_d887a69f-cef5-4a92-90eb-70fe9da80161 .
+
+km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb rr:predicateObjectMap km-dev:PredicateObjectMap_9477811c-92c4-4df2-84f0-972240689a23 .
+
+km-dev:PredicateObjectMap_9477811c-92c4-4df2-84f0-972240689a23 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9477811c-92c4-4df2-84f0-972240689a23 .
+
+km-dev:TriplesMap_0c7c07c1-7da6-4fa4-93f3-1b4d9885a29b a rr:TriplesMap .
+
+_:node1987sb7n1x1 km-dev:hasTriplesMap km-dev:TriplesMap_0c7c07c1-7da6-4fa4-93f3-1b4d9885a29b .
+
+km-dev:TriplesMap_0c7c07c1-7da6-4fa4-93f3-1b4d9885a29b km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x16 rr:tableName "previ_meteo_Abetone_xmlrep" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasLogicalTable _:node1987sb7n1x16 .
+
+km-dev:TriplesMap_0c7c07c1-7da6-4fa4-93f3-1b4d9885a29b rr:logicalTable _:node1987sb7n1x16 ;
+	rr:subjectMap _:node1987sb7n1x17 .
+
+_:node1987sb7n1x1 km-dev:hasSubjectMap _:node1987sb7n1x17 .
+
+_:node1987sb7n1x17 km-dev:isPartOfMapping _:node1987sb7n1x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2006/time#Instant1" ;
+	rr:class time:Instant ;
+	rr:template "http://www.disit.org/km4city/resource/{time_ms}" .
+
+km-dev:PredicateObjectMap_c7116827-3b31-4a98-93b1-910fbee80972 rr:predicate km4c:instantWReport .
+
+km-dev:RefObjectMap_df98aefb-eb9f-4156-818b-614c84bab500 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap km-dev:RefObjectMap_df98aefb-eb9f-4156-818b-614c84bab500 .
+
+km-dev:PredicateObjectMap_c7116827-3b31-4a98-93b1-910fbee80972 rr:objectMap km-dev:RefObjectMap_df98aefb-eb9f-4156-818b-614c84bab500 .
+
+km-dev:TriplesMap_0c7c07c1-7da6-4fa4-93f3-1b4d9885a29b rr:predicateObjectMap km-dev:PredicateObjectMap_c7116827-3b31-4a98-93b1-910fbee80972 .
+
+km-dev:PredicateObjectMap_c7116827-3b31-4a98-93b1-910fbee80972 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c7116827-3b31-4a98-93b1-910fbee80972 .
+
+km-dev:PredicateObjectMap_b4fcc813-c868-4e83-b568-6af84026ee00 rr:predicate km4c:instantWReport .
+
+km-dev:RefObjectMap_ab420bde-8281-4b88-9a1e-62087f37cecb a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_fa32117b-b685-4699-ab8f-bbe6b44cb4fb ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap km-dev:RefObjectMap_ab420bde-8281-4b88-9a1e-62087f37cecb .
+
+km-dev:PredicateObjectMap_b4fcc813-c868-4e83-b568-6af84026ee00 rr:objectMap km-dev:RefObjectMap_ab420bde-8281-4b88-9a1e-62087f37cecb .
+
+km-dev:TriplesMap_0c7c07c1-7da6-4fa4-93f3-1b4d9885a29b rr:predicateObjectMap km-dev:PredicateObjectMap_b4fcc813-c868-4e83-b568-6af84026ee00 .
+
+km-dev:PredicateObjectMap_b4fcc813-c868-4e83-b568-6af84026ee00 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b4fcc813-c868-4e83-b568-6af84026ee00 .
+
+km-dev:PredicateObjectMap_4c56c57c-945a-4e98-8fe1-86aaaa9ce784 rr:predicate dcterms:identifier .
+
+_:node1987sb7n1x18 rr:column "time_ms" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#dateTimeStamp" ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap _:node1987sb7n1x18 .
+
+km-dev:PredicateObjectMap_4c56c57c-945a-4e98-8fe1-86aaaa9ce784 rr:objectMap _:node1987sb7n1x18 .
+
+km-dev:TriplesMap_0c7c07c1-7da6-4fa4-93f3-1b4d9885a29b rr:predicateObjectMap km-dev:PredicateObjectMap_4c56c57c-945a-4e98-8fe1-86aaaa9ce784 .
+
+km-dev:PredicateObjectMap_4c56c57c-945a-4e98-8fe1-86aaaa9ce784 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4c56c57c-945a-4e98-8fe1-86aaaa9ce784 .
+
+km-dev:PredicateObjectMap_887825cb-2427-491a-9790-db6431701164 rr:predicate <http://schema.org/value> .
+
+_:node1987sb7n1x19 rr:column "W3C_date" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#dateTime" ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasObjectMap _:node1987sb7n1x19 .
+
+km-dev:PredicateObjectMap_887825cb-2427-491a-9790-db6431701164 rr:objectMap _:node1987sb7n1x19 .
+
+km-dev:TriplesMap_0c7c07c1-7da6-4fa4-93f3-1b4d9885a29b rr:predicateObjectMap km-dev:PredicateObjectMap_887825cb-2427-491a-9790-db6431701164 .
+
+km-dev:PredicateObjectMap_887825cb-2427-491a-9790-db6431701164 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1987sb7n1x1 .
+
+_:node1987sb7n1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_887825cb-2427-491a-9790-db6431701164 .

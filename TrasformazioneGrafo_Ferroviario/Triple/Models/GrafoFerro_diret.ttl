@@ -1,0 +1,87 @@
+@prefix vann: <http://purl.org/vocab/vann/#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix km4cr: <http://www.disit.org/km4city/resource#> .
+@prefix km4c: <http://www.disit.org/km4city/schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix otn: <http://www.pms.ifi.uni-muenchen.de/OTN#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node195r0f56nx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "grafo_ferroviario_direttrice" ;
+	km-dev:modelPublicationTime "1415024448727"^^xsd:long ;
+	km-dev:modelVersion "1.5" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"km4cr\",\"hasBaseURI\":false},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"COD_DIR\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RailwayDirection1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#RailwayDirection1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RailwayDirection\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"DEN_CNV\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://xmlns.com/foaf/0.1/name\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RailwayDirection1\",\"DomainId\":\"http://www.disit.org/km4city/schema#RailwayDirection1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RailwayDirection\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"}]" .
+
+km-dev:TriplesMap_069fe711-1439-48b2-aa37-bd6dd4cf58e5 a rr:TriplesMap .
+
+_:node195r0f56nx1 km-dev:hasTriplesMap km-dev:TriplesMap_069fe711-1439-48b2-aa37-bd6dd4cf58e5 .
+
+km-dev:TriplesMap_069fe711-1439-48b2-aa37-bd6dd4cf58e5 km-dev:isPartOfMapping _:node195r0f56nx1 .
+
+_:node195r0f56nx2 rr:tableName "grafo_ferroviario_direttrice" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node195r0f56nx1 .
+
+_:node195r0f56nx1 km-dev:hasLogicalTable _:node195r0f56nx2 .
+
+km-dev:TriplesMap_069fe711-1439-48b2-aa37-bd6dd4cf58e5 rr:logicalTable _:node195r0f56nx2 ;
+	rr:subjectMap _:node195r0f56nx3 .
+
+_:node195r0f56nx1 km-dev:hasSubjectMap _:node195r0f56nx3 .
+
+_:node195r0f56nx3 km-dev:isPartOfMapping _:node195r0f56nx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.disit.org/km4city/schema#RailwayDirection1" ;
+	rr:class km4c:RailwayDirection ;
+	rr:template "http://www.disit.org/km4city/resource/{COD_DIR}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_6c65f56d-e3bd-46b1-97d4-51e561866cb2 rr:predicate dcterms:identifier .
+
+_:node195r0f56nx4 rr:column "COD_DIR" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node195r0f56nx1 .
+
+_:node195r0f56nx1 km-dev:hasObjectMap _:node195r0f56nx4 .
+
+km-dev:PredicateObjectMap_6c65f56d-e3bd-46b1-97d4-51e561866cb2 rr:objectMap _:node195r0f56nx4 .
+
+km-dev:TriplesMap_069fe711-1439-48b2-aa37-bd6dd4cf58e5 rr:predicateObjectMap km-dev:PredicateObjectMap_6c65f56d-e3bd-46b1-97d4-51e561866cb2 .
+
+km-dev:PredicateObjectMap_6c65f56d-e3bd-46b1-97d4-51e561866cb2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195r0f56nx1 .
+
+_:node195r0f56nx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6c65f56d-e3bd-46b1-97d4-51e561866cb2 .
+
+km-dev:PredicateObjectMap_67bf013e-07f5-4a65-8614-7d5e3098881f rr:predicate foaf:name .
+
+_:node195r0f56nx5 rr:column "DEN_CNV" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node195r0f56nx1 .
+
+_:node195r0f56nx1 km-dev:hasObjectMap _:node195r0f56nx5 .
+
+km-dev:PredicateObjectMap_67bf013e-07f5-4a65-8614-7d5e3098881f rr:objectMap _:node195r0f56nx5 .
+
+km-dev:TriplesMap_069fe711-1439-48b2-aa37-bd6dd4cf58e5 rr:predicateObjectMap km-dev:PredicateObjectMap_67bf013e-07f5-4a65-8614-7d5e3098881f .
+
+km-dev:PredicateObjectMap_67bf013e-07f5-4a65-8614-7d5e3098881f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195r0f56nx1 .
+
+_:node195r0f56nx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_67bf013e-07f5-4a65-8614-7d5e3098881f .

@@ -1,0 +1,212 @@
+@prefix vann: <http://purl.org/vocab/vann/#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix km4cr: <http://www.disit.org/km4city/resource#> .
+@prefix km4c: <http://www.disit.org/km4city/schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix otn: <http://www.pms.ifi.uni-muenchen.de/OTN#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node195r0q9grx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "grafo_ferroviario_scali" ;
+	km-dev:modelPublicationTime "1415024813595"^^xsd:long ;
+	km-dev:modelVersion "1.5" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"km4cr\",\"hasBaseURI\":false},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"COD_SCA\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:GoodsYard1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#GoodsYard1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#GoodsYard\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"NOME\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://xmlns.com/foaf/0.1/name\",\"isPrimary\":true,\"DomainLabel\":\"km4c:GoodsYard1\",\"DomainId\":\"http://www.disit.org/km4city/schema#GoodsYard1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#GoodsYard\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"STATO\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#state\",\"isPrimary\":true,\"DomainLabel\":\"km4c:GoodsYard1\",\"DomainId\":\"http://www.disit.org/km4city/schema#GoodsYard1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#GoodsYard\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"TIPO\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#yardType\",\"isPrimary\":true,\"DomainLabel\":\"km4c:GoodsYard1\",\"DomainId\":\"http://www.disit.org/km4city/schema#GoodsYard1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#GoodsYard\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"COD_GNZ\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:RailwayJunction1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#RailwayJunction1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#RailwayJunction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"CF\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#railDepartment\",\"isPrimary\":true,\"DomainLabel\":\"km4c:GoodsYard1\",\"DomainId\":\"http://www.disit.org/km4city/schema#GoodsYard1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#GoodsYard\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"RACC\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#railwaySiding\",\"isPrimary\":true,\"DomainLabel\":\"km4c:GoodsYard1\",\"DomainId\":\"http://www.disit.org/km4city/schema#GoodsYard1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#GoodsYard\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"}]" .
+
+km-dev:TriplesMap_160909df-5f67-498b-bc89-3a0a0a1062d0 a rr:TriplesMap .
+
+_:node195r0q9grx1 km-dev:hasTriplesMap km-dev:TriplesMap_160909df-5f67-498b-bc89-3a0a0a1062d0 .
+
+km-dev:TriplesMap_160909df-5f67-498b-bc89-3a0a0a1062d0 km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx2 rr:tableName "grafo_ferroviario_scali" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasLogicalTable _:node195r0q9grx2 .
+
+km-dev:TriplesMap_160909df-5f67-498b-bc89-3a0a0a1062d0 rr:logicalTable _:node195r0q9grx2 ;
+	rr:subjectMap _:node195r0q9grx3 .
+
+_:node195r0q9grx1 km-dev:hasSubjectMap _:node195r0q9grx3 .
+
+_:node195r0q9grx3 km-dev:isPartOfMapping _:node195r0q9grx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.disit.org/km4city/schema#GoodsYard1" ;
+	rr:class km4c:GoodsYard ;
+	rr:template "http://www.disit.org/km4city/resource/{COD_SCA}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_a3b7233f-fabb-425d-8814-d2cb1bfbc54f rr:predicate dcterms:identifier .
+
+_:node195r0q9grx4 rr:column "COD_SCA" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasObjectMap _:node195r0q9grx4 .
+
+km-dev:PredicateObjectMap_a3b7233f-fabb-425d-8814-d2cb1bfbc54f rr:objectMap _:node195r0q9grx4 .
+
+km-dev:TriplesMap_160909df-5f67-498b-bc89-3a0a0a1062d0 rr:predicateObjectMap km-dev:PredicateObjectMap_a3b7233f-fabb-425d-8814-d2cb1bfbc54f .
+
+km-dev:PredicateObjectMap_a3b7233f-fabb-425d-8814-d2cb1bfbc54f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a3b7233f-fabb-425d-8814-d2cb1bfbc54f .
+
+km-dev:PredicateObjectMap_c9fe056f-9eda-4258-ac83-2d5728a66bfd rr:predicate km4c:correspondToJunction .
+
+km-dev:RefObjectMap_91e6a551-c9cf-462a-b9c4-26861f99243a a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e614162e-27bb-467d-9e5f-39fe452188dd ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasObjectMap km-dev:RefObjectMap_91e6a551-c9cf-462a-b9c4-26861f99243a .
+
+km-dev:PredicateObjectMap_c9fe056f-9eda-4258-ac83-2d5728a66bfd rr:objectMap km-dev:RefObjectMap_91e6a551-c9cf-462a-b9c4-26861f99243a .
+
+km-dev:TriplesMap_160909df-5f67-498b-bc89-3a0a0a1062d0 rr:predicateObjectMap km-dev:PredicateObjectMap_c9fe056f-9eda-4258-ac83-2d5728a66bfd .
+
+km-dev:PredicateObjectMap_c9fe056f-9eda-4258-ac83-2d5728a66bfd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c9fe056f-9eda-4258-ac83-2d5728a66bfd .
+
+km-dev:PredicateObjectMap_66c1a739-e4f5-4ab6-bb0d-a31045982e5b rr:predicate km4c:railDepartment .
+
+_:node195r0q9grx5 rr:column "CF" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasObjectMap _:node195r0q9grx5 .
+
+km-dev:PredicateObjectMap_66c1a739-e4f5-4ab6-bb0d-a31045982e5b rr:objectMap _:node195r0q9grx5 .
+
+km-dev:TriplesMap_160909df-5f67-498b-bc89-3a0a0a1062d0 rr:predicateObjectMap km-dev:PredicateObjectMap_66c1a739-e4f5-4ab6-bb0d-a31045982e5b .
+
+km-dev:PredicateObjectMap_66c1a739-e4f5-4ab6-bb0d-a31045982e5b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_66c1a739-e4f5-4ab6-bb0d-a31045982e5b .
+
+km-dev:PredicateObjectMap_c49bcda9-df8c-49ce-afb5-74dd68150286 rr:predicate km4c:railwaySiding .
+
+_:node195r0q9grx6 rr:column "RACC" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasObjectMap _:node195r0q9grx6 .
+
+km-dev:PredicateObjectMap_c49bcda9-df8c-49ce-afb5-74dd68150286 rr:objectMap _:node195r0q9grx6 .
+
+km-dev:TriplesMap_160909df-5f67-498b-bc89-3a0a0a1062d0 rr:predicateObjectMap km-dev:PredicateObjectMap_c49bcda9-df8c-49ce-afb5-74dd68150286 .
+
+km-dev:PredicateObjectMap_c49bcda9-df8c-49ce-afb5-74dd68150286 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c49bcda9-df8c-49ce-afb5-74dd68150286 .
+
+km-dev:PredicateObjectMap_9a26167b-2f7a-4aee-8a00-f1d78aafda80 rr:predicate km4c:state .
+
+_:node195r0q9grx7 rr:column "STATO" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasObjectMap _:node195r0q9grx7 .
+
+km-dev:PredicateObjectMap_9a26167b-2f7a-4aee-8a00-f1d78aafda80 rr:objectMap _:node195r0q9grx7 .
+
+km-dev:TriplesMap_160909df-5f67-498b-bc89-3a0a0a1062d0 rr:predicateObjectMap km-dev:PredicateObjectMap_9a26167b-2f7a-4aee-8a00-f1d78aafda80 .
+
+km-dev:PredicateObjectMap_9a26167b-2f7a-4aee-8a00-f1d78aafda80 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9a26167b-2f7a-4aee-8a00-f1d78aafda80 .
+
+km-dev:PredicateObjectMap_24b6ea73-14c4-4db3-aa10-db2d227b74bc rr:predicate km4c:yardType .
+
+_:node195r0q9grx8 rr:column "TIPO" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasObjectMap _:node195r0q9grx8 .
+
+km-dev:PredicateObjectMap_24b6ea73-14c4-4db3-aa10-db2d227b74bc rr:objectMap _:node195r0q9grx8 .
+
+km-dev:TriplesMap_160909df-5f67-498b-bc89-3a0a0a1062d0 rr:predicateObjectMap km-dev:PredicateObjectMap_24b6ea73-14c4-4db3-aa10-db2d227b74bc .
+
+km-dev:PredicateObjectMap_24b6ea73-14c4-4db3-aa10-db2d227b74bc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_24b6ea73-14c4-4db3-aa10-db2d227b74bc .
+
+km-dev:PredicateObjectMap_1167fcf4-f7db-42e0-bf82-6b53865338b9 rr:predicate foaf:name .
+
+_:node195r0q9grx9 rr:column "NOME" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasObjectMap _:node195r0q9grx9 .
+
+km-dev:PredicateObjectMap_1167fcf4-f7db-42e0-bf82-6b53865338b9 rr:objectMap _:node195r0q9grx9 .
+
+km-dev:TriplesMap_160909df-5f67-498b-bc89-3a0a0a1062d0 rr:predicateObjectMap km-dev:PredicateObjectMap_1167fcf4-f7db-42e0-bf82-6b53865338b9 .
+
+km-dev:PredicateObjectMap_1167fcf4-f7db-42e0-bf82-6b53865338b9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1167fcf4-f7db-42e0-bf82-6b53865338b9 .
+
+km-dev:TriplesMap_e614162e-27bb-467d-9e5f-39fe452188dd a rr:TriplesMap .
+
+_:node195r0q9grx1 km-dev:hasTriplesMap km-dev:TriplesMap_e614162e-27bb-467d-9e5f-39fe452188dd .
+
+km-dev:TriplesMap_e614162e-27bb-467d-9e5f-39fe452188dd km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx10 rr:tableName "grafo_ferroviario_scali" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasLogicalTable _:node195r0q9grx10 .
+
+km-dev:TriplesMap_e614162e-27bb-467d-9e5f-39fe452188dd rr:logicalTable _:node195r0q9grx10 ;
+	rr:subjectMap _:node195r0q9grx11 .
+
+_:node195r0q9grx1 km-dev:hasSubjectMap _:node195r0q9grx11 .
+
+_:node195r0q9grx11 km-dev:isPartOfMapping _:node195r0q9grx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.disit.org/km4city/schema#RailwayJunction2" ;
+	rr:class km4c:RailwayJunction ;
+	rr:template "http://www.disit.org/km4city/resource/{COD_GNZ}" .
+
+km-dev:PredicateObjectMap_224ce41a-b9b0-435c-8989-45a90af58099 rr:predicate dcterms:identifier .
+
+_:node195r0q9grx12 rr:column "COD_GNZ" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasObjectMap _:node195r0q9grx12 .
+
+km-dev:PredicateObjectMap_224ce41a-b9b0-435c-8989-45a90af58099 rr:objectMap _:node195r0q9grx12 .
+
+km-dev:TriplesMap_e614162e-27bb-467d-9e5f-39fe452188dd rr:predicateObjectMap km-dev:PredicateObjectMap_224ce41a-b9b0-435c-8989-45a90af58099 .
+
+km-dev:PredicateObjectMap_224ce41a-b9b0-435c-8989-45a90af58099 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195r0q9grx1 .
+
+_:node195r0q9grx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_224ce41a-b9b0-435c-8989-45a90af58099 .

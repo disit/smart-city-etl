@@ -1,0 +1,20 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:avm="http://infomobilita.toscana.it/schema/avm">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <avm:AVMMessage>
+         <avm:exchange>
+            <avm:idConsumer></avm:idConsumer>
+            <avm:idServer></avm:idServer>
+            <avm:oraInvioMessaggio></avm:oraInvioMessaggio>
+            <avm:response></avm:response>
+            <avm:notOkInfo></avm:notOkInfo>
+            <avm:keepAlive></avm:keepAlive>
+            <avm:pushType></avm:pushType>
+            <avm:pullType>filtro</avm:pullType>
+            <avm:filterReference>
+               <avm:codiceCorsaLogico>xxxxxxx</avm:codiceCorsaLogico>
+            </avm:filterReference>
+         </avm:exchange>
+      </avm:AVMMessage>
+   </soapenv:Body>
+</soapenv:Envelope>

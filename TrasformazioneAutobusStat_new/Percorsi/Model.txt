@@ -1,0 +1,8 @@
+<OGRVRTDataSource>
+    <OGRVRTLayer name="--LAYER--">
+        <SrcDataSource>--PATH--</SrcDataSource>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:3003</LayerSRS>
+        <GeometryField encoding="PointFromColumns" x="CoordxFix" y="CoordyFix"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

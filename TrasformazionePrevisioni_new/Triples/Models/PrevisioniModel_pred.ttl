@@ -1,0 +1,288 @@
+@prefix vann: <http://purl.org/vocab/vann/#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix km4cr: <http://www.disit.org/km4city/resource#> .
+@prefix km4c: <http://www.disit.org/km4city/schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix schema: <http://schema.org/> .
+@prefix tzont: <http://www.w3.org/2006/timezone#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix otn: <http://www.pms.ifi.uni-muenchen.de/OTN#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node194ou7hn3x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "Previ_meteo_Abetone_xmlpred" ;
+	km-dev:modelPublicationTime "1413881251555"^^xsd:long ;
+	km-dev:modelVersion "1.4" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"predictionKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"Domain\":\"http://www.disit.dinfo.unifi.it/SiiMobility#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"descr\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/description\",\"isPrimary\":true,\"Domain\":\"http://www.disit.dinfo.unifi.it/SiiMobility#WeatherPrediction1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"hours\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.dinfo.unifi.it/SiiMobility#hour\",\"isPrimary\":true,\"Domain\":\"http://www.disit.dinfo.unifi.it/SiiMobility#WeatherPrediction1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"reportKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"Domain\":\"http://www.disit.dinfo.unifi.it/SiiMobility#WeatherReport1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"temp_max\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.dinfo.unifi.it/SiiMobility#maxTemp\",\"isPrimary\":true,\"Domain\":\"http://www.disit.dinfo.unifi.it/SiiMobility#WeatherPrediction1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"temp_min\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.dinfo.unifi.it/SiiMobility#minTemp\",\"isPrimary\":true,\"Domain\":\"http://www.disit.dinfo.unifi.it/SiiMobility#WeatherPrediction1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"um\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.dinfo.unifi.it/SiiMobility#humidity\",\"isPrimary\":true,\"Domain\":\"http://www.disit.dinfo.unifi.it/SiiMobility#WeatherPrediction1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"uv\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.dinfo.unifi.it/SiiMobility#uv\",\"isPrimary\":true,\"Domain\":\"http://www.disit.dinfo.unifi.it/SiiMobility#WeatherPrediction1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"week_day\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.dinfo.unifi.it/SiiMobility#day\",\"isPrimary\":true,\"Domain\":\"http://www.disit.dinfo.unifi.it/SiiMobility#WeatherPrediction1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"quota_neve\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.dinfo.unifi.it/SiiMobility#snow\",\"isPrimary\":true,\"Domain\":\"http://www.disit.dinfo.unifi.it/SiiMobility#WeatherPrediction1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"temp\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.dinfo.unifi.it/SiiMobility#recTemp\",\"isPrimary\":true,\"Domain\":\"http://www.disit.dinfo.unifi.it/SiiMobility#WeatherPrediction1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"temp_perc\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.dinfo.unifi.it/SiiMobility#perTemp\",\"isPrimary\":true,\"Domain\":\"http://www.disit.dinfo.unifi.it/SiiMobility#WeatherPrediction1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"wind\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.dinfo.unifi.it/SiiMobility#wind\",\"isPrimary\":true,\"Domain\":\"http://www.disit.dinfo.unifi.it/SiiMobility#WeatherPrediction1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"km4c\",\"hasBaseURI\":false},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"km4c\",\"hasBaseURI\":false},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"value\":\"isUriOfClass\",\"type\":\"other\"},{\"name\":\"metaPropertyValue\",\"value\":\"http://www.disit.org/km4city/schema#WeatherReport\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"reportKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://isi.edu/integration/karma/dev#classLink\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetMetaPropertyCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/schema/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"predictionKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"descr\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/description\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"hours\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#hour\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"reportKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://isi.edu/integration/karma/dev#classLink\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"},{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":false,\"DomainLabel\":\"km4c:WeatherReport1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1 (add)\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"reportKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"temp_max\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#maxTemp\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:integer\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"temp_min\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#minTemp\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:integer\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"um\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#humidity\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"um\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#humidity\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:integer\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"uv\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#uv\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:integer\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"week_day\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#day\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"quota_neve\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#snow\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"temp\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#recTemp\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:integer\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"quota_neve\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#snow\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:integer\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"temp_perc\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#perTemp\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:integer\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"wind\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.disit.org/km4city/schema#wind\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"value\":\"isUriOfClass\",\"type\":\"other\"},{\"name\":\"metaPropertyValue\",\"value\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"predictionKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://isi.edu/integration/karma/dev#classLink\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetMetaPropertyCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"value\":\"isUriOfClass\",\"type\":\"other\"},{\"name\":\"metaPropertyValue\",\"value\":\"http://www.disit.org/km4city/schema#WeatherReport\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"reportKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://isi.edu/integration/karma/dev#classLink\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherReport1 (add)\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherReport1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherReport\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetMetaPropertyCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"value\":\"isSubclassOfClass\",\"type\":\"other\"},{\"name\":\"metaPropertyValue\",\"value\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"predictionKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetMetaPropertyCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"value\":\"isSubclassOfClass\",\"type\":\"other\"},{\"name\":\"metaPropertyValue\",\"value\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"predictionKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetMetaPropertyCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"metaPropertyName\",\"value\":\"isUriOfClass\",\"type\":\"other\"},{\"name\":\"metaPropertyValue\",\"value\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"type\":\"other\"},{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"predictionKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://isi.edu/integration/karma/dev#classLink\",\"isPrimary\":true,\"DomainLabel\":\"km4c:WeatherPrediction1\",\"DomainId\":\"http://www.disit.org/km4city/schema#WeatherPrediction1\",\"DomainUri\":\"http://www.disit.org/km4city/schema#WeatherPrediction\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"xsd:string\",\"type\":\"other\"}],\"commandName\":\"SetMetaPropertyCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"km4c\",\"hasBaseURI\":false},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"km4cr\",\"hasBaseURI\":false},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"}]" .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 a rr:TriplesMap .
+
+_:node194ou7hn3x1 km-dev:hasTriplesMap km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x2 rr:tableName "Previ_meteo_Abetone_xmlpred" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasLogicalTable _:node194ou7hn3x2 .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 rr:logicalTable _:node194ou7hn3x2 ;
+	rr:subjectMap _:node194ou7hn3x3 .
+
+_:node194ou7hn3x1 km-dev:hasSubjectMap _:node194ou7hn3x3 .
+
+_:node194ou7hn3x3 km-dev:isPartOfMapping _:node194ou7hn3x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.disit.org/km4city/schema#WeatherPrediction1" ;
+	rr:class km4c:WeatherPrediction ;
+	rr:template "http://www.disit.org/km4city/resource/{predictionKey}" .
+
+km-dev:PredicateObjectMap_7551d898-fa2d-4498-ae9b-69a336f869b9 rr:predicate dcterms:description .
+
+_:node194ou7hn3x4 rr:column "descr" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasObjectMap _:node194ou7hn3x4 .
+
+km-dev:PredicateObjectMap_7551d898-fa2d-4498-ae9b-69a336f869b9 rr:objectMap _:node194ou7hn3x4 .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 rr:predicateObjectMap km-dev:PredicateObjectMap_7551d898-fa2d-4498-ae9b-69a336f869b9 .
+
+km-dev:PredicateObjectMap_7551d898-fa2d-4498-ae9b-69a336f869b9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7551d898-fa2d-4498-ae9b-69a336f869b9 .
+
+km-dev:PredicateObjectMap_05b04d08-ed56-43a2-8faf-9dec630ab476 rr:predicate km4c:day .
+
+_:node194ou7hn3x5 rr:column "week_day" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasObjectMap _:node194ou7hn3x5 .
+
+km-dev:PredicateObjectMap_05b04d08-ed56-43a2-8faf-9dec630ab476 rr:objectMap _:node194ou7hn3x5 .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 rr:predicateObjectMap km-dev:PredicateObjectMap_05b04d08-ed56-43a2-8faf-9dec630ab476 .
+
+km-dev:PredicateObjectMap_05b04d08-ed56-43a2-8faf-9dec630ab476 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_05b04d08-ed56-43a2-8faf-9dec630ab476 .
+
+km-dev:PredicateObjectMap_5f745681-135d-4602-b82c-2199d3f8c124 rr:predicate km4c:hour .
+
+_:node194ou7hn3x6 rr:column "hours" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasObjectMap _:node194ou7hn3x6 .
+
+km-dev:PredicateObjectMap_5f745681-135d-4602-b82c-2199d3f8c124 rr:objectMap _:node194ou7hn3x6 .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 rr:predicateObjectMap km-dev:PredicateObjectMap_5f745681-135d-4602-b82c-2199d3f8c124 .
+
+km-dev:PredicateObjectMap_5f745681-135d-4602-b82c-2199d3f8c124 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5f745681-135d-4602-b82c-2199d3f8c124 .
+
+km-dev:PredicateObjectMap_09ea0285-91b5-48d8-ac47-ef8d3af306b8 rr:predicate km4c:humidity .
+
+_:node194ou7hn3x7 rr:column "um" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasObjectMap _:node194ou7hn3x7 .
+
+km-dev:PredicateObjectMap_09ea0285-91b5-48d8-ac47-ef8d3af306b8 rr:objectMap _:node194ou7hn3x7 .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 rr:predicateObjectMap km-dev:PredicateObjectMap_09ea0285-91b5-48d8-ac47-ef8d3af306b8 .
+
+km-dev:PredicateObjectMap_09ea0285-91b5-48d8-ac47-ef8d3af306b8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_09ea0285-91b5-48d8-ac47-ef8d3af306b8 .
+
+km-dev:PredicateObjectMap_b8215dc4-e612-40fe-8b7e-5c7c94ef3d85 rr:predicate km4c:maxTemp .
+
+_:node194ou7hn3x8 rr:column "temp_max" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasObjectMap _:node194ou7hn3x8 .
+
+km-dev:PredicateObjectMap_b8215dc4-e612-40fe-8b7e-5c7c94ef3d85 rr:objectMap _:node194ou7hn3x8 .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 rr:predicateObjectMap km-dev:PredicateObjectMap_b8215dc4-e612-40fe-8b7e-5c7c94ef3d85 .
+
+km-dev:PredicateObjectMap_b8215dc4-e612-40fe-8b7e-5c7c94ef3d85 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b8215dc4-e612-40fe-8b7e-5c7c94ef3d85 .
+
+km-dev:PredicateObjectMap_bda3ca9c-5694-4288-8703-6d4a76a7e83c rr:predicate km4c:minTemp .
+
+_:node194ou7hn3x9 rr:column "temp_min" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasObjectMap _:node194ou7hn3x9 .
+
+km-dev:PredicateObjectMap_bda3ca9c-5694-4288-8703-6d4a76a7e83c rr:objectMap _:node194ou7hn3x9 .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 rr:predicateObjectMap km-dev:PredicateObjectMap_bda3ca9c-5694-4288-8703-6d4a76a7e83c .
+
+km-dev:PredicateObjectMap_bda3ca9c-5694-4288-8703-6d4a76a7e83c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bda3ca9c-5694-4288-8703-6d4a76a7e83c .
+
+km-dev:PredicateObjectMap_74a2d98c-2b2a-485b-8b7e-58f37cb2bbb7 rr:predicate km4c:perTemp .
+
+_:node194ou7hn3x10 rr:column "temp_perc" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasObjectMap _:node194ou7hn3x10 .
+
+km-dev:PredicateObjectMap_74a2d98c-2b2a-485b-8b7e-58f37cb2bbb7 rr:objectMap _:node194ou7hn3x10 .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 rr:predicateObjectMap km-dev:PredicateObjectMap_74a2d98c-2b2a-485b-8b7e-58f37cb2bbb7 .
+
+km-dev:PredicateObjectMap_74a2d98c-2b2a-485b-8b7e-58f37cb2bbb7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_74a2d98c-2b2a-485b-8b7e-58f37cb2bbb7 .
+
+km-dev:PredicateObjectMap_dbc098eb-b478-4a2d-99c0-dde40b89df1c rr:predicate km4c:recTemp .
+
+_:node194ou7hn3x11 rr:column "temp" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasObjectMap _:node194ou7hn3x11 .
+
+km-dev:PredicateObjectMap_dbc098eb-b478-4a2d-99c0-dde40b89df1c rr:objectMap _:node194ou7hn3x11 .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 rr:predicateObjectMap km-dev:PredicateObjectMap_dbc098eb-b478-4a2d-99c0-dde40b89df1c .
+
+km-dev:PredicateObjectMap_dbc098eb-b478-4a2d-99c0-dde40b89df1c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dbc098eb-b478-4a2d-99c0-dde40b89df1c .
+
+km-dev:PredicateObjectMap_4bba6588-8ed7-42c0-b31f-6fd670e5a47c rr:predicate km4c:snow .
+
+_:node194ou7hn3x12 rr:column "quota_neve" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasObjectMap _:node194ou7hn3x12 .
+
+km-dev:PredicateObjectMap_4bba6588-8ed7-42c0-b31f-6fd670e5a47c rr:objectMap _:node194ou7hn3x12 .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 rr:predicateObjectMap km-dev:PredicateObjectMap_4bba6588-8ed7-42c0-b31f-6fd670e5a47c .
+
+km-dev:PredicateObjectMap_4bba6588-8ed7-42c0-b31f-6fd670e5a47c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4bba6588-8ed7-42c0-b31f-6fd670e5a47c .
+
+km-dev:PredicateObjectMap_e3eadd0a-fd9d-450e-a485-4a87c34d1972 rr:predicate km4c:uv .
+
+_:node194ou7hn3x13 rr:column "uv" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasObjectMap _:node194ou7hn3x13 .
+
+km-dev:PredicateObjectMap_e3eadd0a-fd9d-450e-a485-4a87c34d1972 rr:objectMap _:node194ou7hn3x13 .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 rr:predicateObjectMap km-dev:PredicateObjectMap_e3eadd0a-fd9d-450e-a485-4a87c34d1972 .
+
+km-dev:PredicateObjectMap_e3eadd0a-fd9d-450e-a485-4a87c34d1972 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e3eadd0a-fd9d-450e-a485-4a87c34d1972 .
+
+km-dev:PredicateObjectMap_c962d427-0eef-4ac6-aad8-a7bdb9783bb6 rr:predicate km4c:wind .
+
+_:node194ou7hn3x14 rr:column "wind" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasObjectMap _:node194ou7hn3x14 .
+
+km-dev:PredicateObjectMap_c962d427-0eef-4ac6-aad8-a7bdb9783bb6 rr:objectMap _:node194ou7hn3x14 .
+
+km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 rr:predicateObjectMap km-dev:PredicateObjectMap_c962d427-0eef-4ac6-aad8-a7bdb9783bb6 .
+
+km-dev:PredicateObjectMap_c962d427-0eef-4ac6-aad8-a7bdb9783bb6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c962d427-0eef-4ac6-aad8-a7bdb9783bb6 .
+
+km-dev:TriplesMap_b079e24c-3d03-4abf-9be2-f770db858d92 a rr:TriplesMap .
+
+_:node194ou7hn3x1 km-dev:hasTriplesMap km-dev:TriplesMap_b079e24c-3d03-4abf-9be2-f770db858d92 .
+
+km-dev:TriplesMap_b079e24c-3d03-4abf-9be2-f770db858d92 km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x15 rr:tableName "Previ_meteo_Abetone_xmlpred" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasLogicalTable _:node194ou7hn3x15 .
+
+km-dev:TriplesMap_b079e24c-3d03-4abf-9be2-f770db858d92 rr:logicalTable _:node194ou7hn3x15 ;
+	rr:subjectMap _:node194ou7hn3x16 .
+
+_:node194ou7hn3x1 km-dev:hasSubjectMap _:node194ou7hn3x16 .
+
+_:node194ou7hn3x16 km-dev:isPartOfMapping _:node194ou7hn3x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.disit.org/km4city/schema#WeatherReport3" ;
+	rr:class km4c:WeatherReport ;
+	rr:template "http://www.disit.org/km4city/resource/{reportKey}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_1d17c9b8-63aa-492c-85ed-87bdc5b3ee39 rr:predicate km4c:hasPrediction .
+
+km-dev:RefObjectMap_2966759f-ad3e-4025-b3a2-7100e490ee42 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_7d31172d-02cb-4501-aab1-a2680dfd0ff7 ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasObjectMap km-dev:RefObjectMap_2966759f-ad3e-4025-b3a2-7100e490ee42 .
+
+km-dev:PredicateObjectMap_1d17c9b8-63aa-492c-85ed-87bdc5b3ee39 rr:objectMap km-dev:RefObjectMap_2966759f-ad3e-4025-b3a2-7100e490ee42 .
+
+km-dev:TriplesMap_b079e24c-3d03-4abf-9be2-f770db858d92 rr:predicateObjectMap km-dev:PredicateObjectMap_1d17c9b8-63aa-492c-85ed-87bdc5b3ee39 .
+
+km-dev:PredicateObjectMap_1d17c9b8-63aa-492c-85ed-87bdc5b3ee39 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node194ou7hn3x1 .
+
+_:node194ou7hn3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1d17c9b8-63aa-492c-85ed-87bdc5b3ee39 .

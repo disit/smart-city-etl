@@ -1,0 +1,90 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix transit: <http://vocab.org/transit/terms/> .
+@prefix km4cr: <http://www.disit.org/km4city/resource#> .
+@prefix km4c: <http://www.disit.org/km4city/schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <http://schema.org/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix otn: <http://www.pms.ifi.uni-muenchen.de/OTN#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gtfs: <http://vocab.gtfs.org/terms#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1at8ncc7sx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "SELECT * FROM SiiMobility.TPLBus_calendarDates" ;
+	km-dev:modelPublicationTime "1474540482812"^^xsd:long ;
+	km-dev:modelVersion "1.4" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":true,\"graphName\":\"\",\"prefix\":\"s\",\"hasBaseURI\":true,\"baseURI\":\"http://localhost:8080/source/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"CalendarDatesTXTKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:CalendarDateRule1 (add)\",\"DomainId\":\"http://vocab.gtfs.org/terms#CalendarDateRule1 (add)\",\"DomainUri\":\"http://vocab.gtfs.org/terms#CalendarDateRule\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"date\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/date\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:CalendarDateRule1\",\"DomainId\":\"http://vocab.gtfs.org/terms#CalendarDateRule1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#CalendarDateRule\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"exception_type\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://vocab.gtfs.org/terms#dateAddition\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:CalendarDateRule1\",\"DomainId\":\"http://vocab.gtfs.org/terms#CalendarDateRule1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#CalendarDateRule\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"CalendarDatesTXTKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:CalendarDateRule1\",\"DomainId\":\"http://vocab.gtfs.org/terms#CalendarDateRule1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#CalendarDateRule\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"CalendarDatesTXTKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:CalendarDateRule1\",\"DomainId\":\"http://vocab.gtfs.org/terms#CalendarDateRule1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#CalendarDateRule\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"CalendarDatesTXTKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://purl.org/dc/terms/identifier\",\"isPrimary\":true,\"DomainLabel\":\"gtfs:CalendarDateRule1\",\"DomainId\":\"http://vocab.gtfs.org/terms#CalendarDateRule1\",\"DomainUri\":\"http://vocab.gtfs.org/terms#CalendarDateRule\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"properties\",\"value\":{\"hasServiceProperties\":false,\"hasPrefix\":false,\"graphName\":\"\",\"hasBaseURI\":true,\"baseURI\":\"http://www.disit.org/km4city/resource/\"},\"type\":\"other\"}],\"commandName\":\"SetWorksheetPropertiesCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"CalendarDatesTXTKey\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"isPrimary\":true,\"FullType\":\"http://purl.org/dc/terms/identifier\",\"DomainLabel\":\"gtfs:Service1 (add)\",\"DomainId\":\"http://vocab.gtfs.org/terms#Service1 (add)\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Service\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[{\"edgeId\":\"http://vocab.gtfs.org/terms#serviceRule\",\"edgeTargetId\":\"http://vocab.gtfs.org/terms#CalendarDateRule1\",\"edgeSourceId\":\"http://vocab.gtfs.org/terms#Service2\"}],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP1:WS11096AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[],\"type\":\"other\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[{\"edgeId\":\"http://vocab.gtfs.org/terms#serviceRule\",\"edgeTargetId\":\"http://vocab.gtfs.org/terms#CalendarDateRule1\",\"edgeSourceId\":\"http://vocab.gtfs.org/terms#Service2\"}],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP1:WS11096AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[{\"edgeTargetUri\":\"http://vocab.gtfs.org/terms#CalendarDateRule\",\"edgeId\":\"http://purl.org/dc/elements/1.1/date\",\"edgeTargetId\":\"http://vocab.gtfs.org/terms#CalendarDateRule1\",\"edgeSourceId\":\"http://vocab.gtfs.org/terms#Service2\",\"edgeSourceUri\":\"http://vocab.gtfs.org/terms#Service\"}],\"type\":\"other\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"date\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":true,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"UnassignSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"exception_type\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":true,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"UnassignSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"initialEdges\",\"value\":[{\"edgeId\":\"http://purl.org/dc/elements/1.1/date\",\"edgeTargetId\":\"http://vocab.gtfs.org/terms#CalendarDateRule1\",\"edgeSourceId\":\"http://vocab.gtfs.org/terms#Service2\"}],\"type\":\"other\"},{\"name\":\"alignmentId\",\"value\":\"WSP1:WS11096AL\",\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"newEdges\",\"value\":[],\"type\":\"other\"}],\"commandName\":\"ChangeInternalNodeLinksCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"date\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"isPrimary\":true,\"FullType\":\"http://purl.org/dc/terms/date\",\"DomainLabel\":\"gtfs:Service2\",\"DomainId\":\"http://vocab.gtfs.org/terms#Service2\",\"DomainUri\":\"http://vocab.gtfs.org/terms#Service\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"}]" .
+
+km-dev:TriplesMap_fb56ec7d-1589-4635-9410-1d3a892964f9 a rr:TriplesMap .
+
+_:node1at8ncc7sx1 km-dev:hasTriplesMap km-dev:TriplesMap_fb56ec7d-1589-4635-9410-1d3a892964f9 .
+
+km-dev:TriplesMap_fb56ec7d-1589-4635-9410-1d3a892964f9 km-dev:isPartOfMapping _:node1at8ncc7sx1 .
+
+_:node1at8ncc7sx2 rr:tableName "SELECT * FROM SiiMobility.TPLBus_calendarDates" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1at8ncc7sx1 .
+
+_:node1at8ncc7sx1 km-dev:hasLogicalTable _:node1at8ncc7sx2 .
+
+km-dev:TriplesMap_fb56ec7d-1589-4635-9410-1d3a892964f9 rr:logicalTable _:node1at8ncc7sx2 ;
+	rr:subjectMap _:node1at8ncc7sx3 .
+
+_:node1at8ncc7sx1 km-dev:hasSubjectMap _:node1at8ncc7sx3 .
+
+_:node1at8ncc7sx3 km-dev:isPartOfMapping _:node1at8ncc7sx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://vocab.gtfs.org/terms#Service2" ;
+	rr:class gtfs:Service ;
+	rr:template "http://www.disit.org/km4city/resource/{CalendarDatesTXTKey}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_a386f580-9304-4454-aeeb-cbe39b320d96 rr:predicate dcterms:date .
+
+_:node1at8ncc7sx4 rr:column "date" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at8ncc7sx1 .
+
+_:node1at8ncc7sx1 km-dev:hasObjectMap _:node1at8ncc7sx4 .
+
+km-dev:PredicateObjectMap_a386f580-9304-4454-aeeb-cbe39b320d96 rr:objectMap _:node1at8ncc7sx4 .
+
+km-dev:TriplesMap_fb56ec7d-1589-4635-9410-1d3a892964f9 rr:predicateObjectMap km-dev:PredicateObjectMap_a386f580-9304-4454-aeeb-cbe39b320d96 .
+
+km-dev:PredicateObjectMap_a386f580-9304-4454-aeeb-cbe39b320d96 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at8ncc7sx1 .
+
+_:node1at8ncc7sx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a386f580-9304-4454-aeeb-cbe39b320d96 .
+
+km-dev:PredicateObjectMap_44c40e18-3b56-4a9b-bca8-d776f9d9e9e3 rr:predicate dcterms:identifier .
+
+_:node1at8ncc7sx5 rr:column "CalendarDatesTXTKey" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1at8ncc7sx1 .
+
+_:node1at8ncc7sx1 km-dev:hasObjectMap _:node1at8ncc7sx5 .
+
+km-dev:PredicateObjectMap_44c40e18-3b56-4a9b-bca8-d776f9d9e9e3 rr:objectMap _:node1at8ncc7sx5 .
+
+km-dev:TriplesMap_fb56ec7d-1589-4635-9410-1d3a892964f9 rr:predicateObjectMap km-dev:PredicateObjectMap_44c40e18-3b56-4a9b-bca8-d776f9d9e9e3 .
+
+km-dev:PredicateObjectMap_44c40e18-3b56-4a9b-bca8-d776f9d9e9e3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1at8ncc7sx1 .
+
+_:node1at8ncc7sx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_44c40e18-3b56-4a9b-bca8-d776f9d9e9e3 .
