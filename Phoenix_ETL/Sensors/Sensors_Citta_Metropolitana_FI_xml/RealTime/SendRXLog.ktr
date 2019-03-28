@@ -463,59 +463,6 @@
       <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
     </attributes>
   </connection>
-  <connection>
-    <name>PhoenixJDBC</name>
-    <server/>
-    <type>GENERIC</type>
-    <access>Native</access>
-    <database/>
-    <port>1521</port>
-    <username>aaa</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb79ce10be93aedb</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>CUSTOM_DRIVER_CLASS</code><attribute>org.apache.phoenix.jdbc.PhoenixDriver</attribute></attribute>
-      <attribute><code>CUSTOM_URL</code><attribute>jdbc&#x3a;phoenix&#x3a;192.168.0.118,192.168.0.124,192.168.0.129&#x3a;2181&#x3a;&#x2f;hbase</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
-      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
-      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
-  <connection>
-    <name>test_20</name>
-    <server>192.168.0.20</server>
-    <type>MYSQL</type>
-    <access>Native</access>
-    <database>SiiMobility</database>
-    <port>3306</port>
-    <username>SiiMobility</username>
-    <password>Encrypted 2be98afc86aa7bf8ba94e9121d29bbbc3</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
-      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
-      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
-      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
   <order>
     <hop>
       <from>Build Date 2</from>
@@ -553,7 +500,7 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>var param &#x3d; param&#x3b;&#xa;&#xa;var actualDateTemp &#x3d; new Date&#x28;&#x29;&#x3b;&#xa;var actualYearMonth &#x3d; actualDateTemp.getFullYear&#x28;&#x29;&#x2b;&#x22;_&#x22;&#x2b;&#x28;&#x28;&#x28;actualDateTemp.getMonth&#x28;&#x29;&#x2b;1&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; &#x28;actualDateTemp.getMonth&#x28;&#x29;&#x2b;1&#x29;&#x29;&#x3b;&#xa;var actualDay &#x3d; &#x28;&#x28;actualDateTemp.getDate&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getDate&#x28;&#x29;&#x29;&#x3b; &#xa;var actualHours &#x3d; &#x28;&#x28;actualDateTemp.getHours&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getHours&#x28;&#x29;&#x29;&#x3b;&#xa;var actualMinSec &#x3d; &#x28;&#x28;actualDateTemp.getMinutes&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getMinutes&#x28;&#x29;&#x29;&#x2b;&#x22;&#x22;&#x2b;&#x28;&#x28;actualDateTemp.getSeconds&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getSeconds&#x28;&#x29;&#x29;&#x3b; &#xa;var offset &#x3d; actualDateTemp.getTimezoneOffset&#x28;&#x29;&#x3b;&#xa;&#xa;var actualDate &#x3d; actualDateTemp.getFullYear&#x28;&#x29;&#x2b;&#x22;-&#x22;&#x2b;&#x28;&#x28;&#x28;actualDateTemp.getMonth&#x28;&#x29;&#x2b;1&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; &#x28;actualDateTemp.getMonth&#x28;&#x29;&#x2b;1&#x29;&#x29;&#x2b;&#x22;-&#x22;&#x2b;&#x28;&#x28;actualDateTemp.getDate&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getDate&#x28;&#x29;&#x29;&#x2b;&#x22;T&#x22;&#x2b;&#x28;&#x28;actualDateTemp.getHours&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getHours&#x28;&#x29;&#x29;&#x2b;&#x22;&#x3a;&#x22;&#x2b;&#x28;&#x28;actualDateTemp.getMinutes&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getMinutes&#x28;&#x29;&#x29;&#x2b;&#x22;&#x3a;&#x22;&#x2b;&#x28;&#x28;actualDateTemp.getSeconds&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getSeconds&#x28;&#x29;&#x2b;&#x22;.000&#x2b;0&#x22;&#x2b; &#x28;&#x28;-offset&#x29;&#x2f;60&#x29;&#x2b;&#x22;&#x3a;00&#x22;&#x29;&#x3b;&#xa;var timestamp &#x3d; actualDateTemp.getTime&#x28;&#x29;&#x3b;&#xa;&#xa;var host_info&#x3d;java.net.InetAddress.getLocalHost&#x28;&#x29;&#x3b;	&#xa;var IP&#x3d;host_info.getHostAddress&#x28;&#x29;&#x3b;&#xa;var size &#x3d; Filesize&#x3b;&#xa;&#x2f;&#x2f;var dim&#x3d;row.indexOf&#x28;&#x22;i&#x22;&#x29;&#x3b;&#xa;var dim &#x3d; size&#x2f;1024&#x3b;&#x2f;&#x2f;KB&#xa;&#xa;var query &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;192.168.1.43&#x2f;RsyslogAPI&#x2f;rsyslog.php&#x3f;p&#x3d;log&#x26;pid&#x3d;&#x22;&#x2b;processName&#x2b;&#xa;&#x22;&#x26;tmstmp&#x3d;&#x22;&#x2b;timestamp&#x2b;&#xa;&#x22;&#x26;modCom&#x3d;RX&#x22;&#x2b;&#xa;&#x22;&#x26;IP_local&#x3d;&#x22;&#x2b;IP&#x2b;&#xa;&#x22;&#x26;IP_ext&#x3d;&#x22;&#x2b;param&#x2b;&#xa;&#x22;&#x26;payloadSize&#x3d;&#x22;&#x2b;dim&#x2b;&#xa;&#x22;&#x26;agent&#x3d;ETL&#x22;&#x2b;&#xa;&#x22;&#x26;lat&#x3d;43.7993111&#x22;&#x2b;&#xa;&#x22;&#x26;lon&#x3d;11.2642611&#x22;&#x2b;&#xa;&#x22;&#x26;motivation&#x3d;FileSystem_Storage&#x22;&#x2b;&#xa;&#x2f;&#x2f;&#x22;&#x26;serviceUri&#x3d;&#x22;&#x2b;serviceUri&#x2b;&#xa;&#x22;&#x26;message&#x3d; &#x22;&#x3b;&#xa;&#x2f;&#x2f;http&#x3a;&#x2f;&#x2f;www.disit.org&#x2f;km4city&#x2f;resource&#x2f;a717d55a5fc8e19ce5560dfaf3e78c9d&#xa;&#xa;</jsScript_script>
+        <jsScript_script>var param &#x3d; param&#x3b;&#xa;&#xa;var actualDateTemp &#x3d; new Date&#x28;&#x29;&#x3b;&#xa;var actualYearMonth &#x3d; actualDateTemp.getFullYear&#x28;&#x29;&#x2b;&#x22;_&#x22;&#x2b;&#x28;&#x28;&#x28;actualDateTemp.getMonth&#x28;&#x29;&#x2b;1&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; &#x28;actualDateTemp.getMonth&#x28;&#x29;&#x2b;1&#x29;&#x29;&#x3b;&#xa;var actualDay &#x3d; &#x28;&#x28;actualDateTemp.getDate&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getDate&#x28;&#x29;&#x29;&#x3b; &#xa;var actualHours &#x3d; &#x28;&#x28;actualDateTemp.getHours&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getHours&#x28;&#x29;&#x29;&#x3b;&#xa;var actualMinSec &#x3d; &#x28;&#x28;actualDateTemp.getMinutes&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getMinutes&#x28;&#x29;&#x29;&#x2b;&#x22;&#x22;&#x2b;&#x28;&#x28;actualDateTemp.getSeconds&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getSeconds&#x28;&#x29;&#x29;&#x3b; &#xa;var offset &#x3d; actualDateTemp.getTimezoneOffset&#x28;&#x29;&#x3b;&#xa;&#xa;var actualDate &#x3d; actualDateTemp.getFullYear&#x28;&#x29;&#x2b;&#x22;-&#x22;&#x2b;&#x28;&#x28;&#x28;actualDateTemp.getMonth&#x28;&#x29;&#x2b;1&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; &#x28;actualDateTemp.getMonth&#x28;&#x29;&#x2b;1&#x29;&#x29;&#x2b;&#x22;-&#x22;&#x2b;&#x28;&#x28;actualDateTemp.getDate&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getDate&#x28;&#x29;&#x29;&#x2b;&#x22;T&#x22;&#x2b;&#x28;&#x28;actualDateTemp.getHours&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getHours&#x28;&#x29;&#x29;&#x2b;&#x22;&#x3a;&#x22;&#x2b;&#x28;&#x28;actualDateTemp.getMinutes&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getMinutes&#x28;&#x29;&#x29;&#x2b;&#x22;&#x3a;&#x22;&#x2b;&#x28;&#x28;actualDateTemp.getSeconds&#x28;&#x29;&#x3c;10&#x3f;&#x27;0&#x27;&#x3a;&#x27;&#x27;&#x29; &#x2b; actualDateTemp.getSeconds&#x28;&#x29;&#x2b;&#x22;.000&#x2b;0&#x22;&#x2b; &#x28;&#x28;-offset&#x29;&#x2f;60&#x29;&#x2b;&#x22;&#x3a;00&#x22;&#x29;&#x3b;&#xa;var timestamp &#x3d; actualDateTemp.getTime&#x28;&#x29;&#x3b;&#xa;&#xa;var host_info&#x3d;java.net.InetAddress.getLocalHost&#x28;&#x29;&#x3b;	&#xa;var IP&#x3d;host_info.getHostAddress&#x28;&#x29;&#x3b;&#xa;var size &#x3d; Filesize&#x3b;&#xa;&#x2f;&#x2f;var dim&#x3d;row.indexOf&#x28;&#x22;i&#x22;&#x29;&#x3b;&#xa;var dim &#x3d; size&#x2f;1024&#x3b;&#x2f;&#x2f;KB&#xa;&#xa;var query &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;localhost&#x2f;RsyslogAPI&#x2f;rsyslog.php&#x3f;p&#x3d;log&#x26;pid&#x3d;&#x22;&#x2b;processName&#x2b;&#xa;&#x22;&#x26;tmstmp&#x3d;&#x22;&#x2b;timestamp&#x2b;&#xa;&#x22;&#x26;modCom&#x3d;RX&#x22;&#x2b;&#xa;&#x22;&#x26;IP_local&#x3d;&#x22;&#x2b;IP&#x2b;&#xa;&#x22;&#x26;IP_ext&#x3d;&#x22;&#x2b;param&#x2b;&#xa;&#x22;&#x26;payloadSize&#x3d;&#x22;&#x2b;dim&#x2b;&#xa;&#x22;&#x26;agent&#x3d;ETL&#x22;&#x2b;&#xa;&#x22;&#x26;lat&#x3d;43.7993111&#x22;&#x2b;&#xa;&#x22;&#x26;lon&#x3d;11.2642611&#x22;&#x2b;&#xa;&#x22;&#x26;motivation&#x3d;FileSystem_Storage&#x22;&#x2b;&#xa;&#x2f;&#x2f;&#x22;&#x26;serviceUri&#x3d;&#x22;&#x2b;serviceUri&#x2b;&#xa;&#x22;&#x26;message&#x3d; &#x22;&#x3b;&#xa;&#x2f;&#x2f;http&#x3a;&#x2f;&#x2f;www.disit.org&#x2f;km4city&#x2f;resource&#x2f;a717d55a5fc8e19ce5560dfaf3e78c9d&#xa;&#xa;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>      <field>        <name>timestamp</name>
         <rename>timestamp</rename>
         <type>Number</type>
@@ -642,7 +589,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <url>http&#x3a;&#x2f;&#x2f;192.168.1.43&#x2f;RsyslogAPI&#x2f;rsyslog.php&#x3f;p&#x3d;log&#x26;pid&#x3d;ETL_ID&#x26;tmstmp&#x3d;1518188055864&#x26;modCom&#x3d;TX&#x26;IP_local&#x3d;192.168.0.115&#x26;IP_ext&#x3d;192.168.0.117&#x26;payloadSize&#x3d;999999&#x26;agent&#x3d;ETL&#x26;motivation&#x3d;DB_request&#x26;lang&#x3d;IT&#x26;lat&#x3d;43&#x26;lon&#x3d;11&#x26;serviceUri&#x3d;http&#x3a;&#x2f;&#x2f;www.disit.org&#x2f;km4city&#x2f;resource&#x2f;a717d55a5fc8e19ce5560dfaf3e78c9d&#x26;message&#x3d;note</url>
+    <url>http&#x3a;&#x2f;&#x2f;localhost&#x2f;RsyslogAPI&#x2f;rsyslog.php&#x3f;p&#x3d;log&#x26;pid&#x3d;ETL_ID&#x26;tmstmp&#x3d;1518188055864&#x26;modCom&#x3d;TX&#x26;IP_local&#x3d;localhost&#x26;IP_ext&#x3d;localhost&#x26;payloadSize&#x3d;999999&#x26;agent&#x3d;ETL&#x26;motivation&#x3d;DB_request&#x26;lang&#x3d;IT&#x26;lat&#x3d;43&#x26;lon&#x3d;11&#x26;serviceUri&#x3d;http&#x3a;&#x2f;&#x2f;www.disit.org&#x2f;km4city&#x2f;resource&#x2f;a717d55a5fc8e19ce5560dfaf3e78c9d&#x26;message&#x3d;note</url>
     <urlInField>Y</urlInField>
     <urlField>query</urlField>
     <encoding>UTF-8</encoding>

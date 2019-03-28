@@ -595,6 +595,33 @@
       <xloc>320</xloc>
       <yloc>400</yloc>
     </entry>
+    <entry>
+      <name>Copy Files 3</name>
+      <description/>
+      <type>COPY_FILES</type>
+      <copy_empty_folders>Y</copy_empty_folders>
+      <arg_from_previous>N</arg_from_previous>
+      <overwrite_files>N</overwrite_files>
+      <include_subfolders>N</include_subfolders>
+      <remove_source_files>N</remove_source_files>
+      <add_result_filesname>N</add_result_filesname>
+      <destination_is_a_file>N</destination_is_a_file>
+      <create_destination_folder>N</create_destination_folder>
+      <fields>
+        <field>
+          <source_filefolder>&#x24;&#x7b;DESTDIRECT&#x7d;&#x2f;&#x24;&#x7b;CATEGORY&#x7d;&#x2f;&#x24;&#x7b;processName&#x7d;&#x2f;&#x24;&#x7b;actualYearMonth&#x7d;&#x2f;&#x24;&#x7b;actualDay&#x7d;&#x2f;&#x24;&#x7b;actualHours&#x7d;&#x2f;&#x24;&#x7b;actualMinSec&#x7d;&#x2f;&#x24;&#x7b;processName&#x7d;.&#x24;&#x7b;FORMAT&#x7d;</source_filefolder>
+          <source_configuration_name>STATIC-SOURCE-FILE-0</source_configuration_name>
+          <destination_filefolder>&#x2f;media&#x2f;Trasformazioni&#x2f;Phoenix_ETL&#x2f;sensors&#x2f;Sensors_Citta_Metropolitana_FI_xml&#x2f;RealTime</destination_filefolder>
+          <destination_configuration_name>STATIC-DEST-FILE-0</destination_configuration_name>
+          <wildcard/>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>160</xloc>
+      <yloc>192</yloc>
+    </entry>
   </entries>
   <hops>
     <hop>
@@ -722,6 +749,15 @@
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>File Exists</from>
+      <to>Copy Files 3</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
     </hop>
   </hops>
   <notepads>
