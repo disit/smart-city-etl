@@ -72,6 +72,114 @@
   </info>
   <notepads>
   </notepads>
+  <connection>
+    <name>connection62</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>SiiMobility</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4a016aa75d59dabdf</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>connectionParam</name>
+    <server>&#x24;&#x7b;IPADDRESSMASTER&#x7d;</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>&#x24;&#x7b;DATABASEMYSQL&#x7d;</database>
+    <port>&#x24;&#x7b;PORTMYSQL&#x7d;</port>
+    <username>&#x24;&#x7b;USERNAMEMYSQL&#x7d;</username>
+    <password>&#x24;&#x7b;PSWMYSQL&#x7d;</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>&#x24;&#x7b;PORTMYSQL&#x7d;</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>local_20</name>
+    <server>192.168.0.20</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>SiiMobility</database>
+    <port>3306</port>
+    <username>SiiMobility</username>
+    <password>Encrypted 2be98afc86aa7bf8ba94e9121d29bbbc3</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>local_72</name>
+    <server>192.168.0.72</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>SiiMobility</database>
+    <port>3306</port>
+    <username>SiiMobility</username>
+    <password>Encrypted 2be98afc86aa7bf8ba94e9121d29bbbc3</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
   <order>
   <hop> <from>Get Variables</from><to>Modified Java Script Value</to><enabled>Y</enabled> </hop>
   <hop> <from>Modified Java Script Value</from><to>Set Variables</to><enabled>Y</enabled> </hop>
@@ -124,7 +232,7 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2f;var param &#x3d; param&#x3b;&#xa;&#x2f;&#x2f;var Format &#x3d; Format&#x3b;&#xa;var processName &#x3d; process&#x3b;&#xa;var TPLname &#x3d; processName.split&#x28;&#x22;_&#x22;&#x29;&#x5b;1&#x5d; &#x3b;&#xa;var link &#x3d; &#x27;http&#x3a;&#x2f;&#x2f;dati.toscana.it&#x2f;api&#x2f;3&#x2f;action&#x2f;resource_search&#x3f;query&#x3d;name&#x3a;&#x27;&#x2b;TPLname&#x2b;&#x27;.gtfs&#x27;&#x3b;</jsScript_script>
+        <jsScript_script>&#x2f;&#x2f;var param &#x3d; param&#x3b;&#xa;&#x2f;&#x2f;var Format &#x3d; Format&#x3b;&#xa;var processName &#x3d; process&#x3b;&#xa;var TPLname &#x3d; processName.split&#x28;&#x22;_&#x22;&#x29;&#x5b;1&#x5d; &#x3b;&#xa;&#xa;if&#x28;TPLname&#x3d;&#x3d;&#x27;toremar&#x27; &#x7c;&#x7c; TPLname&#x3d;&#x3d;&#x27;tft&#x27; &#x29;&#xa;	var link &#x3d; &#x27;http&#x3a;&#x2f;&#x2f;dati.toscana.it&#x2f;api&#x2f;3&#x2f;action&#x2f;resource_search&#x3f;query&#x3d;name&#x3a;&#x27;&#x2b;TPLname&#x2b;&#x27;.zip&#x27;&#x3b;&#xa;else&#xa;	var link &#x3d; &#x27;http&#x3a;&#x2f;&#x2f;dati.toscana.it&#x2f;api&#x2f;3&#x2f;action&#x2f;resource_search&#x3f;query&#x3d;name&#x3a;&#x27;&#x2b;TPLname&#x2b;&#x27;.gtfs&#x27;&#x3b;&#xa;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>      <field>        <name>link</name>
         <rename>link</rename>
         <type>String</type>
@@ -133,8 +241,8 @@
         <replace>N</replace>
       </field>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>272</xloc>
-      <yloc>118</yloc>
+      <xloc>224</xloc>
+      <yloc>117</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -161,7 +269,7 @@
     <use_formatting>Y</use_formatting>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>483</xloc>
+      <xloc>684</xloc>
       <yloc>118</yloc>
       <draw>Y</draw>
       </GUI>

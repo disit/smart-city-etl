@@ -13,10 +13,37 @@
     <parameters>
         <parameter>
             <name>processName</name>
-            <default_value>Bus_amvbus</default_value>
+            <default_value/>
             <description/>
         </parameter>
     </parameters>
+  <connection>
+    <name>connection62</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>SiiMobility</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4a016aa75d59dabdf</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
   <connection>
     <name>connectionParam</name>
     <server>&#x24;&#x7b;IPADDRESSMASTER&#x7d;</server>
@@ -36,6 +63,33 @@
       <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
       <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
       <attribute><code>PORT_NUMBER</code><attribute>&#x24;&#x7b;PORTMYSQL&#x7d;</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>local_72</name>
+    <server>192.168.0.72</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>SiiMobility</database>
+    <port>3306</port>
+    <username>SiiMobility</username>
+    <password>Encrypted 2be98afc86aa7bf8ba94e9121d29bbbc3</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
       <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
       <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
       <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
@@ -99,8 +153,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>204</xloc>
-      <yloc>51</yloc>
+      <xloc>292</xloc>
+      <yloc>9</yloc>
       </entry>
     <entry>
       <name>Success</name>
@@ -142,8 +196,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>117</xloc>
-      <yloc>51</yloc>
+      <xloc>98</xloc>
+      <yloc>52</yloc>
       </entry>
     <entry>
       <name>update last_triples</name>
@@ -225,8 +279,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>437</xloc>
-      <yloc>52</yloc>
+      <xloc>507</xloc>
+      <yloc>7</yloc>
       </entry>
     <entry>
       <name>create actualDate</name>
@@ -258,8 +312,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>309</xloc>
-      <yloc>51</yloc>
+      <xloc>393</xloc>
+      <yloc>6</yloc>
       </entry>
     <entry>
       <name>Shapes Triplification</name>
@@ -363,8 +417,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>740</xloc>
-      <yloc>53</yloc>
+      <xloc>792</xloc>
+      <yloc>3</yloc>
       </entry>
     <entry>
       <name>Routes Triplification</name>
@@ -468,8 +522,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>581</xloc>
-      <yloc>53</yloc>
+      <xloc>651</xloc>
+      <yloc>8</yloc>
       </entry>
     <entry>
       <name>senddata.sh</name>
@@ -497,17 +551,92 @@
       <xloc>131</xloc>
       <yloc>147</yloc>
       </entry>
+    <entry>
+      <name>Stop File Exists</name>
+      <description/>
+      <type>FILE_EXISTS</type>
+      <filename>&#x24;&#x7b;DESTDIRECT&#x7d;&#x2f;&#x24;&#x7b;processName&#x7d;&#x2f;1Last_file&#x2f;stop.txt</filename>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>253</xloc>
+      <yloc>85</yloc>
+      </entry>
+    <entry>
+      <name>Delete file</name>
+      <description/>
+      <type>DELETE_FILE</type>
+      <filename>&#x24;&#x7b;DESTDIRECT&#x7d;&#x2f;&#x24;&#x7b;processName&#x7d;&#x2f;1Last_file&#x2f;stop.txt</filename>
+      <fail_if_file_not_exists>N</fail_if_file_not_exists>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>380</xloc>
+      <yloc>97</yloc>
+      </entry>
+    <entry>
+      <name>Set variables</name>
+      <description/>
+      <type>SET_VARIABLES</type>
+      <replacevars>Y</replacevars>
+      <filename/>
+      <file_variable_type>JVM</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>DESTDIRECT</variable_name>
+          <variable_value>&#x24;&#x7b;DESTDIRECT&#x7d;TPLBus</variable_value>
+          <variable_type>CURRENT_JOB</variable_type>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>177</xloc>
+      <yloc>53</yloc>
+      </entry>
+    <entry>
+      <name>Mail 2</name>
+      <description/>
+      <type>MAIL</type>
+      <server>musicnetwork.dinfo.unifi.it</server>
+      <port>25</port>
+      <destination>pierfrancesco.bellini&#x40;unifi.it</destination>
+      <destinationCc>michela.paolucci&#x40;unifi.it</destinationCc>
+      <destinationBCc/>
+      <replyto>TPL&#x40;disit.org</replyto>
+      <replytoname>disit_TPLtriples</replytoname>
+      <subject>ETL&#x3a; &#x24;&#x7b;processName&#x7d;</subject>
+      <include_date>Y</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Nuove triple per&#x3a;  &#x24;&#x7b;processName&#x7d;&#xa;Percorso&#x3a; &#x24;&#x7b;TRIPLESDESTDIRECT&#x7d;&#x2f;TPLBus&#x2f;&#x24;&#x7b;processName&#x7d;&#x2f;&#x24;&#x7b;actualYearMonth&#x7d;&#x2f;&#x24;&#x7b;actualDay&#x7d;&#x2f;&#x24;&#x7b;actualHours&#x7d;&#x2f;&#x24;&#x7b;actualMinSec&#x7d;&#xa;</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>N</use_auth>
+      <use_secure_auth>N</use_secure_auth>
+      <auth_user/>
+      <auth_password>Encrypted </auth_password>
+      <only_comment>Y</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>SSL</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>        <filetype>LOG</filetype>
+      </filetypes>      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>153</xloc>
+      <yloc>232</yloc>
+      </entry>
   </entries>
   <hops>
-    <hop>
-      <from>getConfig</from>
-      <to>DROP</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
     <hop>
       <from>DROP</from>
       <to>create actualDate</to>
@@ -626,7 +755,52 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
+      <from>Stop File Exists</from>
+      <to>Delete file</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Stop File Exists</from>
+      <to>DROP</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>getConfig</from>
+      <to>Set variables</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Set variables</from>
+      <to>Stop File Exists</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
       <from>update last_triples</from>
+      <to>Mail 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Mail 2</from>
       <to>Success</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>

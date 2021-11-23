@@ -18,6 +18,33 @@
         </parameter>
     </parameters>
   <connection>
+    <name>connection62</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>SiiMobility</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4a016aa75d59dabdf</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
     <name>connectionParam</name>
     <server>&#x24;&#x7b;IPADDRESSMASTER&#x7d;</server>
     <type>MYSQL</type>
@@ -39,8 +66,62 @@
       <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
       <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
       <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
-      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>local_20</name>
+    <server>192.168.0.20</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>SiiMobility</database>
+    <port>3306</port>
+    <username>SiiMobility</username>
+    <password>Encrypted 2be98afc86aa7bf8ba94e9121d29bbbc3</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>local_72</name>
+    <server>192.168.0.72</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>SiiMobility</database>
+    <port>3306</port>
+    <username>SiiMobility</username>
+    <password>Encrypted 2be98afc86aa7bf8ba94e9121d29bbbc3</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
       <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
     </attributes>
   </connection>
@@ -89,8 +170,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>223</xloc>
-      <yloc>68</yloc>
+      <xloc>149</xloc>
+      <yloc>38</yloc>
       </entry>
     <entry>
       <name>START</name>
@@ -109,8 +190,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>79</xloc>
-      <yloc>67</yloc>
+      <xloc>30</xloc>
+      <yloc>38</yloc>
       </entry>
     <entry>
       <name>Success</name>
@@ -119,8 +200,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>136</xloc>
-      <yloc>670</yloc>
+      <xloc>68</xloc>
+      <yloc>412</yloc>
       </entry>
     <entry>
       <name>File Compare</name>
@@ -132,8 +213,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>535</xloc>
-      <yloc>68</yloc>
+      <xloc>568</xloc>
+      <yloc>37</yloc>
       </entry>
     <entry>
       <name>Delete folders</name>
@@ -150,8 +231,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>712</xloc>
-      <yloc>66</yloc>
+      <xloc>660</xloc>
+      <yloc>40</yloc>
       </entry>
     <entry>
       <name>Success 2</name>
@@ -160,8 +241,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>870</xloc>
-      <yloc>69</yloc>
+      <xloc>716</xloc>
+      <yloc>142</yloc>
       </entry>
     <entry>
       <name>File Exists</name>
@@ -171,8 +252,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>346</xloc>
-      <yloc>67</yloc>
+      <xloc>303</xloc>
+      <yloc>37</yloc>
       </entry>
     <entry>
       <name>Copy Files</name>
@@ -196,8 +277,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>350</xloc>
-      <yloc>171</yloc>
+      <xloc>372</xloc>
+      <yloc>78</yloc>
       </entry>
     <entry>
       <name>Copy Files 2</name>
@@ -221,8 +302,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>537</xloc>
-      <yloc>177</yloc>
+      <xloc>490</xloc>
+      <yloc>83</yloc>
       </entry>
     <entry>
       <name>Unzip file</name>
@@ -252,8 +333,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>438</xloc>
-      <yloc>346</yloc>
+      <xloc>266</xloc>
+      <yloc>234</yloc>
       </entry>
     <entry>
       <name>HBase_Stops_Insert</name>
@@ -288,8 +369,8 @@
             </parameter>      </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1086</xloc>
-      <yloc>672</yloc>
+      <xloc>868</xloc>
+      <yloc>321</yloc>
       </entry>
     <entry>
       <name>Simple evaluation</name>
@@ -310,8 +391,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>439</xloc>
-      <yloc>271</yloc>
+      <xloc>430</xloc>
+      <yloc>141</yloc>
       </entry>
     <entry>
       <name>File .zip Exists</name>
@@ -321,8 +402,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>437</xloc>
-      <yloc>437</yloc>
+      <xloc>395</xloc>
+      <yloc>234</yloc>
       </entry>
     <entry>
       <name>Unzip file 2</name>
@@ -352,8 +433,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>437</xloc>
-      <yloc>564</yloc>
+      <xloc>482</xloc>
+      <yloc>321</yloc>
       </entry>
     <entry>
       <name>HBase_Trips_Insert</name>
@@ -387,8 +468,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>606</xloc>
-      <yloc>492</yloc>
+      <xloc>559</xloc>
+      <yloc>234</yloc>
       </entry>
     <entry>
       <name>HBase_Agency_Insert</name>
@@ -423,8 +504,8 @@
             </parameter>      </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>918</xloc>
-      <yloc>671</yloc>
+      <xloc>816</xloc>
+      <yloc>410</yloc>
       </entry>
     <entry>
       <name>HBase_CalendarDates_Insert</name>
@@ -459,8 +540,8 @@
             </parameter>      </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>725</xloc>
-      <yloc>669</yloc>
+      <xloc>624</xloc>
+      <yloc>412</yloc>
       </entry>
     <entry>
       <name>HBase_Routes_Insert</name>
@@ -495,8 +576,8 @@
             </parameter>      </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>523</xloc>
-      <yloc>668</yloc>
+      <xloc>444</xloc>
+      <yloc>412</yloc>
       </entry>
     <entry>
       <name>HBase_StopTimes_Insert</name>
@@ -531,8 +612,8 @@
             </parameter>      </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>341</xloc>
-      <yloc>670</yloc>
+      <xloc>265</xloc>
+      <yloc>412</yloc>
       </entry>
     <entry>
       <name>HBase_Shapes_Insert</name>
@@ -567,8 +648,8 @@
             </parameter>      </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>813</xloc>
-      <yloc>493</yloc>
+      <xloc>709</xloc>
+      <yloc>234</yloc>
       </entry>
     <entry>
       <name>Drop SQL Tables</name>
@@ -583,23 +664,63 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1082</xloc>
-      <yloc>493</yloc>
+      <xloc>862</xloc>
+      <yloc>234</yloc>
+      </entry>
+    <entry>
+      <name>Success 2 2</name>
+      <description/>
+      <type>SUCCESS</type>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>223</xloc>
+      <yloc>124</yloc>
+      </entry>
+    <entry>
+      <name>File Exists 2</name>
+      <description/>
+      <type>FILE_EXISTS</type>
+      <filename>&#x24;&#x7b;DESTDIRECT&#x7d;&#x2f;&#x24;&#x7b;processName&#x7d;&#x2f;Link&#x2f;&#x24;&#x7b;actualYearMonth&#x7d;&#x2f;&#x24;&#x7b;actualDay&#x7d;&#x2f;&#x24;&#x7b;actualHours&#x7d;&#x2f;&#x24;&#x7b;actualMinSec&#x7d;&#x2f;stop.txt</filename>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>109</xloc>
+      <yloc>124</yloc>
+      </entry>
+    <entry>
+      <name>Create file</name>
+      <description/>
+      <type>CREATE_FILE</type>
+      <filename>&#x24;&#x7b;DESTDIRECT&#x7d;&#x2f;&#x24;&#x7b;processName&#x7d;&#x2f;1Last_file&#x2f;stop.txt</filename>
+      <fail_if_file_exists>N</fail_if_file_exists>
+      <add_filename_result>N</add_filename_result>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>756</xloc>
+      <yloc>42</yloc>
+      </entry>
+    <entry>
+      <name>Write to file</name>
+      <description/>
+      <type>WRITE_TO_FILE</type>
+      <filename>&#x24;&#x7b;DESTDIRECT&#x7d;&#x2f;&#x24;&#x7b;processName&#x7d;&#x2f;1Last_file&#x2f;stop.txt</filename>
+      <createParentFolder>N</createParentFolder>
+      <appendFile>N</appendFile>
+      <content>stop</content>
+      <encoding/>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>858</xloc>
+      <yloc>46</yloc>
       </entry>
   </entries>
   <hops>
     <hop>
       <from>File Compare</from>
       <to>Delete folders</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Delete folders</from>
-      <to>Success 2</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -659,15 +780,6 @@
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>START</from>
-      <to>HTTP</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>Y</unconditional>
     </hop>
     <hop>
       <from>File .zip Exists</from>
@@ -784,6 +896,60 @@
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
       <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>START</from>
+      <to>File Exists 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>File Exists 2</from>
+      <to>Success 2 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>File Exists 2</from>
+      <to>HTTP</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Delete folders</from>
+      <to>Create file</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Create file</from>
+      <to>Write to file</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Write to file</from>
+      <to>Success 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
   </hops>

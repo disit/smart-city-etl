@@ -44,6 +44,33 @@
       <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
     </attributes>
   </connection>
+  <connection>
+    <name>local_20</name>
+    <server>192.168.0.20</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>SiiMobility</database>
+    <port>3306</port>
+    <username>SiiMobility</username>
+    <password>Encrypted 2be98afc86aa7bf8ba94e9121d29bbbc3</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
     <slaveservers>
     </slaveservers>
 <job-log-table><connection/>
@@ -165,7 +192,7 @@
       <name>Evaluate rows number in a table</name>
       <description/>
       <type>EVAL_TABLE_CONTENT</type>
-      <connection>connectionParam</connection>
+      <connection>local_20</connection>
       <schemaname/>
       <tablename>TPLBus_calendarDates</tablename>
       <success_condition>rows_count_different</success_condition>
@@ -216,7 +243,7 @@
       <add_date>N</add_date>
       <add_time>N</add_time>
       <insertScript>Y</insertScript>
-      <script>mvn exec&#x3a;java -Dexec.mainClass&#x3d;&#x22;edu.isi.karma.rdf.OfflineRdfGenerator&#x22; -Dexec.args&#x3d;&#x22; --sourcetype DB --modelfilepath &#x22;&#x24;&#x7b;MODELPATH&#x7d;&#x2f;TPLBus_calendarDates.ttl&#x22; --outputfile &#x24;&#x7b;TRIPLESDESTDIRECT&#x7d;&#x2f;TPLBus&#x2f;&#x24;&#x7b;processName&#x7d;&#x2f;&#x24;&#x7b;actualYearMonth&#x7d;&#x2f;&#x24;&#x7b;actualDay&#x7d;&#x2f;&#x24;&#x7b;actualHours&#x7d;&#x2f;&#x24;&#x7b;actualMinSec&#x7d;&#x2f;CalendarDates.n3 --dbtype MySQL --hostname &#x24;&#x7b;IPADDRESSMASTER&#x7d; --username &#x24;&#x7b;USERNAMEMYSQL&#x7d; --password &#x24;&#x7b;PSWMYSQL&#x7d; --portnumber &#x24;&#x7b;PORTMYSQL&#x7d; --dbname &#x24;&#x7b;DATABASEMYSQL&#x7d; --tablename TPLBus_calendarDates&#x22; -Dexec.classpathScope&#x3d;compile</script>
+      <script>java -cp target/karma-offline-0.0.1-SNAPSHOT-shaded.jar edu.isi.karma.rdf.OfflineRdfGenerator --sourcetype DB --modelfilepath &#x22;&#x24;&#x7b;MODELPATH&#x7d;&#x2f;TPLBus_calendarDates.ttl&#x22; --outputfile &#x24;&#x7b;TRIPLESDESTDIRECT&#x7d;&#x2f;TPLBus&#x2f;&#x24;&#x7b;processName&#x7d;&#x2f;&#x24;&#x7b;actualYearMonth&#x7d;&#x2f;&#x24;&#x7b;actualDay&#x7d;&#x2f;&#x24;&#x7b;actualHours&#x7d;&#x2f;&#x24;&#x7b;actualMinSec&#x7d;&#x2f;CalendarDates.n3 --dbtype MySQL --hostname &#x24;&#x7b;IPADDRESSMASTER&#x7d; --username &#x24;&#x7b;USERNAMEMYSQL&#x7d; --password &#x24;&#x7b;PSWMYSQL&#x7d; --portnumber &#x24;&#x7b;PORTMYSQL&#x7d; --dbname &#x24;&#x7b;DATABASEMYSQL&#x7d; --tablename TPLBus_calendarDates</script>
       <loglevel>Basic</loglevel>
       <parallel>N</parallel>
       <draw>Y</draw>
@@ -243,12 +270,12 @@
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>
       <sendOneStatement>F</sendOneStatement>
-      <connection>connectionParam</connection>
+      <connection>local_20</connection>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>328</xloc>
-      <yloc>184</yloc>
+      <xloc>330</xloc>
+      <yloc>181</yloc>
       </entry>
     <entry>
       <name>DROP calendarDates</name>
@@ -259,7 +286,7 @@
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>
       <sendOneStatement>F</sendOneStatement>
-      <connection>connectionParam</connection>
+      <connection>local_20</connection>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>

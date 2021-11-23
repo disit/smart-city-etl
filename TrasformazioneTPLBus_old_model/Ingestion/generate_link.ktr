@@ -124,7 +124,7 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2f;var param &#x3d; param&#x3b;&#xa;&#x2f;&#x2f;var Format &#x3d; Format&#x3b;&#xa;var processName &#x3d; process&#x3b;&#xa;var TPLname &#x3d; processName.split&#x28;&#x22;_&#x22;&#x29;&#x5b;1&#x5d; &#x3b;&#xa;var link &#x3d; &#x27;http&#x3a;&#x2f;&#x2f;dati.toscana.it&#x2f;api&#x2f;3&#x2f;action&#x2f;resource_search&#x3f;query&#x3d;name&#x3a;&#x27;&#x2b;TPLname&#x2b;&#x27;.gtfs&#x27;&#x3b;</jsScript_script>
+        <jsScript_script>&#x2f;&#x2f;var param &#x3d; param&#x3b;&#xa;&#x2f;&#x2f;var Format &#x3d; Format&#x3b;&#xa;var processName &#x3d; process&#x3b;&#xa;var TPLname &#x3d; processName.split&#x28;&#x22;_&#x22;&#x29;&#x5b;1&#x5d; &#x3b;&#xa;var link &#x3d; &#x27;http&#x3a;&#x2f;&#x2f;dati.toscana.it&#x2f;api&#x2f;3&#x2f;action&#x2f;resource_search&#x3f;query&#x3d;name&#x3a;&#x27;&#x2b;TPLname&#x3b;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>      <field>        <name>link</name>
         <rename>link</rename>
         <type>String</type>

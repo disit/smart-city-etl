@@ -18,7 +18,7 @@
         </parameter>
     </parameters>
   <connection>
-    <name>connectionParam</name>
+    <name>ConnectionParam</name>
     <server>&#x24;&#x7b;IPADDRESSMASTER&#x7d;</server>
     <type>MYSQL</type>
     <access>Native</access>
@@ -36,7 +36,87 @@
       <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
       <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
       <attribute><code>PORT_NUMBER</code><attribute>&#x24;&#x7b;PORTMYSQL&#x7d;</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>local_20</name>
+    <server>192.168.0.20</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>SiiMobility</database>
+    <port>3306</port>
+    <username>SiiMobility</username>
+    <password>Encrypted 2be98afc86aa7bf8ba94e9121d29bbbc3</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
       <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>PhoenixJDBC</name>
+    <server/>
+    <type>GENERIC</type>
+    <access>Native</access>
+    <database/>
+    <port>1521</port>
+    <username>aaa</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10be93aedb</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>CUSTOM_DRIVER_CLASS</code><attribute>org.apache.phoenix.jdbc.PhoenixDriver</attribute></attribute>
+      <attribute><code>CUSTOM_URL</code><attribute>jdbc&#x3a;phoenix&#x3a;192.168.0.118,192.168.0.124,192.168.0.129&#x3a;2181&#x3a;&#x2f;hbase</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>test_20</name>
+    <server>192.168.0.20</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>SiiMobility</database>
+    <port>3306</port>
+    <username>SiiMobility</username>
+    <password>Encrypted 2be98afc86aa7bf8ba94e9121d29bbbc3</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
       <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
       <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
       <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
@@ -83,8 +163,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>175</xloc>
-      <yloc>183</yloc>
+      <xloc>18</xloc>
+      <yloc>29</yloc>
       </entry>
     <entry>
       <name>HbaseToMySQL</name>
@@ -122,8 +202,8 @@
             </parameter>      </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>598</xloc>
-      <yloc>184</yloc>
+      <xloc>441</xloc>
+      <yloc>30</yloc>
       </entry>
     <entry>
       <name>getTime</name>
@@ -158,14 +238,14 @@
             </parameter>      </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>460</xloc>
-      <yloc>184</yloc>
+      <xloc>303</xloc>
+      <yloc>30</yloc>
       </entry>
     <entry>
       <name>Evaluate rows number in a table</name>
       <description/>
       <type>EVAL_TABLE_CONTENT</type>
-      <connection>connectionParam</connection>
+      <connection>ConnectionParam</connection>
       <schemaname/>
       <tablename>TPLBus_agency</tablename>
       <success_condition>rows_count_different</success_condition>
@@ -178,8 +258,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>827</xloc>
-      <yloc>189</yloc>
+      <xloc>670</xloc>
+      <yloc>35</yloc>
       </entry>
     <entry>
       <name>DUMMY</name>
@@ -198,8 +278,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1025</xloc>
-      <yloc>192</yloc>
+      <xloc>665</xloc>
+      <yloc>199</yloc>
       </entry>
     <entry>
       <name>create RegioneCsvTriples </name>
@@ -216,13 +296,13 @@
       <add_date>N</add_date>
       <add_time>N</add_time>
       <insertScript>Y</insertScript>
-      <script>mvn exec&#x3a;java -Dexec.mainClass&#x3d;&#x22;edu.isi.karma.rdf.OfflineRdfGenerator&#x22; -Dexec.args&#x3d;&#x22; --sourcetype DB --modelfilepath &#x22;&#x24;&#x7b;MODELPATH&#x7d;&#x2f;TPLBus_agency.ttl&#x22; --outputfile &#x24;&#x7b;TRIPLESDESTDIRECT&#x7d;&#x2f;TPLBus&#x2f;&#x24;&#x7b;processName&#x7d;&#x2f;&#x24;&#x7b;actualYearMonth&#x7d;&#x2f;&#x24;&#x7b;actualDay&#x7d;&#x2f;&#x24;&#x7b;actualHours&#x7d;&#x2f;&#x24;&#x7b;actualMinSec&#x7d;&#x2f;Agency.n3 --dbtype MySQL --hostname &#x24;&#x7b;IPADDRESSMASTER&#x7d; --username &#x24;&#x7b;USERNAMEMYSQL&#x7d; --password &#x24;&#x7b;PSWMYSQL&#x7d; --portnumber &#x24;&#x7b;PORTMYSQL&#x7d; --dbname &#x24;&#x7b;DATABASEMYSQL&#x7d; --tablename TPLBus_agency&#x22; -Dexec.classpathScope&#x3d;compile</script>
+      <script>java -cp target&#x2f;karma-offline-0.0.1-SNAPSHOT-shaded.jar edu.isi.karma.rdf.OfflineRdfGenerator --sourcetype DB --modelfilepath &#x22;&#x24;&#x7b;MODELPATH&#x7d;&#x2f;TPLBus_agency.ttl&#x22; --outputfile &#x24;&#x7b;TRIPLESDESTDIRECT&#x7d;&#x2f;TPLBus&#x2f;&#x24;&#x7b;processName&#x7d;&#x2f;&#x24;&#x7b;actualYearMonth&#x7d;&#x2f;&#x24;&#x7b;actualDay&#x7d;&#x2f;&#x24;&#x7b;actualHours&#x7d;&#x2f;&#x24;&#x7b;actualMinSec&#x7d;&#x2f;Agency.n3 --dbtype MySQL --hostname &#x24;&#x7b;IPADDRESSMASTER&#x7d; --username &#x24;&#x7b;USERNAMEMYSQL&#x7d; --password &#x24;&#x7b;PSWMYSQL&#x7d; --portnumber &#x24;&#x7b;PORTMYSQL&#x7d; --dbname &#x24;&#x7b;DATABASEMYSQL&#x7d; --tablename TPLBus_agency</script>
       <loglevel>Basic</loglevel>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>562</xloc>
-      <yloc>355</yloc>
+      <xloc>525</xloc>
+      <yloc>192</yloc>
       </entry>
     <entry>
       <name>Success </name>
@@ -231,8 +311,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>181</xloc>
-      <yloc>355</yloc>
+      <xloc>661</xloc>
+      <yloc>368</yloc>
       </entry>
     <entry>
       <name>CREATE</name>
@@ -243,12 +323,12 @@
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>
       <sendOneStatement>F</sendOneStatement>
-      <connection>connectionParam</connection>
+      <connection>ConnectionParam</connection>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>332</xloc>
-      <yloc>181</yloc>
+      <xloc>175</xloc>
+      <yloc>27</yloc>
       </entry>
     <entry>
       <name>DROP agency</name>
@@ -259,12 +339,96 @@
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>
       <sendOneStatement>F</sendOneStatement>
-      <connection>connectionParam</connection>
+      <connection>ConnectionParam</connection>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>250</xloc>
-      <yloc>185</yloc>
+      <xloc>93</xloc>
+      <yloc>31</yloc>
+      </entry>
+    <entry>
+      <name>change agency name</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x2f;media&#x2f;Trasformazioni&#x2f;TrasformazioneTPLBus_new_model&#x2f;Triplification&#x2f;change_agency_name.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>processName</name>
+            <stream_name/>
+            <value/>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>322</xloc>
+      <yloc>201</yloc>
+      </entry>
+    <entry>
+      <name>Delete file old agency names</name>
+      <description/>
+      <type>DELETE_FILE</type>
+      <filename>&#x24;&#x7b;TRIPLESDESTDIRECT&#x7d;&#x2f;TPLBus&#x2f;&#x24;&#x7b;processName&#x7d;&#x2f;&#x24;&#x7b;actualYearMonth&#x7d;&#x2f;&#x24;&#x7b;actualDay&#x7d;&#x2f;&#x24;&#x7b;actualHours&#x7d;&#x2f;&#x24;&#x7b;actualMinSec&#x7d;&#x2f;Agency.n3</filename>
+      <fail_if_file_not_exists>N</fail_if_file_not_exists>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>152</xloc>
+      <yloc>202</yloc>
+      </entry>
+    <entry>
+      <name>dataset_version_filesystem</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x2f;media&#x2f;Trasformazioni&#x2f;TrasformazioneTPLBus_new_model&#x2f;Triplification&#x2f;dataset_version_path.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>processName</name>
+            <stream_name/>
+            <value/>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>155</xloc>
+      <yloc>366</yloc>
       </entry>
   </entries>
   <hops>
@@ -318,7 +482,7 @@
       <to>DROP agency</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
       <evaluation>Y</evaluation>
       <unconditional>Y</unconditional>
     </hop>
@@ -333,6 +497,33 @@
     </hop>
     <hop>
       <from>create RegioneCsvTriples </from>
+      <to>change agency name</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>change agency name</from>
+      <to>Delete file old agency names</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Delete file old agency names</from>
+      <to>dataset_version_filesystem</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>dataset_version_filesystem</from>
       <to>Success </to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
